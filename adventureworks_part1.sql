@@ -3,13 +3,13 @@
 - Order results by SubCategory name. */
 
 SELECT
-p.ProductID,
-p.Name,
-p.ProductNumber,
-p.Size,
-p.Color,
-p.ProductSubcategoryID,
-p_subcategory.Name AS SubCategory
+  p.ProductID,
+  p.Name,
+  p.ProductNumber,
+  p.Size,
+  p.Color,
+  p.ProductSubcategoryID,
+  p_subcategory.Name AS SubCategory
 FROM `tc-da-1.adwentureworks_db.product` AS p
 JOIN `tc-da-1.adwentureworks_db.productsubcategory` AS p_subcategory
 ON p.ProductSubcategoryID = p_subcategory.ProductSubcategoryID
@@ -20,14 +20,14 @@ ORDER BY SubCategory
 - Afterwards order the results by Category name.*/
 
 SELECT
-p.ProductID,
-p.Name,
-p.ProductNumber,
-p.Size,
-p.Color,
-p.ProductSubcategoryID,
-p_subcategory.Name AS SubCategory,
-p_category.name AS Category
+  p.ProductID,
+  p.Name,
+  p.ProductNumber,
+  p.Size,
+  p.Color,
+  p.ProductSubcategoryID,
+  p_subcategory.Name AS SubCategory,
+  p_category.name AS Category
 FROM `tc-da-1.adwentureworks_db.product` AS p
 JOIN `tc-da-1.adwentureworks_db.productsubcategory` AS p_subcategory
 ON p.ProductSubcategoryID = p_subcategory.ProductSubcategoryID
@@ -40,14 +40,14 @@ ORDER BY Category
 - Order the results from most to least expensive bike. */
 
 SELECT
-p.ProductID,
-p.Name,
-p.ProductNumber,
-p.Size,
-p.Color,
-p.ProductSubcategoryID,
-p_subcategory.Name AS SubCategory,
-p_category.Name AS Category
+  p.ProductID,
+  p.Name,
+  p.ProductNumber,
+  p.Size,
+  p.Color,
+  p.ProductSubcategoryID,
+  p_subcategory.Name AS SubCategory,
+  p_category.Name AS Category
 FROM `tc-da-1.adwentureworks_db.product` AS p
 JOIN `tc-da-1.adwentureworks_db.productsubcategory` AS p_subcategory
 ON p.ProductSubcategoryID = p_subcategory.ProductSubcategoryID

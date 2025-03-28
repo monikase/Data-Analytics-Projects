@@ -1,3 +1,9 @@
+/*
+1.3 TASK
+Enrich your original 1.1 SELECT by creating a new column in the view that marks active & inactive customers based on whether they have ordered anything during the last 365 days.
+- Copy only the top 500 rows from your written select ordered by CustomerId desc.
+*/
+
 -- CTES:
 WITH
     customer_table AS (

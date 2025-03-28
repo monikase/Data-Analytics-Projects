@@ -1,3 +1,9 @@
+/*
+2.2 TASK
+Enrich 2.1 query with the cumulative_sum of the total amount with tax earned per country & region.
+- Hint: use CTE or subquery
+*/
+
 -- CTES
 WITH
   sales_table AS (

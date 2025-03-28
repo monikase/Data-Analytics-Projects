@@ -2,4 +2,5 @@
 
 - Dashboard.pbix : PowerBI file with analysis
 - Dashboard.pdf : Overview of the dashboard
-- Sales Repord Intro : Explained steps of analysis
+- Sales Repord Intro.pdf : Explained steps of analysis
+- Queries.sql : Queries used to extract data

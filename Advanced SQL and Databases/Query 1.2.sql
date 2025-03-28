@@ -1,3 +1,10 @@
+/*
+1.2 TASK
+Business finds the original query valuable to analyze customers and now want to get the data from the first query for the top 200 customers with the highest total amount (with tax) who have not ordered for the last 365 days. How would you identify this segment?
+- You can use temp table, cte and/or subquery of the 1.1 select.
+- Note that the database is old and the current date should be defined by finding the latest order date in the orders table.
+*/
+
 -- CTES:
 WITH
     customer_table AS (

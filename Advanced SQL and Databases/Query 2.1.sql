@@ -1,3 +1,10 @@
+/*
+2.1 TASK
+Create a query of monthly sales numbers in each Country & region. 
+Include in the query a number of orders, customers and sales persons in each month with a total amount with tax earned. 
+Sales numbers from all types of customers are required.
+*/
+
 -- CTES
 WITH
   sales_table AS (

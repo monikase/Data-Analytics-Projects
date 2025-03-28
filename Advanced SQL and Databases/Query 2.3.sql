@@ -1,3 +1,9 @@
+/*
+2.3 TASK
+Enrich 2.2 query by adding ‘sales_rank’ column that ranks rows from best to worst for each country based on total amount with tax earned each month. 
+I.e. the month where the (US, Southwest) region made the highest total amount with tax earned will be ranked 1 for that region and vice versa.
+*/
+
 -- CTES
 WITH
   sales_table AS (

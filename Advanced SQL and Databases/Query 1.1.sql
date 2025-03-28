@@ -1,3 +1,14 @@
+/*
+1.1 TASK
+You’ve been tasked to create a detailed overview of all individual customers (these are defined by customerType = ‘I’ and/or stored in an individual table). Write a query that provides:
+- Identity information : CustomerId, Firstname, Last Name, FullName (First Name & Last Name).
+- An Extra column called addressing_title i.e. (Mr. Achong), if the title is missing - Dear Achong.
+- Contact information : Email, phone, account number, CustomerType.
+- Location information : City, State & Country, address.
+- Sales: number of orders, total amount (with Tax), date of the last order.
+- Few customers have multiple addresses, to avoid duplicate data take their latest available address by choosing max(AddressId)
+*/
+
 -- CTES:
 WITH
     customer_table AS (

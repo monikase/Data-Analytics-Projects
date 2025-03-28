@@ -1,6 +1,6 @@
 ## Utilizing Spreadsheets for Data Analytics
 
-- 'AdventureWorks' fictional business overview
+- 'AdventureWorks' sales overview
 
 Link to Google Sheets: [Sales Dashboard](https://docs.google.com/spreadsheets/d/18tJznePg0lrdk1OfUaUwF4GVFstI7-cxyRcSSb2r8I0/edit?usp=sharing)
 

@@ -27,6 +27,7 @@ join_data AS (
 )
 SELECT
   join_data.registration_week AS cohort_week,
+  COUNT(join_data.user_id) AS registrations,
   SUM (CASE WHEN join_data.purchase_week = join_data.registration_week THEN join_data.purchase END) / (COUNT(DISTINCT user_id)) AS week_0,
   SUM (CASE WHEN join_data.purchase_week = DATE_ADD (join_data.registration_week, INTERVAL 1 WEEK) THEN join_data.purchase END) / (COUNT (DISTINCT user_id)) AS week_1,
   SUM (CASE WHEN join_data.purchase_week = DATE_ADD (join_data.registration_week, INTERVAL 2 WEEK) THEN join_data.purchase END) / (COUNT (DISTINCT user_id)) AS week_2,

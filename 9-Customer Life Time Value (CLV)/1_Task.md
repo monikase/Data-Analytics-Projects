@@ -1,6 +1,6 @@
 ## Customer Life Time Value Analysis
 
-Customer Lifetime Value (CLV) - often called Lifetime Value (LTV) - one of the most powerful metrics in business analytics.
+Customer Lifetime Value (CLV) - often called Lifetime Value (LTV) - helps businesses make smarter decisions that lead to better profitability and growth. CLV allows to identify key areas like pricing, sales, and retention strategies, which in turn help reduce costs and increase profit. By understanding how much each customer is worth over their lifetime, businesses can make more informed decisions about customer acquisition costs (CAC) and adjust spending to maximize profitability.
 
 Analysis in [Spreadsheets](https://docs.google.com/spreadsheets/d/1ueH-u6Eb1cN0sOQPfY_6twDhc1cbGF-lHEsU8g3iTnw/edit?usp=sharing)
 

@@ -1,3 +1,3 @@
 ## RFM Segmentation Dashboard
 
-![image](https://github.com/user-attachments/assets/779b9b49-bc64-4202-b589-0091206f9050)
+![image](https://github.com/user-attachments/assets/7e897f7f-0b85-4688-8c94-1e2e7e18fbc9)

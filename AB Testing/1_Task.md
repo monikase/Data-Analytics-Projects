@@ -32,9 +32,35 @@ Since there are three marketing campaigns we will conduct several tests, compari
 This kind of testing is known as pairwise comparisons, and it suffers from the multiple testing problem - if we run a lot of tests, there’s an increased chance of getting a type I error (false positive). 
 Therefore, for analysis of A/B test results we will use a confidence level of 99%.
 
-### Hypothesis
+### General Approach
 
-Promotion Effectiveness: Do different promotions (promotion column) have a significantly different impact on sales (num_customers, revenue) at similar locations?
+Since we have three promotions (1, 2, and 3), we'll perform three pairwise comparisons:
+
+• Promotion 1 vs. Promotion 2  
+• Promotion 1 vs. Promotion 3  
+• Promotion 2 vs. Promotion 3  
+
+For each comparison, we'll set up a null hypothesis (H0) and an alternative hypothesis (Ha).
+
+### Hypotheses
+
+**1. Promotion 1 vs. Promotion 2**
+
+• H0 (Null Hypothesis): There is no significant difference in the mean sales (SalesInThousands) between Promotion 1 and Promotion 2. (In statistical terms: μ1 = μ2)  
+• Ha (Alternative Hypothesis): There is a significant difference in the mean sales (SalesInThousands) between Promotion 1 and Promotion 2. (In statistical terms: μ1 ≠ μ2)  
+
+**2. Promotion 1 vs. Promotion 3**
+
+• H0 (Null Hypothesis): There is no significant difference in the mean sales (SalesInThousands) between Promotion 1 and Promotion 3. (In statistical terms: μ1 = μ3)  
+• Ha (Alternative Hypothesis): There is a significant difference in the mean sales (SalesInThousands) between Promotion 1 and Promotion 3. (In statistical terms: μ1 ≠ μ3)  
+
+**3. Promotion 2 vs. Promotion 3**
+
+• H0 (Null Hypothesis): There is no significant difference in the mean sales (SalesInThousands) between Promotion 2 and Promotion 3. (In statistical terms: μ2 = μ3)  
+• Ha (Alternative Hypothesis): There is a significant difference in the mean sales (SalesInThousands) between Promotion 2 and Promotion 3. (In statistical terms: μ2 ≠ μ3)  
+
+
+
 
 
 

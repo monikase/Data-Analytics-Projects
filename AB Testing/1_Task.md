@@ -30,7 +30,7 @@ Evaluate A/B testing results and decide which marketing strategy works the best.
 
 Since there are three marketing campaigns we will conduct several tests, comparing campaigns against one another. 
 This kind of testing is known as pairwise comparisons, and it suffers from the multiple testing problem - if we run a lot of tests, there’s an increased chance of getting a type I error (false positive). 
-Therefore, for analysis of A/B test results we will use a confidence level of 99%.
+**Therefore, for analysis of A/B test results we will use a confidence level of 99%.**
 
 ### General Approach
 

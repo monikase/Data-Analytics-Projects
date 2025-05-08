@@ -9,13 +9,15 @@ In order to determine which promotion has the greatest effect on sales, the new 
 A different promotion is used at each location, and the weekly sales of the new item are recorded for the first four weeks.
 
 Columns(7):  
+
 • *MarketID*: unique identifier for market (10 unique)  
 • *MarketSize*: size of market area by sales (small, medium, large)  
 • *LocationID*: unique identifier for store location (137 unique)  
 • *AgeOfStore*: age of store in years (min: 1, avg: 8,5, max: 28)  
 • *Promotion*: one of three promotions that were tested (1, 2, 3)  
 • *week*: one of four weeks when the promotions were run (1, 2, 3, 4)  
-• *SalesInThousands*: sales amount for a specific LocationID, Promotion, and week  
+• *SalesInThousands*: sales amount for a specific LocationID, Promotion, and week 
+
 Total Rows(548)
 
 ### Quick Overview

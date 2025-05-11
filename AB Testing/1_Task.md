@@ -60,8 +60,16 @@ For each comparison, we'll set up a null hypothesis (H0) and an alternative hypo
 • H0 (Null Hypothesis): There is no significant difference in the mean sales (SalesInThousands) between Promotion 2 and Promotion 3.  
 • Ha (Alternative Hypothesis): There is a significant difference in the mean sales (SalesInThousands) between Promotion 2 and Promotion 3.  
 
+### Additional Considerations
 
+• **Confidence Level:** As stated, we will use a 99% confidence level. This means we are willing to accept a 1% chance of rejecting the null hypothesis when it is actually true (Type I error).
+• **Statistical Test:** To test these hypotheses, we will use **Independent Samples t-test -** Used when comparing the means of two independent groups.
+• **Pairwise Comparisons:** Since we are conducting multiple comparisons, we need to adjust the significance level (alpha) to control for the familywise error rate. Bonferroni correction is a common method for this.
+• **The sample sizes** between Promotion 1 vs. Promotion 2 (43 vs 47) & Promotion 1 vs. Promotion 3 (43 vs 47) **are different.**
+• - Are the sales normally distributed?
+• - Are the sales variances known? Population variance unknown & we have small samples, therefore, we use T-test
 
+### 
 
 
 

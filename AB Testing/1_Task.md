@@ -53,12 +53,44 @@ Since we have three promotions (1, 2, and 3), we'll perform three pairwise compa
 
 The table contains the numbers necessary to calculate the A/B test. You can find the query in the appendix.
 
-| Metric | Promotion_1 | Promotion_2 | Promotion_3 |
-| :-------: | :-----: | :-----: | :-----: |
-| Sample mean ($\bar{x}$) | 232.396 | 189.318 | 221.458 |
-| Sample size (n) | 43 | 47 | 47 |
-| Std. deviation (s) | 64.113 | 57.988 | 65.535 |
-| Variance (s<sup>2</sup>) | 4110.463 | 3362.653 | 4294.897 |
+<div style="display: flex; justify-content: center;">
+  <table>
+    <thead>
+      <tr>
+        <th style="text-align: center;">Metric</th>
+        <th style="text-align: center;">Promotion\_1</th>
+        <th style="text-align: center;">Promotion\_2</th>
+        <th style="text-align: center;">Promotion\_3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center;">Sample mean ($\bar{x}$)</td>
+        <td style="text-align: center;">232.396</td>
+        <td style="text-align: center;">189.318</td>
+        <td style="text-align: center;">221.458</td>
+      </tr>
+      <tr>
+        <td style="text-align: center;">Sample size (n)</td>
+        <td style="text-align: center;">43</td>
+        <td style="text-align: center;">47</td>
+        <td style="text-align: center;">47</td>
+      </tr>
+      <tr>
+        <td style="text-align: center;">Std. deviation (s)</td>
+        <td style="text-align: center;">64.113</td>
+        <td style="text-align: center;">57.988</td>
+        <td style="text-align: center;">65.535</td>
+      </tr>
+      <tr>
+        <td style="text-align: center;">Variance (s<sup>2</sup>)</td>
+        <td style="text-align: center;">4110.463</td>
+        <td style="text-align: center;">3362.653</td>
+        <td style="text-align: center;">4294.897</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
   
   
 **Table 1.** Promotions Metrics needed for Independent samples t-test

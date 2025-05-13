@@ -97,6 +97,11 @@ Conclusions:
   <img src="https://github.com/user-attachments/assets/8c6a2ccb-cf90-4346-8cc2-da9c88ce2e88" width="750" height="530" alt="Promotion 1 vs Promotion 2" style="display: block; margin-left: auto; margin-right: auto; />
 </div>
 
+<div style="text-align: center;">
+  <img src="https://github.com/user-attachments/assets/8c6a2ccb-cf90-4346-8cc2-da9c88ce2e88" width="750" height="530" alt="Promotion 1 vs Promotion 2" style="display: block; margin-left: auto; margin-right: auto;" />
+</div>
+
+
 **Image 1.** https://www.evanmiller.org/ab-testing/t-test.html
 
 ## Appendix

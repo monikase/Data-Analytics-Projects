@@ -62,10 +62,9 @@ The table contains the numbers necessary to calculate the A/B test. You can find
   
   
 **Table 1.** Promotions Metrics needed for Independent samples t-test
+</br>
 
-
-
-### 1. Promotion 1 vs. Promotion 2
+## 1. Promotion 1 vs. Promotion 2
 </br>
 </br>
 

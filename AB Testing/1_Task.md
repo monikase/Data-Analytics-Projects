@@ -27,7 +27,7 @@ Since we have three promotions (1, 2, and 3), we'll perform three pairwise compa
 • Promotion 1 vs. Promotion 3  
 • Promotion 2 vs. Promotion 3  
 
-• For each comparison, we'll set up a **null hypothesis (H<sub>0</sub>)** and an **alternative hypothesis (H<sub>a</sub>)**.
+• For each comparison, we'll set up a **null hypothesis (H<sub>0</sub>)** and an **alternative hypothesis (H<sub>a</sub>)**.  
 • **Statistical Test:** To test these hypotheses, we will use **Independent Samples t-test -** Used when comparing the means of two independent groups. 
 
 ## Hypotheses

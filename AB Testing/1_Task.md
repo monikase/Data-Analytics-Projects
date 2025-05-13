@@ -128,19 +128,16 @@ $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.632 $$
   <th> Explanation </th>
   <th> Comparison </th>
   <th> Conclusion </th>
-  <th> Hypthesis </th>
 </tr>
 <tr>
   <td> t-value > critical value </td>
   <td> 3.332 > 2.632 </td>
   <td> $\implies$ We can reject H<sub>0</sub> hypothesis </td>
-  <td> There is a significant difference in the mean sales between Promotion 1 and Promotion 2 </td>
 </tr>
  <tr>
   <td> p-value < α </td>
   <td> 0.0013 < 0.01 </td>
   <td> $\implies$ We can reject H<sub>0</sub> hypothesis  </td>
-  <td> There is a significant difference in the mean sales between Promotion 1 and Promotion 2 </td>
 </tr>
 </table>
 </br>
@@ -155,7 +152,9 @@ We can also use [Evan Miller 2 Sample T-Test](https://www.evanmiller.org/ab-test
 <p align="center">
   <img width="750" height="520" src="https://github.com/user-attachments/assets/14dd6ed7-f798-4a7f-a4fc-ba9fbcaa6704">
 </p>
-
+ <\br>
+Verdict:
+**There is a significant difference in the mean sales between Promotion 1 and Promotion 2. Promotion 1 Mean is greater than Promotion 2.**
 
 ## Appendix
 

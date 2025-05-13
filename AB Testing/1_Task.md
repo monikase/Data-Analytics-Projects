@@ -75,14 +75,13 @@ $$ df = {n_1} + {n_2} - 2 = 43 + 47 - 2 = 88 $$
 
 $$ t\text{-critical}\ value \approx 2.632 $$
 
-$$ p-value = 0.0013 $$
+| t-value | critical value | p-value | α |
+| :---: | :---: | :---: | :---: |
+| 3.332 | 2.632 | 0.0013 | 0.01 |
 
-Conclusion: t-value is higher than a critical value 3.332 > 2.632
-
-| t-value | critical value |
-| :---: | :---: |
-| 3.332 | 2.632 |
-
+Conclusions: 
+• t-value is higher than the critical value 3.332 > 2.632 $\implies$ We can reject H<sub>0</sub> hypothesis
+• p-value is lower than α: 0.0013 < 0.01 $\implies$ We can reject H<sub>0</sub> hypothesis
 
 ## Appendix
 

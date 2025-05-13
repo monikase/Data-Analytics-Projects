@@ -137,7 +137,7 @@ FROM
   PromotionStats
 UNION ALL
 SELECT
-  "Std. deviation (s2)",
+  "Std. deviation (s)",
   CAST(SUM(CASE WHEN PromotionID = 1 THEN StdDev END) AS STRING),
   CAST(SUM(CASE WHEN PromotionID = 2 THEN StdDev END) AS STRING),
   CAST(SUM(CASE WHEN PromotionID = 3 THEN StdDev END) AS STRING)
@@ -145,7 +145,7 @@ FROM
   PromotionStats
 UNION ALL
 SELECT
-  "Variance (σ)",
+  "Variance (s2)",
   CAST(SUM(CASE WHEN PromotionID = 1 THEN Variance END) AS STRING),
   CAST(SUM(CASE WHEN PromotionID = 2 THEN Variance END) AS STRING),
   CAST(SUM(CASE WHEN PromotionID = 3 THEN Variance END) AS STRING)

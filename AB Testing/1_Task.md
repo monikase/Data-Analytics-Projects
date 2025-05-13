@@ -65,7 +65,7 @@ The table contains the numbers necessary to calculate the A/B test. You can find
 
 
 
-## t-test 1. Promotion 1 vs. Promotion 2
+### t-test 1. Promotion 1 vs. Promotion 2
   
 
 
@@ -75,6 +75,13 @@ $$ df = {n_1} + {n_2} - 2 = 43 + 47 - 2 = 88 $$
 
 $$ t\text{-critical}\ value \approx 2.632 $$
 
+$$ p-value = 0.0013 $$
+
+Conclusion: t-value is higher than a critical value 3.332 > 2.632
+
+| t-value | critical value |
+| :---: | :---: |
+| 3.332 | 2.632 |
 
 
 ## Appendix

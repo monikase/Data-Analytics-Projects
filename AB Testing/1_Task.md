@@ -128,16 +128,19 @@ $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.632 $$
   <th> Explanation </th>
   <th> Comparison </th>
   <th> Conclusion </th>
+  <th> Hypthesis </th>
 </tr>
 <tr>
   <td> t-value is higher than the t-critical value </td>
   <td> 3.332 > 2.632 </td>
   <td> $\implies$ We can reject H<sub>0</sub> hypothesis </td>
+  <td> There is a significant difference in the mean sales between Promotion 1 and Promotion 2 </td>
 </tr>
  <tr>
   <td> p-value is lower than α </td>
   <td> 0.0013 < 0.01 </td>
   <td> $\implies$ We can reject H<sub>0</sub> hypothesis  </td>
+  <td> There is a significant difference in the mean sales between Promotion 1 and Promotion 2 </td>
 </tr>
 </table>
 </br>

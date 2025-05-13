@@ -1,4 +1,4 @@
-## Fast Food Marketing Campaign A/B Test Analysis
+# Fast Food Marketing Campaign A/B Test Analysis
 
 This is an analysis of [Fast Food Marketing Campaign A/B Test dataset](https://www.kaggle.com/datasets/chebotinaa/fast-food-marketing-campaign-ab-test)
 

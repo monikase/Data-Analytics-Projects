@@ -24,13 +24,17 @@ Total Rows(548)
 
 ![image](https://github.com/user-attachments/assets/421150d3-8b9f-4eea-a7ba-67f764c9f1a0)
 
-### Goal 
+### Goal of the Test
 
 Evaluate A/B testing results and decide which marketing strategy works the best.
 
 Since there are three marketing campaigns we will conduct several tests, comparing campaigns against one another. 
 This kind of testing is known as pairwise comparisons, and it suffers from the multiple testing problem - if we run a lot of tests, there’s an increased chance of getting a type I error (false positive). 
-**Therefore, for analysis of A/B test results we will use a confidence level of 99%.**
+**Therefore, for analysis of A/B test results we will use a confidence level of 99%. (1−α), where α = 0.01**
+
+### Target metric
+
+• sales_in_thousands - sales amount for a specific LocationID, Promotion, and week, we aggregate it by LocationID and PromotionID
 
 ### General Approach
 
@@ -69,7 +73,14 @@ For each comparison, we'll set up a null hypothesis (H0) and an alternative hypo
 • - Are the sales normally distributed?  
 • - Are the sales variances known? Population variance unknown & we have small samples, therefore, we use T-test  
 
-### 
+### Calculations
+
+| Metric | Promotion_1 | Promotion_2 | Promotion_3 |
+| :-------: | :-----: | :-----: | :-----: |
+| Sample mean (μ) | 232.396 | 189.318 | 221.458 |
+| Sample size (n) | 43 | 47 | 47 |
+| Std. deviation (s) | 64.113 | 57.988 | 65.535 |
+| Variance (σ) | 4110.462 | 3362.653 | 4294.897 |
 
 
 

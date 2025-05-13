@@ -19,10 +19,6 @@ Since there are three marketing campaigns we will conduct several tests, compari
 This kind of testing is known as pairwise comparisons, and it suffers from the multiple testing problem - if we run a lot of tests, there’s an increased chance of getting a type I error (false positive).  
 **Therefore, for analysis of A/B test results we will use a confidence level of 99%. (1−α), where α = 0.01**
 
-## Target metric
-
-• sales_in_thousands - sales amount for a specific LocationID, Promotion, and week, we aggregate it by LocationID and PromotionID
-
 ## General Approach
 
 Since we have three promotions (1, 2, and 3), we'll perform three pairwise comparisons:

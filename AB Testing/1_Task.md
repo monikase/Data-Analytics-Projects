@@ -59,8 +59,8 @@ The table contains the numbers necessary to calculate the A/B test. You can find
 | Sample size (n) | 43 | 47 | 47 |
 | Std. deviation (s) | 64.113 | 57.988 | 65.535 |
 | Variance (s<sup>2</sup>) | 4110.463 | 3362.653 | 4294.897 |
-
-
+  
+  
 **Table 1.** Promotions Metrics needed for Independent samples t-test
 
 

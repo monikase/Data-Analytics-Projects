@@ -80,7 +80,7 @@ For each comparison, we'll set up a null hypothesis (H<sub>0</sub>) and an alter
 | Sample mean (μ) | 232.396 | 189.318 | 221.458 |
 | Sample size (n) | 43 | 47 | 47 |
 | Std. deviation (s) | 64.113 | 57.988 | 65.535 |
-| Variance (σ) | 4110.462 | 3362.653 | 4294.897 |
+| Variance (s<sup>2</sup>) | 4110.462 | 3362.653 | 4294.897 |
 
 
 

@@ -94,7 +94,7 @@ Conclusions:
 • p-value is lower than α: 0.0013 < 0.01 $\implies$ We can reject H<sub>0</sub> hypothesis   
 
 
-<img src="https://github.com/user-attachments/assets/14dd6ed7-f798-4a7f-a4fc-ba9fbcaa6704" width="750" height="530" alt="Promotion 1 vs Promotion 2" />
+<img src="https://github.com/user-attachments/assets/14dd6ed7-f798-4a7f-a4fc-ba9fbcaa6704" width="750" height="520" alt="Promotion 1 vs Promotion 2" />
 
 
 

@@ -91,12 +91,10 @@ $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.632 $$
 
 Conclusions:   
 • t-value is higher than the critical value 3.332 > 2.632 $\implies$ We can reject H<sub>0</sub> hypothesis  
-• p-value is lower than α: 0.0013 < 0.01 $\implies$ We can reject H<sub>0</sub> hypothesis  
-
-<img src="https://github.com/user-attachments/assets/8c6a2ccb-cf90-4346-8cc2-da9c88ce2e88" width="800" height="500">  
+• p-value is lower than α: 0.0013 < 0.01 $\implies$ We can reject H<sub>0</sub> hypothesis   
 
 <div style="text-align: center;">
-  <img src="https://github.com/user-attachments/assets/8c6a2ccb-cf90-4346-8cc2-da9c88ce2e88" width="800" height="500" alt="Promotion 1 vs Promotion 2" />
+  <img src="https://github.com/user-attachments/assets/8c6a2ccb-cf90-4346-8cc2-da9c88ce2e88" width="750" height="530" alt="Promotion 1 vs Promotion 2" />
 </div>
 
 **Image 1.** https://www.evanmiller.org/ab-testing/t-test.html

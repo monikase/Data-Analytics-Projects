@@ -88,6 +88,8 @@ $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.632 $$
 </tr>
 </table>
 
+
+    
 <table align="center">
 <tr>
   <th> Explanation </th>
@@ -105,10 +107,7 @@ $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.632 $$
   <td> $\implies$ We can reject H<sub>0</sub> hypothesis  </td>
 </tr>
 </table>
-
-**Conclusions:**   
-• t-value is higher than the critical value 3.332 > 2.632 $\implies$ We can reject H<sub>0</sub> hypothesis  
-• p-value is lower than α: 0.0013 < 0.01 $\implies$ We can reject H<sub>0</sub> hypothesis   
+ 
 
 We can also use [Evan Miller 2 Sample T-Test](https://www.evanmiller.org/ab-testing/t-test.html) to do this test from raw sales data:
 

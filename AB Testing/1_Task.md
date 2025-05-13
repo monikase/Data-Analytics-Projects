@@ -2,7 +2,7 @@
 
 This is an analysis of [Fast Food Marketing Campaign A/B Test dataset](https://www.kaggle.com/datasets/chebotinaa/fast-food-marketing-campaign-ab-test)
 
-### About Dataset
+## About Dataset
 
 A fast-food chain plans to add a new item to its menu. However, they are still undecided between three possible marketing campaigns for promoting the new product. 
 In order to determine which promotion has the greatest effect on sales, the new item is introduced at locations in several randomly selected markets. 
@@ -20,11 +20,11 @@ Columns(7):
 
 Total Rows(548)
 
-### Quick Overview
+## Quick Overview
 
 ![image](https://github.com/user-attachments/assets/421150d3-8b9f-4eea-a7ba-67f764c9f1a0)
 
-### Goal of the Test
+## Goal of the Test
 
 Evaluate A/B testing results and decide which marketing strategy works the best.
 
@@ -32,11 +32,11 @@ Since there are three marketing campaigns we will conduct several tests, compari
 This kind of testing is known as pairwise comparisons, and it suffers from the multiple testing problem - if we run a lot of tests, there’s an increased chance of getting a type I error (false positive). 
 **Therefore, for analysis of A/B test results we will use a confidence level of 99%. (1−α), where α = 0.01**
 
-### Target metric
+## Target metric
 
 • sales_in_thousands - sales amount for a specific LocationID, Promotion, and week, we aggregate it by LocationID and PromotionID
 
-### General Approach
+## General Approach
 
 Since we have three promotions (1, 2, and 3), we'll perform three pairwise comparisons:
 
@@ -46,7 +46,7 @@ Since we have three promotions (1, 2, and 3), we'll perform three pairwise compa
 
 For each comparison, we'll set up a null hypothesis (H0) and an alternative hypothesis (Ha).
 
-### Hypotheses
+## Hypotheses
 
 **1. Promotion 1 vs. Promotion 2**
 
@@ -73,7 +73,7 @@ For each comparison, we'll set up a null hypothesis (H0) and an alternative hypo
 • - Are the sales normally distributed?  
 • - Are the sales variances known? Population variance unknown & we have small samples, therefore, we use T-test  
 
-### Calculations
+## Calculations
 
 | Metric | Promotion_1 | Promotion_2 | Promotion_3 |
 | :-------: | :-----: | :-----: | :-----: |

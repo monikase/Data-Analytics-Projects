@@ -56,9 +56,9 @@ The table contains the numbers necessary to calculate the A/B test. You can find
 <table align="center">
   <tr>
     <th> Metric </th>
-    <th> Promotion\_1 </th>
-    <th> Promotion\_2 </th>
-    <th> Promotion\_3 </th>
+    <th> Promotion_1 </th>
+    <th> Promotion_2 </th>
+    <th> Promotion_3 </th>
   </tr>
   <tr>
     <td> Sample mean ($\bar{x}$) </td>

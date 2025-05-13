@@ -2,7 +2,6 @@
 
 This is an analysis of [Fast Food Marketing Campaign A/B Test dataset](https://www.kaggle.com/datasets/chebotinaa/fast-food-marketing-campaign-ab-test)
 
-## About Dataset
 
 A fast-food chain plans to add a new item to its menu. However, they are still undecided between three possible marketing campaigns for promoting the new product. 
 In order to determine which promotion has the greatest effect on sales, the new item is introduced at locations in several randomly selected markets. 

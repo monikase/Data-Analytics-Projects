@@ -76,7 +76,7 @@ $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.632 $$
 <table align="center">
 <tr>
   <th> t-value </th>
-  <th> critical value </th>
+  <th> t-critical value </th>
   <th> p-value </th>
   <th> α </th>
 </tr>
@@ -98,7 +98,7 @@ $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.632 $$
   <th> Conclusion </th>
 </tr>
 <tr>
-  <td> t-value is higher than the critical value </td>
+  <td> t-value is higher than the t-critical value </td>
   <td> 3.332 > 2.632 </td>
   <td> $\implies$ We can reject H<sub>0</sub> hypothesis </td>
 </tr>

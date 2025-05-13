@@ -67,13 +67,11 @@ The table contains the numbers necessary to calculate the A/B test. You can find
 
 ### t-test 1. Promotion 1 vs. Promotion 2
   
-
-
 $$ t = \frac{|\bar{x}_1 - \bar{x}_2|}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}} = \frac{|232.398 - 189.318|}{\sqrt{\frac{4110.463}{43} + \frac{3362.653}{47}}} = \frac{43.078}{\sqrt{167.138}} = 3.332 $$  
 
 $$ df = {n_1} + {n_2} - 2 = 43 + 47 - 2 = 88 $$  
 
-$$ t\text{-critical}\ value \approx 2.632 $$
+$$ t\text{-critical}\ value\(\from\t-table\)\ \approx 2.632 $$
 
 | t-value | critical value | p-value | α |
 | :---: | :---: | :---: | :---: |
@@ -82,6 +80,8 @@ $$ t\text{-critical}\ value \approx 2.632 $$
 Conclusions:   
 • t-value is higher than the critical value 3.332 > 2.632 $\implies$ We can reject H<sub>0</sub> hypothesis  
 • p-value is lower than α: 0.0013 < 0.01 $\implies$ We can reject H<sub>0</sub> hypothesis  
+
+
 
 ## Appendix
 

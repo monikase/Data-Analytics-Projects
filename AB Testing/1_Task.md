@@ -92,7 +92,7 @@ The table contains the numbers necessary to calculate the A/B test. You can find
 
 $$ t = \frac{|\bar{x}_1 - \bar{x}_2|}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}} = \frac{|232.398 - 189.318|}{\sqrt{\frac{4110.463}{43} + \frac{3362.653}{47}}} = \frac{43.078}{\sqrt{167.138}} = 3.332 $$
 
-$$ df = n<sub>1</sub> + n<sub>2</sub> - 2 = 43 + 47 - 2 = 88 $$
+$$ df = {n_1} + n<sub>2</sub> - 2 = 43 + 47 - 2 = 88 $$
 
 
 

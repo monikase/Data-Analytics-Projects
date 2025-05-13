@@ -93,14 +93,13 @@ Conclusions:
 • t-value is higher than the critical value 3.332 > 2.632 $\implies$ We can reject H<sub>0</sub> hypothesis  
 • p-value is lower than α: 0.0013 < 0.01 $\implies$ We can reject H<sub>0</sub> hypothesis   
 
-We can also use [Evan Miller 2 Sample T-Test](https://www.evanmiller.org/ab-testing/t-test.html) to do this test:  
+We can also use [Evan Miller 2 Sample T-Test](https://www.evanmiller.org/ab-testing/t-test.html) to do this test from raw sales data:  
 
 
 <img src="https://github.com/user-attachments/assets/14dd6ed7-f798-4a7f-a4fc-ba9fbcaa6704" width="750" height="520" alt="Promotion 1 vs Promotion 2" />
 
 
 
-**Image 1.** https://www.evanmiller.org/ab-testing/t-test.html
 
 ## Appendix
 

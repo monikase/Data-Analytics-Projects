@@ -47,15 +47,7 @@ Since we have three promotions (1, 2, and 3), we'll perform three pairwise compa
 
 • H<sub>0</sub> (Null Hypothesis): There is no significant difference in the mean sales between Promotion 2 and Promotion 3.  
 • H<sub>a</sub> (Alternative Hypothesis): There is a significant difference in the mean sales between Promotion 2 and Promotion 3.  
-
-### Additional Considerations
-
-• **Confidence Level:** As stated, we will use a 99% confidence level. This means we are willing to accept a 1% chance of rejecting the null hypothesis when it is actually true (Type I error).  
  
-• **Pairwise Comparisons:** Since we are conducting multiple comparisons, we need to adjust the significance level (alpha) to control for the familywise error rate. Bonferroni correction is a common method for this.  
-• **The sample sizes** between Promotion 1 vs. Promotion 2 (43 vs 47) & Promotion 1 vs. Promotion 3 (43 vs 47) **are different.**  
-• - Are the sales normally distributed?  
-• - Are the sales variances known? Population variance unknown & we have small samples, therefore, we use T-test  
 
 ## Calculations
 
@@ -72,12 +64,16 @@ The table contains the numbers necessary to calculate the A/B test. You can find
 **Table 1.** Promotions Metrics needed for Independent samples t-test
 
 
+
 ## Test 1. Promotion 1 vs. Promotion 2
+
 
 
 $$ t = \frac{|\bar{x}_1 - \bar{x}_2|}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}} = \frac{|232.398 - 189.318|}{\sqrt{\frac{4110.463}{43} + \frac{3362.653}{47}}} = \frac{43.078}{\sqrt{167.138}} = 3.332 $$
 
 $$ df = {n_1} + {n_2} - 2 = 43 + 47 - 2 = 88 $$
+
+
 
 
 

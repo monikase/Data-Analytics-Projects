@@ -80,7 +80,6 @@ $$ df = {n_1} + {n_2} - 2 = 43 + 47 - 2 = 88 $$
 $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.632 $$
 
 </br>
-</br>
 
 <table align="center">
 <tr>

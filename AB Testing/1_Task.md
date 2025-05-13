@@ -44,25 +44,25 @@ Since we have three promotions (1, 2, and 3), we'll perform three pairwise compa
 • Promotion 1 vs. Promotion 3  
 • Promotion 2 vs. Promotion 3  
 
-For each comparison, we'll set up a null hypothesis (H0) and an alternative hypothesis (Ha).
+For each comparison, we'll set up a null hypothesis (H<sub>0</sub>) and an alternative hypothesis (H<sub>a</sub>).
 
 ## Hypotheses
 
 **1. Promotion 1 vs. Promotion 2**
 
 • H<sub>0</sub> (Null Hypothesis): There is no significant difference in the mean sales (SalesInThousands) between Promotion 1 and Promotion 2.  
-• Ha (Alternative Hypothesis): There is a significant difference in the mean sales (SalesInThousands) between Promotion 1 and Promotion 2.  
+• H<sub>a</sub> (Alternative Hypothesis): There is a significant difference in the mean sales (SalesInThousands) between Promotion 1 and Promotion 2.  
 
 **2. Promotion 1 vs. Promotion 3**
 
-• H0 (Null Hypothesis): There is no significant difference in the mean sales (SalesInThousands) between Promotion 1 and Promotion 3.   
-• Ha (Alternative Hypothesis): There is a significant difference in the mean sales (SalesInThousands) between Promotion 1 and Promotion 3.  
+• H<sub>0</sub> (Null Hypothesis): There is no significant difference in the mean sales (SalesInThousands) between Promotion 1 and Promotion 3.   
+• H<sub>a</sub> (Alternative Hypothesis): There is a significant difference in the mean sales (SalesInThousands) between Promotion 1 and Promotion 3.  
 
 
 **3. Promotion 2 vs. Promotion 3**
 
-• H0 (Null Hypothesis): There is no significant difference in the mean sales (SalesInThousands) between Promotion 2 and Promotion 3.  
-• Ha (Alternative Hypothesis): There is a significant difference in the mean sales (SalesInThousands) between Promotion 2 and Promotion 3.  
+• H<sub>0</sub> (Null Hypothesis): There is no significant difference in the mean sales (SalesInThousands) between Promotion 2 and Promotion 3.  
+• H<sub>a</sub> (Alternative Hypothesis): There is a significant difference in the mean sales (SalesInThousands) between Promotion 2 and Promotion 3.  
 
 ### Additional Considerations
 

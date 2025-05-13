@@ -50,7 +50,7 @@ For each comparison, we'll set up a null hypothesis (H0) and an alternative hypo
 
 **1. Promotion 1 vs. Promotion 2**
 
-• H0 (Null Hypothesis): There is no significant difference in the mean sales (SalesInThousands) between Promotion 1 and Promotion 2.  
+• H<sub>0</sub> (Null Hypothesis): There is no significant difference in the mean sales (SalesInThousands) between Promotion 1 and Promotion 2.  
 • Ha (Alternative Hypothesis): There is a significant difference in the mean sales (SalesInThousands) between Promotion 1 and Promotion 2.  
 
 **2. Promotion 1 vs. Promotion 3**

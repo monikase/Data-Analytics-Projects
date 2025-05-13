@@ -131,7 +131,9 @@ We can also use [Evan Miller 2 Sample T-Test](https://www.evanmiller.org/ab-test
 
 <img src="https://github.com/user-attachments/assets/14dd6ed7-f798-4a7f-a4fc-ba9fbcaa6704" margin-left="100" width="750" height="520" alt="Promotion 1 vs Promotion 2" />
 
-
+<p align="center">
+  <img width="750" height="520" src="https://github.com/user-attachments/assets/14dd6ed7-f798-4a7f-a4fc-ba9fbcaa6704">
+</p>
 
 
 ## Appendix

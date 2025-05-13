@@ -75,6 +75,8 @@ For each comparison, we'll set up a null hypothesis (H<sub>0</sub>) and an alter
 
 ## Calculations
 
+The table contains the numbers necessary to calculate the A/B test. You can find the query in the appendix.
+
 | Metric | Promotion_1 | Promotion_2 | Promotion_3 |
 | :-------: | :-----: | :-----: | :-----: |
 | Sample mean (μ) | 232.396 | 189.318 | 221.458 |
@@ -85,4 +87,68 @@ For each comparison, we'll set up a null hypothesis (H<sub>0</sub>) and an alter
 
 
 
+## Appendix
 
+### Query for table 1
+
+```sql
+WITH
+  AggregatedSales AS (
+    -- Calculate total sales for each LocationID and PromotionID combination
+    SELECT
+      location_id AS LocationID,
+      promotion AS PromotionID,
+      SUM(sales_in_thousands) AS TotalSales
+    FROM
+      `tc-da-1.turing_data_analytics.wa_marketing_campaign`
+    GROUP BY
+      LocationID,
+      PromotionID
+  ),
+  -- Calculate summary statistics for each promotion across all locations
+  PromotionStats AS (
+    SELECT
+      PromotionID,
+      AVG(TotalSales) AS Mean,
+      COUNT(LocationID) AS SampleSize,
+      STDDEV(TotalSales) AS StdDev,
+      VAR_SAMP(TotalSales) AS Variance
+    FROM
+      AggregatedSales
+    GROUP BY
+      PromotionID
+  )
+-- Pivot the statistics into columns and add row labels
+SELECT
+  "Sample mean (μ)" AS Metric,
+  -- Use a CASE statement to select the correct statistic for each PromotionID
+  CAST(SUM(CASE WHEN PromotionID = 1 THEN Mean END) AS STRING) AS Promotion_1,
+  CAST(SUM(CASE WHEN PromotionID = 2 THEN Mean END) AS STRING) AS Promotion_2,
+  CAST(SUM(CASE WHEN PromotionID = 3 THEN Mean END) AS STRING) AS Promotion_3
+FROM
+  PromotionStats
+UNION ALL
+SELECT
+  "Sample size (n)",
+  CAST(SUM(CASE WHEN PromotionID = 1 THEN SampleSize END) AS STRING),
+  CAST(SUM(CASE WHEN PromotionID = 2 THEN SampleSize END) AS STRING),
+  CAST(SUM(CASE WHEN PromotionID = 3 THEN SampleSize END) AS STRING)
+FROM
+  PromotionStats
+UNION ALL
+SELECT
+  "Std. deviation (s2)",
+  CAST(SUM(CASE WHEN PromotionID = 1 THEN StdDev END) AS STRING),
+  CAST(SUM(CASE WHEN PromotionID = 2 THEN StdDev END) AS STRING),
+  CAST(SUM(CASE WHEN PromotionID = 3 THEN StdDev END) AS STRING)
+FROM
+  PromotionStats
+UNION ALL
+SELECT
+  "Variance (σ)",
+  CAST(SUM(CASE WHEN PromotionID = 1 THEN Variance END) AS STRING),
+  CAST(SUM(CASE WHEN PromotionID = 2 THEN Variance END) AS STRING),
+  CAST(SUM(CASE WHEN PromotionID = 3 THEN Variance END) AS STRING)
+FROM
+  PromotionStats
+```

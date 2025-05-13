@@ -88,8 +88,9 @@ $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.632 $$
 </tr>
 </table>
 
+</br>
+</br>
 
-    
 <table align="center">
 <tr>
   <th> Explanation </th>

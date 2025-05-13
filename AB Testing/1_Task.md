@@ -68,14 +68,21 @@ The table contains the numbers necessary to calculate the A/B test. You can find
 ### 1. Promotion 1 vs. Promotion 2
 </br>
 </br>
+
 $$ t-value = \frac{|\bar{x}_1 - \bar{x}_2|}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}} = \frac{|232.398 - 189.318|}{\sqrt{\frac{4110.463}{43} + \frac{3362.653}{47}}} = \frac{43.078}{\sqrt{167.138}} = 3.332 $$  
+
 </br>
+
 $$ df = {n_1} + {n_2} - 2 = 43 + 47 - 2 = 88 $$  
+
 </br>
 </br>
+
 $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.632 $$
+
 </br>
 </br>
+
 <table align="center">
 <tr>
   <th> t-value </th>

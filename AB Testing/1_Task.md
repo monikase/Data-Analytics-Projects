@@ -73,7 +73,7 @@ $$ t = \frac{|\bar{x}_1 - \bar{x}_2|}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2
 
 $$ df = {n_1} + {n_2} - 2 = 43 + 47 - 2 = 88 $$  
 
-$$ t-critical\value \approx  2.632 $$
+$$ t\text{-critical}\ value \approx 2.632 $$
 
 
 

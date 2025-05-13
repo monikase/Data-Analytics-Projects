@@ -76,7 +76,6 @@ $$ t-value = \frac{|\bar{x}_1 - \bar{x}_2|}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^
 $$ df = {n_1} + {n_2} - 2 = 43 + 47 - 2 = 88 $$  
 
 </br>
-</br>
 
 $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.632 $$
 

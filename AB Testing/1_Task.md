@@ -82,7 +82,7 @@ The table contains the numbers necessary to calculate the A/B test. You can find
 | Sample mean ($\bar{x}$) | 232.396 | 189.318 | 221.458 |
 | Sample size (n) | 43 | 47 | 47 |
 | Std. deviation (s) | 64.113 | 57.988 | 65.535 |
-| Variance (s<sup>2</sup>) | 4110.462 | 3362.653 | 4294.897 |
+| Variance (s<sup>2</sup>) | 4110.463 | 3362.653 | 4294.897 |
 
 
 **Table 1.** Promotions Metrics needed for Independent samples t-test
@@ -90,7 +90,7 @@ The table contains the numbers necessary to calculate the A/B test. You can find
 **Test 1. Promotion 1 vs. Promotion 2**
 
 
-$$ t = \frac{|\bar{x}_1 - \bar{x}_2|}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}} = \frac{|232.398 - 189.318|}{\sqrt{\frac{4110.462}{43} + \frac{3362.653}{47}}} = \frac{43.078}{\sqrt{167.138}} = 3.332 $$
+$$ t = \frac{|\bar{x}_1 - \bar{x}_2|}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}} = \frac{|232.398 - 189.318|}{\sqrt{\frac{4110.463}{43} + \frac{3362.653}{47}}} = \frac{43.078}{\sqrt{167.138}} = 3.332 $$
 
 
 

@@ -85,7 +85,11 @@ The table contains the numbers necessary to calculate the A/B test. You can find
 | Variance (s<sup>2</sup>) | 4110.462 | 3362.653 | 4294.897 |
 
 
-**Table 1.** Promotions Metrics  
+**Table 1.** Promotions Metrics needed for Independent samples t-test
+
+
+$$ t = \frac{|\bar{x}_1 - \bar{x}_2|}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}} $$
+
 
 
 

@@ -79,7 +79,7 @@ The table contains the numbers necessary to calculate the A/B test. You can find
 
 | Metric | Promotion_1 | Promotion_2 | Promotion_3 |
 | :-------: | :-----: | :-----: | :-----: |
-| Sample mean (\bar{x}_1) | 232.396 | 189.318 | 221.458 |
+| Sample mean (\bar{x}) | 232.396 | 189.318 | 221.458 |
 | Sample size (n) | 43 | 47 | 47 |
 | Std. deviation (s) | 64.113 | 57.988 | 65.535 |
 | Variance (s<sup>2</sup>) | 4110.462 | 3362.653 | 4294.897 |

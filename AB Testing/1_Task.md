@@ -73,23 +73,19 @@ $$ df = {n_1} + {n_2} - 2 = 43 + 47 - 2 = 88 $$
 
 $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.632 $$
 
-| t-value | critical value | p-value | α |
-| :---: | :---: | :---: | :---: |
-| 3.332 | 2.632 | 0.0013 | 0.01 |
-
-<table style="margin-left: auto; margin-right: auto;">
-  <tr>
-    <th> t-value </th>
-    <th> critical value </th>
-    <th> p-value </th>
-    <th> α </th>
-  </tr>
-  <tr>
-    <td> 3.332 </td>
-    <td> 2.632 </td>
-    <td> 0.0013 </td>
-    <td> 0.01 </td>
-  </tr>
+<table align="center">
+<tr>
+  <th> t-value </th>
+  <th> critical value </th>
+  <th> p-value </th>
+  <th> α </th>
+</tr>
+<tr>
+  <td> 3.332 </td>
+  <td> 2.632 </td>
+  <td> 0.0013 </td>
+  <td> 0.01 </td>
+</tr>
 </table>
 
 

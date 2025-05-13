@@ -87,8 +87,6 @@ $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.632 $$
   <td> 0.01 </td>
 </tr>
 </table>
-
-</br>
 </br>
 
 <table align="center">
@@ -108,7 +106,7 @@ $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.632 $$
   <td> $\implies$ We can reject H<sub>0</sub> hypothesis  </td>
 </tr>
 </table>
- 
+</br>
 
 We can also use [Evan Miller 2 Sample T-Test](https://www.evanmiller.org/ab-testing/t-test.html) to do this test from raw sales data:
 

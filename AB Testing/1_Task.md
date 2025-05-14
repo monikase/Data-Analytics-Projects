@@ -294,6 +294,7 @@ Given all the insights from the A/B test analysis, the most logical and data-dri
 
 **Rationale for this decision:**  
 
+|       |       |
 | :---: | :---: |
 | **Statistically Significant Higher Sales** | Analysis demonstrates a statistically significant increase in mean sales with Promotion 1 compared to Promotion 2 at a high confidence level (99%). This provides strong evidence that Promotion 1 is more effective in driving customer purchases of the new item. |
 | **No Significant Difference with Promotion 3** | While Promotion 3 had numerically higher mean sales than Promotion 2, the difference compared to Promotion 1 was not statistically significant. This means we cannot confidently say that Promotion 3 performs better than Promotion 1. |

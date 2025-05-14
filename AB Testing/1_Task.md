@@ -156,7 +156,7 @@ Verdict:
 Promotion 1 Mean is greater than Promotion 2.**
 
 
-## 1. Promotion 1 vs. Promotion 2
+## 1. Promotion 1 vs. Promotion 3
 </br>
 </br>
 

@@ -92,7 +92,7 @@ The table contains the metrics necessary to calculate the A/B test. Query is in 
 </br>
 </br>
 
-$$ t-value = \frac{|\bar{x}_1 - \bar{x}_2|}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}} = \frac{|232.398 - 189.318|}{\sqrt{\frac{4110.463}{43} + \frac{3362.653}{47}}} = \frac{43.078}{\sqrt{167.138}} = 3.332 $$  
+$$ t-value = \frac{|\bar{x}_1 - \bar{x}_2|}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}} = \frac{|232.396 - 189.318|}{\sqrt{\frac{4110.463}{43} + \frac{3362.653}{47}}} = \frac{43.078}{\sqrt{167.138}} = 3.332 $$  
 
 </br>
 
@@ -160,7 +160,7 @@ Promotion 1 Mean is greater than Promotion 2.**
 </br>
 </br>
 
-$$ t-value = \frac{|\bar{x}_1 - \bar{x}_3|}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_3^2}{n_3}}} = \frac{|232.398 - 221.458|}{\sqrt{\frac{4110.463}{43} + \frac{4294.897}{47}}} = \frac{10.938}{\sqrt{186.973}} = 0.7999 $$  
+$$ t-value = \frac{|\bar{x}_1 - \bar{x}_3|}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_3^2}{n_3}}} = \frac{|232.396 - 221.458|}{\sqrt{\frac{4110.463}{43} + \frac{4294.897}{47}}} = \frac{10.938}{\sqrt{186.973}} = 0.7999 $$  
 
 </br>
 

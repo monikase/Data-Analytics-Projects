@@ -226,7 +226,7 @@ Verdict:
 </br>
 </br>
 
-$$ t-value = \frac{|\bar{x}_2 - \bar{x}_3|}{\sqrt{\frac{s_2^2}{n_2} + \frac{s_3^2}{n_3}}} = \frac{|189.318 - 221.458|}{\sqrt{\frac{3362.653}{47} + \frac{4294.897}{47}}} = \frac{10.938}{\sqrt{186.973}} = 2.518 $$  
+$$ t-value = \frac{|\bar{x}_2 - \bar{x}_3|}{\sqrt{\frac{s_2^2}{n_2} + \frac{s_3^2}{n_3}}} = \frac{|189.318 - 221.458|}{\sqrt{\frac{3362.653}{47} + \frac{4294.897}{47}}} = \frac{10.938}{\sqrt{162.927}} = 2.518 $$  
 
 </br>
 

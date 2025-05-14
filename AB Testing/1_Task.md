@@ -85,8 +85,6 @@ The table contains the numbers necessary to calculate the A/B test. You can find
     <td> 4294.897 </td>
   </tr>
 </table>
-<br>
-  
   
 <p align="center"> <sub>Table 1. Promotions Metrics needed for Independent samples t-test</sub> </p align="center">
 </br>

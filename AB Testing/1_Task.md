@@ -153,10 +153,11 @@ We can also use [Evan Miller 2 Sample T-Test](https://www.evanmiller.org/ab-test
   <img width="750" height="520" src="https://github.com/user-attachments/assets/14dd6ed7-f798-4a7f-a4fc-ba9fbcaa6704">
 </p>
 
-<\br>
+</br>
   
-Verdict:
-**There is a significant difference in the mean sales between Promotion 1 and Promotion 2. Promotion 1 Mean is greater than Promotion 2.**
+Verdict:  
+**There is a significant difference in the mean sales between Promotion 1 and Promotion 2.  
+Promotion 1 Mean is greater than Promotion 2.**
 
 ## Appendix
 

@@ -226,7 +226,7 @@ Verdict:
 </br>
 </br>
 
-$$ t-value = \frac{|\bar{x}_2 - \bar{x}_3|}{\sqrt{\frac{s_2^2}{n_2} + \frac{s_3^2}{n_3}}} = \frac{|189.318 - 221.458|}{\sqrt{\frac{3362.653}{47} + \frac{4294.897}{47}}} = \frac{10.938}{\sqrt{162.927}} = 2.518 $$  
+$$ t-value = \frac{|\bar{x}_2 - \bar{x}_3|}{\sqrt{\frac{s_2^2}{n_2} + \frac{s_3^2}{n_3}}} = \frac{|189.318 - 221.458|}{\sqrt{\frac{3362.653}{47} + \frac{4294.897}{47}}} = \frac{32.14}{\sqrt{162.927}} = 2.518 $$  
 
 </br>
 
@@ -295,7 +295,7 @@ Given all the insights from the A/B test analysis, the most logical and data-dri
 **Rationale for this decision:**  
 
 |       |       |
-| :---: | :---: |
+| :--- | :--- |
 | **Statistically Significant Higher Sales** | Analysis demonstrates a statistically significant increase in mean sales with Promotion 1 compared to Promotion 2 at a high confidence level (99%). This provides strong evidence that Promotion 1 is more effective in driving customer purchases of the new item. |
 | **No Significant Difference with Promotion 3** | While Promotion 3 had numerically higher mean sales than Promotion 2, the difference compared to Promotion 1 was not statistically significant. This means we cannot confidently say that Promotion 3 performs better than Promotion 1. |
 | **Prioritizing Proven Effectiveness** | In a business decision, especially when launching a new product, it's crucial to go with the option that has demonstrated a clear positive impact on the key metric (sales in this case) with a high degree of certainty. Promotion 1 has provided that clear evidence. |

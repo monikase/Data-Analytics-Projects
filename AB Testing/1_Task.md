@@ -221,3 +221,27 @@ SELECT
 FROM
   PromotionStats
 ```
+### Query for Evan Miller Test
+
+```sql
+WITH AggregatedSales AS (
+    SELECT
+        location_id AS LocationID,
+        promotion AS PromotionID,
+        SUM(sales_in_thousands) AS TotalSales
+    FROM
+        `tc-da-1.turing_data_analytics.wa_marketing_campaign` 
+    GROUP BY
+        LocationID,
+        PromotionID
+)
+SELECT 
+    LocationID,
+    SUM(CASE WHEN PromotionID = 1 THEN TotalSales END) AS Promotion_1,
+    SUM(CASE WHEN PromotionID = 2 THEN TotalSales END) AS Promotion_2,
+    SUM(CASE WHEN PromotionID = 3 THEN TotalSales END) AS Promotion_3
+FROM 
+    AggregatedSales
+GROUP BY LocationID
+ORDER BY LocationID;
+```

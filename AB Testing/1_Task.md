@@ -296,6 +296,22 @@ Given all the insights from the A/B test analysis, the most logical and data-dri
 
 **Rationale for this decision:**  
 
+<table align="center">
+  <tr>
+    <td> <b>Statistically Significant Higher Sales</b> </td>
+    <td> Analysis demonstrates a statistically significant increase in mean sales with Promotion 1 compared to Promotion 2 at a high confidence level (99%). This provides strong evidence that Promotion 1 is more effective in driving customer purchases of the new item. </td>
+  </tr>
+  <tr>
+    <td> <b>No Significant Difference with Promotion 3</b> </td>
+    <td> While Promotion 3 had numerically higher mean sales than Promotion 2, the difference compared to Promotion 1 was not statistically significant. This means we cannot confidently say that Promotion 3 performs better than Promotion 1. </td>
+  </tr>
+  <tr>
+    <td> <b>Prioritizing Proven Effectiveness</b> </td>
+    <td> In a business decision, especially when launching a new product, it's crucial to go with the option that has demonstrated a clear positive impact on the key metric (sales in this case) with a high degree of certainty. Promotion 1 has provided that clear evidence. </td>
+  </tr>
+</table>
+
+
 |       |       |
 | :--- | :--- |
 | **Statistically Significant Higher Sales** | Analysis demonstrates a statistically significant increase in mean sales with Promotion 1 compared to Promotion 2 at a high confidence level (99%). This provides strong evidence that Promotion 1 is more effective in driving customer purchases of the new item. |

@@ -51,7 +51,7 @@ Since we have three promotions (1, 2, and 3), we'll perform three pairwise compa
 
 ## Calculations
 
-The table contains the numbers necessary to calculate the A/B test. You can find the query in the appendix.
+The table contains the metrics necessary to calculate the A/B test. Query is in the appendix.
 
 <table align="center">
   <tr>

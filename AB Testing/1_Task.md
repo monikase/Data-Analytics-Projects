@@ -155,6 +155,73 @@ Verdict:
 **There is a significant difference in the mean sales between Promotion 1 and Promotion 2.  
 Promotion 1 Mean is greater than Promotion 2.**
 
+
+## 1. Promotion 1 vs. Promotion 2
+</br>
+</br>
+
+$$ t-value = \frac{|\bar{x}_1 - \bar{x}_3|}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_3^2}{n_3}}} = \frac{|232.398 - 221.458|}{\sqrt{\frac{4110.463}{43} + \frac{4294.897}{47}}} = \frac{10.938}{\sqrt{186.973}} = 0.7999 $$  
+
+</br>
+
+$$ df = {n_1} + {n_2} - 2 = 43 + 47 - 2 = 88 $$  
+
+</br>
+
+$$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.635 $$
+
+</br>
+
+<table align="center">
+<tr>
+  <th> t-value </th>
+  <th> critical t-value </th>
+  <th> p-value </th>
+  <th> α </th>
+</tr>
+<tr>
+  <td> 0.7999 </td>
+  <td> 2.635 </td>
+  <td> 0.4259 </td>
+  <td> 0.01 </td>
+</tr>
+</table>
+</br>
+
+<table align="center">
+<tr>
+  <th> Explanation </th>
+  <th> Comparison </th>
+  <th> Conclusion </th>
+</tr>
+<tr>
+  <td> t-value < critical value </td>
+  <td> 0.7999 < 2.635 </td>
+  <td> $\implies$ We cannot reject H<sub>0</sub> hypothesis </td>
+</tr>
+ <tr>
+  <td> p-value > α </td>
+  <td> 0.4259 > 0.01 </td>
+  <td> $\implies$ We cannot reject H<sub>0</sub> hypothesis </td>
+</tr>
+</table>
+</br>
+
+<p align="center"> We can also use <a href="https://www.evanmiller.org/ab-testing/t-test.html">Evan Miller 2 Sample T-Test</a> to do this test from raw sales data. Query is in the appendix. </p align="center">
+
+<p align="center"> <sub> Sample 1 - Promotion 1, Sample 2 - Promotion 3 </sub></p>
+
+</br>
+
+<p align="center">
+  <img width="750" height="520" src="https://github.com/user-attachments/assets/ca8e3c47-2281-4ea2-9204-f53d32d1aad5">
+</p>
+
+</br>
+  
+Verdict:  
+**There is no significant difference in the mean sales between Promotion 1 and Promotion 3.**
+
 ## Appendix
 
 ### Query for table 1

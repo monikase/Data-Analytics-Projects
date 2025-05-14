@@ -141,8 +141,7 @@ $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.632 $$
 
 <p align="center"> We can also use <a href="https://www.evanmiller.org/ab-testing/t-test.html">Evan Miller 2 Sample T-Test</a> to do this test from raw sales data. Query is in the appendix. </p align="center">
 
-<p align="center"> <sub>*Sample 1* - Promotion 1 </sub></p>
-<p align="center"> <sub>*Sample 2* - Promotion 2 </sub></p>
+<p align="center"> <sub> Sample 1 - Promotion 1, Sample 2 - Promotion 2 </sub></p>
 
 </br>
 

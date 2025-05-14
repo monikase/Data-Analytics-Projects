@@ -85,7 +85,7 @@ The table contains the metrics necessary to calculate the A/B test. Query is in 
     <td> 4294.897 </td>
   </tr>
 </table>
-<p align="center"> <sub>Table 1. Metrics needed for Independent samples t-test</sub> </p align="center">
+<p align="center"> <sup>Table 1. Metrics needed for Independent samples t-test</sup> </p align="center">
 </br>
 
 ## 1. Promotion 1 vs. Promotion 2

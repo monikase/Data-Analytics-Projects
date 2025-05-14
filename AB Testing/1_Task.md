@@ -27,7 +27,7 @@ Since we have three promotions (1, 2, and 3), we'll perform three pairwise compa
 • Promotion 1 vs. Promotion 3  
 • Promotion 2 vs. Promotion 3  
 
-• For each comparison, we'll set up a **null hypothesis (H<sub>0</sub>)** and an **alternative hypothesis (H<sub>a</sub>)**.  
+• **Hypotheses** For each comparison, we'll set up a **null hypothesis (H<sub>0</sub>)** and an **alternative hypothesis (H<sub>a</sub>)**.  
 • **Statistical Test:** we will use **Independent Samples t-test -** Used when comparing the means of two independent groups. 
 
 ## Hypotheses
@@ -287,6 +287,8 @@ $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.627 $$
   
 Verdict:  
 **There is no significant difference in the mean sales between Promotion 2 and Promotion 3.**
+
+
 
 ## Appendix
 

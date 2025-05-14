@@ -156,7 +156,7 @@ Verdict:
 Promotion 1 Mean is greater than Promotion 2.**
 
 
-## 1. Promotion 1 vs. Promotion 3
+## 2. Promotion 1 vs. Promotion 3
 </br>
 </br>
 
@@ -164,7 +164,7 @@ $$ t-value = \frac{|\bar{x}_1 - \bar{x}_3|}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_3^
 
 </br>
 
-$$ df = {n_1} + {n_2} - 2 = 43 + 47 - 2 = 88 $$  
+$$ df = {n_1} + {n_3} - 2 = 43 + 47 - 2 = 88 $$  
 
 </br>
 
@@ -221,6 +221,72 @@ $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.635 $$
   
 Verdict:  
 **There is no significant difference in the mean sales between Promotion 1 and Promotion 3.**
+
+## 3. Promotion 2 vs. Promotion 3
+</br>
+</br>
+
+$$ t-value = \frac{|\bar{x}_2 - \bar{x}_3|}{\sqrt{\frac{s_2^2}{n_2} + \frac{s_3^2}{n_3}}} = \frac{|189.318 - 221.458|}{\sqrt{\frac{3362.653}{47} + \frac{4294.897}{47}}} = \frac{10.938}{\sqrt{186.973}} = 2.518 $$  
+
+</br>
+
+$$ df = {n_2} + {n_3} - 2 = 47 + 47 - 2 = 92 $$  
+
+</br>
+
+$$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.627 $$
+
+</br>
+
+<table align="center">
+<tr>
+  <th> t-value </th>
+  <th> critical t-value </th>
+  <th> p-value </th>
+  <th> α </th>
+</tr>
+<tr>
+  <td> 2.518 </td>
+  <td> 2.627 </td>
+  <td> 0.0135 </td>
+  <td> 0.01 </td>
+</tr>
+</table>
+</br>
+
+<table align="center">
+<tr>
+  <th> Explanation </th>
+  <th> Comparison </th>
+  <th> Conclusion </th>
+</tr>
+<tr>
+  <td> t-value < critical value </td>
+  <td> 2.518 < 2.627 </td>
+  <td> $\implies$ We cannot reject H<sub>0</sub> hypothesis </td>
+</tr>
+ <tr>
+  <td> p-value > α </td>
+  <td> 0.0135 > 0.01 </td>
+  <td> $\implies$ We cannot reject H<sub>0</sub> hypothesis </td>
+</tr>
+</table>
+</br>
+
+<p align="center"> <a href="https://www.evanmiller.org/ab-testing/t-test.html">Evan Miller 2 Sample T-Test</a> </p align="center">
+
+<p align="center"> <sub> Sample 1 - Promotion 2, Sample 2 - Promotion 3 </sub></p>
+
+</br>
+
+<p align="center">
+  <img width="750" height="520" src="https://github.com/user-attachments/assets/eecb4cbb-398d-4c3a-9101-59fb87799d69">
+</p>
+
+</br>
+  
+Verdict:  
+**There is no significant difference in the mean sales between Promotion 2 and Promotion 3.**
 
 ## Appendix
 

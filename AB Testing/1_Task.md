@@ -17,7 +17,7 @@ Evaluate A/B testing results and decide which marketing strategy works the best.
 
 Since there are three marketing campaigns we will conduct several tests, comparing campaigns against one another. 
 This kind of testing is known as pairwise comparisons, and it suffers from the multiple testing problem - if we run a lot of tests, there’s an increased chance of getting a type I error (false positive).  
-**Therefore, for analysis of A/B test results we will use a confidence level of 99%. (1−α), where α = 0.01**
+**Therefore, for analysis of A/B test results we will use a confidence level (1−α) of 99%; α = 0.01**
 
 ## General Approach
 
@@ -152,9 +152,9 @@ $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.632 $$
 </br>
   
 Verdict:  
-**There is a significant difference in the mean sales between Promotion 1 and Promotion 2.  
+**There is a significant difference in the mean sales between Promotion 1 and Promotion 2:   
 Promotion 1 Mean is greater than Promotion 2.**
-
+</br>
 
 ## 2. Promotion 1 vs. Promotion 3
 </br>
@@ -221,7 +221,7 @@ $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.635 $$
   
 Verdict:  
 **There is no significant difference in the mean sales between Promotion 1 and Promotion 3.**
-
+</br>
 ## 3. Promotion 2 vs. Promotion 3
 </br>
 </br>
@@ -287,10 +287,12 @@ $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.627 $$
   
 Verdict:  
 **There is no significant difference in the mean sales between Promotion 2 and Promotion 3.**
-
+</br>
 ## Decision
 
 Given all the insights from the A/B test analysis, the most logical and data-driven final decision would be to roll out Promotion 1 as the primary marketing campaign for the new menu item across all locations.
+
+</br>
 
 **Rationale for this decision:**  
 
@@ -299,6 +301,8 @@ Given all the insights from the A/B test analysis, the most logical and data-dri
 | **Statistically Significant Higher Sales** | Analysis demonstrates a statistically significant increase in mean sales with Promotion 1 compared to Promotion 2 at a high confidence level (99%). This provides strong evidence that Promotion 1 is more effective in driving customer purchases of the new item. |
 | **No Significant Difference with Promotion 3** | While Promotion 3 had numerically higher mean sales than Promotion 2, the difference compared to Promotion 1 was not statistically significant. This means we cannot confidently say that Promotion 3 performs better than Promotion 1. |
 | **Prioritizing Proven Effectiveness** | In a business decision, especially when launching a new product, it's crucial to go with the option that has demonstrated a clear positive impact on the key metric (sales in this case) with a high degree of certainty. Promotion 1 has provided that clear evidence. |
+
+</br>
 
 **However, this final decision should be implemented with the following considerations:**  
 
@@ -309,6 +313,7 @@ Given all the insights from the A/B test analysis, the most logical and data-dri
 | **Discontinuation or Significant Revision of Promotion 2** | Given its underperformance, Promotion 2 should likely be discontinued or undergo a significant overhaul if there's a strong strategic reason to keep exploring it. |
 | **Ongoing Monitoring** | Even after rolling out Promotion 1, continuous monitoring of its performance over time is crucial. Market conditions, competitor actions, and customer preferences can change, so tracking sales and potentially other relevant metrics will help ensure sustained success. |  
 
+</br>
 
 ## Appendix
 

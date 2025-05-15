@@ -38,7 +38,7 @@ From these charts we can see that:
 - Promotion 3 leads with its' 18% sales coming from the medium market, Promotion 1 leads in large market (14.38%).
 
 **Deal with Outliers and set equal sample proportion:**
-- After analyzing dataset outliers were found: Promotion 1(7), Promotion 2(6), Promotion 3(5). Therefore the sample size reduced (from 43-47) to 36 per each promotion group.
+- After analyzing dataset outliers were found: Promotion 1 **(7)**, Promotion 2 **(6)**, Promotion 3 **(5)**. Therefore, the sample size reduced (from 43-47) to 36 per each promotion group.
 
 </br>
 

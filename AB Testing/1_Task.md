@@ -259,7 +259,7 @@ $s_p^2 = \frac{(n_1 - 1)s_x^2 + (n_3 - 1)s_y^2}{n_1 + n_3 - 2} = 66.3867$
 
 **Effect size (Cohen's d):**
 
-$d=(\bar{x}_1-\bar{x}_3)/s_p^2=0.706$
+$d=(\bar{x}_1-\bar{x}_3)/s_p^2=0.16476$
 
 $\implies$ Cohen's d = 0.165 indicates a small effect size. 
 
@@ -267,8 +267,8 @@ $\implies$ Cohen's d = 0.165 indicates a small effect size.
   
 ### Validation: 
 
-$\implies$ **Since t-value > critical t-value, and p-value < α, H<sub>0</sub> is rejected.**  
-- **There is a significant difference** in the mean sales between Promotion 1 and Promotion 2. Promotion 1 mean > Promotion 2 mean.
+$\implies$ **Since t-value < critical t-value, and p-value > α, H<sub>0</sub> cannot be rejected.**   
+- **There is no significant difference** in the mean sales between Promotion 1 and Promotion 3.
 - **The chance of type I error** (rejecting a correct H<sub>0</sub>) **is high**: 0.4264 (42.64%).
 - Practical significance: Cohen's d of 0.165 indicates a **small effect size**.
 
@@ -337,8 +337,27 @@ $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.627 $$
 
 </br>
   
-Verdict:  
-$\implies$ **There is no significant difference in the mean sales between Promotion 2 and Promotion 3.**
+### Practical significance
+
+**Pooled Standard Deviation :**
+
+$s_p^2 = \frac{(n_2 - 1)s_x^2 + (n_3 - 1)s_y^2}{n_2 + n_3 - 2} = 61.877$
+
+**Effect size (Cohen's d):**
+
+$d=(\bar{x}_2-\bar{x}_3)/s_p^2=-0.519$
+
+$\implies$ Cohen's d = -0.519 indicates a moderately large effect size, with the negative sign signifying that the Promotion 3 has a higher mean than Promotion 2.
+
+</br>
+  
+### Validation: 
+
+$\implies$ **Since t-value < critical t-value, and p-value > α, H<sub>0</sub> cannot be rejected.**  
+- **There is no significant difference** in the mean sales between Promotion 2 and Promotion 3.
+- **The chance of type I error** (rejecting a correct H<sub>0</sub>) **is high**: 0.01353 (1.35%).
+- Practical significance: Cohen's d of -0.519 indicates a **large effect size**, with the negative sign signifying that the **Promotion 3 has a higher mean than Promotion 2**.
+
 
 </br>
 

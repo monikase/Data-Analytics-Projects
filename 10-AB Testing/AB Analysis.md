@@ -91,27 +91,27 @@ The table contains the metrics necessary to calculate the A/B test. Query is in 
   </tr>
   <tr>
     <td> Sample mean ($\bar{x}$) </td>
-    <td> 232.396 </td>
-    <td> 189.318 </td>
-    <td> 221.458 </td>
+    <td> 207.859 </td>
+    <td> 165.275 </td>
+    <td> 190.053 </td>
   </tr>
   <tr>
     <td> Sample size (n) </td>
-    <td> 43 </td>
-    <td> 47 </td>
-    <td> 47 </td>
+    <td> 36 </td>
+    <td> 36 </td>
+    <td> 36 </td>
   </tr>
   <tr>
     <td> Std. deviation (s) </td>
-    <td> 64.113 </td>
-    <td> 57.988 </td>
-    <td> 65.535 </td>
+    <td> 33.249 </td>
+    <td> 30.015 </td>
+    <td> 30.876 </td>
   </tr>
   <tr>
     <td> Variance (s<sup>2</sup>) </td>
-    <td> 4110.463 </td>
-    <td> 3362.653 </td>
-    <td> 4294.897 </td>
+    <td> 1105.489 </td>
+    <td> 900.895 </td>
+    <td> 953.342 </td>
   </tr>
 </table>
 <p align="center"> <sup>Table 1. Metrics needed for Independent samples t-test</sup> </p align="center">
@@ -427,65 +427,132 @@ Given all the insights from the A/B test analysis, the most logical and data-dri
 ### Query for table 1
 
 ```sql
-WITH
-  AggregatedSales AS (
-    -- Calculate total sales for each LocationID and PromotionID combination
-    SELECT
-      location_id AS LocationID,
-      promotion AS PromotionID,
-      SUM(sales_in_thousands) AS TotalSales
-    FROM
-      `tc-da-1.turing_data_analytics.wa_marketing_campaign`
-    GROUP BY
-      LocationID,
-      PromotionID
-  ),
+WITH AggregatedSales AS (
+  -- Calculate total sales for each LocationID and PromotionID combination
+  SELECT
+    location_id AS LocationID,
+    promotion AS PromotionID,
+    SUM(sales_in_thousands) AS TotalSales
+  FROM
+    `tc-da-1.turing_data_analytics.wa_marketing_campaign`
+  GROUP BY
+    LocationID,
+    PromotionID
+),
+PromotionStats AS (
   -- Calculate summary statistics for each promotion across all locations
-  PromotionStats AS (
-    SELECT
-      PromotionID,
-      AVG(TotalSales) AS Mean,
-      COUNT(LocationID) AS SampleSize,
-      STDDEV(TotalSales) AS StdDev,
-      VAR_SAMP(TotalSales) AS Variance
-    FROM
-      AggregatedSales
-    GROUP BY
-      PromotionID
-  )
--- Pivot the statistics into columns and add row labels
+  SELECT
+    PromotionID,
+    AVG(TotalSales) AS Mean,
+    COUNT(LocationID) AS OriginalSampleSize,
+    STDDEV(TotalSales) AS StdDev,
+    VAR_SAMP(TotalSales) AS Variance
+  FROM
+    AggregatedSales
+  GROUP BY
+    PromotionID
+),
+PercentileStats AS (
+  -- Use APPROX_QUANTILES for approximate percentiles
+  SELECT
+    PromotionID,
+    (APPROX_QUANTILES(TotalSales, 100))[25] AS Q1,
+    (APPROX_QUANTILES(TotalSales, 100))[75] AS Q3
+  FROM
+    AggregatedSales
+  GROUP BY
+    PromotionID
+),
+PromotionStatsCombined AS (
+  SELECT
+    ps.*,
+    pstats.Q1,
+    pstats.Q3
+  FROM
+    PromotionStats ps
+    JOIN PercentileStats pstats ON ps.PromotionID = pstats.PromotionID
+),
+OutlierHandledSales AS (
+  -- Flag outliers based on IQR method
+  SELECT
+    s.LocationID,
+    s.PromotionID,
+    s.TotalSales,
+    ps.Q1,
+    ps.Q3,
+    ps.OriginalSampleSize,
+    CASE
+      WHEN s.TotalSales < (ps.Q1 - 1.5 * (ps.Q3 - ps.Q1))
+      OR s.TotalSales > (ps.Q3 + 1.5 * (ps.Q3 - ps.Q1))
+      THEN 1
+      ELSE 0
+    END AS IsOutlier
+  FROM
+    AggregatedSales AS s
+    JOIN PromotionStatsCombined AS ps ON s.PromotionID = ps.PromotionID
+),
+SubsampledSales AS (
+  -- Subsample each promotion group to have exactly 36 data points
+  SELECT
+    LocationID,
+    PromotionID,
+    TotalSales,
+    ROW_NUMBER() OVER (
+      PARTITION BY PromotionID
+      ORDER BY TotalSales
+    ) AS rn
+  FROM
+    OutlierHandledSales
+  WHERE
+    IsOutlier = 0
+),
+FinalStats AS (
+  -- Compute final statistics
+  SELECT
+    PromotionID,
+    AVG(TotalSales) AS Mean,
+    COUNT(LocationID) AS SampleSize,
+    STDDEV(TotalSales) AS StdDev,
+    VAR_SAMP(TotalSales) AS Variance
+  FROM
+    SubsampledSales
+  WHERE
+    rn <= 36
+  GROUP BY
+    PromotionID
+)
+-- Format the final output
 SELECT
   "Sample mean (μ)" AS Metric,
-  -- Use a CASE statement to select the correct statistic for each PromotionID
   CAST(SUM(CASE WHEN PromotionID = 1 THEN Mean END) AS STRING) AS Promotion_1,
   CAST(SUM(CASE WHEN PromotionID = 2 THEN Mean END) AS STRING) AS Promotion_2,
   CAST(SUM(CASE WHEN PromotionID = 3 THEN Mean END) AS STRING) AS Promotion_3
 FROM
-  PromotionStats
+  FinalStats
 UNION ALL
 SELECT
   "Sample size (n)",
-  CAST(SUM(CASE WHEN PromotionID = 1 THEN SampleSize END) AS STRING),
-  CAST(SUM(CASE WHEN PromotionID = 2 THEN SampleSize END) AS STRING),
-  CAST(SUM(CASE WHEN PromotionID = 3 THEN SampleSize END) AS STRING)
+  CAST(SUM(CASE WHEN PromotionID = 1 THEN SampleSize END) AS STRING) AS Promotion_1,
+  CAST(SUM(CASE WHEN PromotionID = 2 THEN SampleSize END) AS STRING) AS Promotion_2,
+  CAST(SUM(CASE WHEN PromotionID = 3 THEN SampleSize END) AS STRING) AS Promotion_3
 FROM
-  PromotionStats
+  FinalStats
 UNION ALL
 SELECT
   "Std. deviation (s)",
-  CAST(SUM(CASE WHEN PromotionID = 1 THEN StdDev END) AS STRING),
-  CAST(SUM(CASE WHEN PromotionID = 2 THEN StdDev END) AS STRING),
-  CAST(SUM(CASE WHEN PromotionID = 3 THEN StdDev END) AS STRING)
+  CAST(SUM(CASE WHEN PromotionID = 1 THEN StdDev END) AS STRING) AS Promotion_1,
+  CAST(SUM(CASE WHEN PromotionID = 2 THEN StdDev END) AS STRING) AS Promotion_2,
+  CAST(SUM(CASE WHEN PromotionID = 3 THEN StdDev END) AS STRING) AS Promotion_3
 FROM
-  PromotionStats
+  FinalStats
 UNION ALL
 SELECT
-  "Variance (s2)",
-  CAST(SUM(CASE WHEN PromotionID = 1 THEN Variance END) AS STRING),
-  CAST(SUM(CASE WHEN PromotionID = 2 THEN Variance END) AS STRING),
-  CAST(SUM(CASE WHEN PromotionID = 3 THEN Variance END) AS STRING)
+  "Variance (s²)",
+  CAST(SUM(CASE WHEN PromotionID = 1 THEN Variance END) AS STRING) AS Promotion_1,
+  CAST(SUM(CASE WHEN PromotionID = 2 THEN Variance END) AS STRING) AS Promotion_2,
+  CAST(SUM(CASE WHEN PromotionID = 3 THEN Variance END) AS STRING) AS Promotion_3
 FROM
-  PromotionStats
+  FinalStats;
 ```
 ### Query for Evan Miller Test
 

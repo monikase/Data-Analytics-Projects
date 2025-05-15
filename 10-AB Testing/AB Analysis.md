@@ -166,14 +166,15 @@ $$ df = {n_1} + {n_2} - 2 = 36 + 36 - 2 = 70 $$
 </table>
 </br>
 
-<p align="center"> We can also use <a href="https://www.evanmiller.org/ab-testing/t-test.html">Evan Miller 2 Sample T-Test</a> to do this test from raw sales data. (Query is in the appendix.) </p align="center">
+<p align="center"> We can also use <a href="https://www.evanmiller.org/ab-testing/t-test.html">Evan Miller 2 Sample T-Test</a> to do this test from raw sales data. </p align="center">
 
 <p align="center"> <sub> Sample 1 - Promotion 1, Sample 2 - Promotion 2 </sub></p>
 
 </br>
 
 <p align="center">
-  <img width="750" height="520" src="https://github.com/user-attachments/assets/14dd6ed7-f798-4a7f-a4fc-ba9fbcaa6704">
+  <img width="750" height="520" src="https://github.com/user-attachments/assets/08c3a46c-08e5-4c75-954c-8cf776f35087")
+">
 </p>
 
 </br>

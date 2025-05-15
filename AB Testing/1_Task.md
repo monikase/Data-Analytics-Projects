@@ -171,17 +171,21 @@ $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.632 $$
 
 $s_p^2 = \frac{(n_1 - 1)s_x^2 + (n_2 - 1)s_y^2}{n_1 + n_2 - 2} = 60.988$
 
-**Cohen's d:**
+**Effect size (Cohen's d):**
 
 $d=(\bar{x}_1-\bar{x}_2)/s_p^2=0.706$
 
-$\implies Cohen's d = 0.706 indicates a large effect size.$
+$\implies$ Cohen's d = 0.706 indicates a large effect size.
 
 </br>
   
-Verdict:  
-$\implies$ **There is a significant difference in the mean sales between Promotion 1 and Promotion 2:   
-Promotion 1 Mean is greater than Promotion 2.**
+Validation: 
+
+$\implies$ **Since t-value > critical t-value, and p-value < α, H<sub>0</sub> is rejected.**  
+- **There is a significant difference** in the mean sales between Promotion 1 and Promotion 2. Promotion 1 mean > Promotion 2 mean.
+- The chance of type I error (rejecting a correct H0) is small: 0.00135 (0.14%).
+- Practical significance: Cohen's d = 0.706 indicates a large effect size.
+     
 
 </br>
 

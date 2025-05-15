@@ -122,12 +122,12 @@ The table contains the metrics necessary to calculate the A/B test. Query is in 
 #### First, using our extracted metrics we perform t-test calculations:
 (Also can be found on [Google Spreadsheet](https://docs.google.com/spreadsheets/d/1MHubB4LabEpGiU_laga0oTvKTTpvIa4w-OtuR-zoGzU/edit?usp=sharing)) 
 
-$$ t-value = \frac{|\bar{x}_1 - \bar{x}_2|}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}} = \frac{|232.396 - 189.318|}{\sqrt{\frac{4110.463}{43} + \frac{3362.653}{47}}} = \frac{43.078}{\sqrt{167.138}} = 3.332 $$  
+$$ t-value = \frac{|\bar{x}_1 - \bar{x}_2|}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}} = \frac{|207.859 - 165.275|}{\sqrt{\frac{1105.489}{36} + \frac{900.895}{36}}} =  5.704$$  
 
 
-$$ df = {n_1} + {n_2} - 2 = 43 + 47 - 2 = 88 $$  
+$$ df = {n_1} + {n_2} - 2 = 36 + 36 - 2 = 70 $$  
 
-<p align="center">critical t-value (from t-table) $$\approx 2.632 $$</p>
+<p align="center">critical t-value (from t-table) $$\approx 2.648 $$</p>
 
 
 <table align="center">
@@ -138,9 +138,9 @@ $$ df = {n_1} + {n_2} - 2 = 43 + 47 - 2 = 88 $$
   <th> α </th>
 </tr>
 <tr>
-  <td> 3.332 </td>
-  <td> 2.632 </td>
-  <td> 0.0013 </td>
+  <td> 5.704 </td>
+  <td> 2.648 </td>
+  <td> 0.000 </td>
   <td> 0.01 </td>
 </tr>
 </table>
@@ -155,12 +155,12 @@ $$ df = {n_1} + {n_2} - 2 = 43 + 47 - 2 = 88 $$
 </tr>
 <tr>
   <td> Reject if t-value > critical t-value </td>
-  <td> t=3.332 > critical t=2.632 </td>
+  <td> t=5.704 > critical t=2.648 </td>
   <td> $\implies$ We can reject H<sub>0</sub> hypothesis </td>
 </tr>
  <tr>
   <td> Reject if p-value < α </td>
-  <td> p=0.0013 < α=0.01 </td>
+  <td> p=0.000 < α=0.01 </td>
   <td> $\implies$ We can reject H<sub>0</sub> hypothesis  </td>
 </tr>
 </table>

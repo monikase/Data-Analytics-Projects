@@ -420,7 +420,7 @@ Given all the insights from the A/B test analysis, the most logical and data-dri
   </tr>
   <tr>
     <td> <b>Further Exploration of Promotion 3</b> </td>
-    <td> Although not the primary choice, Promotion 3's numerically better performance than Promotion 2 deserves further investigation for insights into future campaigns or refining Promotion 1. </td>
+    <td> Although not the primary choice, Promotion 3's statistically better performance than Promotion 2 deserves further investigation for insights into future campaigns or refining Promotion 1. </td>
   </tr>
   <tr>
     <td> <b>Discontinuation or Significant Revision of Promotion 2</b> </td>

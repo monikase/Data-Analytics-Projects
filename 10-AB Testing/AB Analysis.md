@@ -264,7 +264,8 @@ $$ df = {n_1} + {n_3} - 2 = 36 + 36 - 2 = 70 $$
   <img width="750" height="520" src="https://github.com/user-attachments/assets/bac958de-91a3-4e48-99bd-5a29e2e11462">
 </p>
 
-We can see, that there is a small overlap: Promotion 1 falls within Promotion 3's interval, indicating that their mean sales could be similar in that small range, although Promotion 1 generally has higher sales.  
+We can see, that there is a small overlap: Promotion 1 falls within Promotion 3's interval, indicating that their mean sales could be similar in that small range, although Promotion 1 generally has higher sales.    
+
 Treatment Effect $\implies$ Promotion 1 resulted to aproximately 17.806 more in mean sales than Promotion 3.
 
 </br>
@@ -287,6 +288,7 @@ $\implies$ Cohen's d = 0.555 indicates a medium effect size.
 
 $\implies$ Since t-value < critical t-value, and p-value > α,  **H<sub>0</sub> cannot be rejected.**   
 - **There is no significant difference** in the mean sales between Promotion 1 and Promotion 3.
+- Treatment Effect: Promotion 1 resulted to aproximately 17.806 more in mean sales than Promotion 3.
 - The 99% confidence interval hasve a small overlap, indicating that their mean sales could be similar in that range, although Promotion 1 generally has higher sales.
 - **The chance of type I error** (rejecting a correct H<sub>0</sub>) **is high**: 0.02136 (2.14%).
 - Practical significance: Cohen's d of 0.555 indicates a **medium effect size**.
@@ -351,29 +353,34 @@ $$ df = {n_2} + {n_3} - 2 = 36 + 36 - 2 = 70 $$
   <img width="750" height="520" src="https://github.com/user-attachments/assets/9e60782e-77e9-4ca7-9f4a-6edbadfb1a02">
 </p>
 
+We can see, that there is a small overlap: Promotion 3 falls within Promotion 2 interval, indicating that their mean sales could be similar in that small range, although Promotion 3 generally has higher sales.    
+
+Treatment Effect $\implies$ Promotion 3 resulted to aproximately 24.778 more in mean sales than Promotion 2.
+
 </br>
   
 #### Practical significance
 
 **Pooled Standard Deviation :**
 
-$s_p^2 = \frac{(n_2 - 1)s_2^2 + (n_3 - 1)s_3^2}{n_2 + n_3 - 2} = 61.877$
+$s_p^2 = \frac{(n_2 - 1)s_2^2 + (n_3 - 1)s_3^2}{n_2 + n_3 - 2} = 30.449$
 
 **Effect size (Cohen's d):**
 
-$d=(\bar{x}_2-\bar{x}_3)/s_p^2=-0.519$
+$d=(\bar{x}_2-\bar{x}_3)/s_p^2=-0.814$
 
-$\implies$ Cohen's d = -0.519 indicates a moderately large effect size, with the negative sign signifying that the Promotion 3 has a higher mean than Promotion 2.
+$\implies$ Cohen's d = -0.814 indicates a large effect size, with the negative sign signifying that the Promotion 3 has a higher mean than Promotion 2.
 
 </br>
   
 ### Validation: 
 
-$\implies$ **Since t-value < critical t-value, and p-value > α, H<sub>0</sub> cannot be rejected.**  
-- **There is no significant difference** in the mean sales between Promotion 2 and Promotion 3.
-- The 99% confidence interval for the mean sales of Promotion 2 is (166.59, 212.05), while the 99% confidence interval for Promotion 3 is (195.78, 247.14). These confidence intervals do overlap, indicating that the true mean sales between Promotion 2 and Promotion 3 might not be significantly different at the 99% confidence level.
-- **The chance of type I error** (rejecting a correct H<sub>0</sub>) **is high**: 0.01353 (1.35%).
-- Practical significance: Cohen's d of -0.519 indicates a **large effect size**, with the negative sign signifying that the **Promotion 3 has a higher mean than Promotion 2**.
+$\implies$ Since t-value < critical t-value, and p-value > α, **H<sub>0</sub> is rejected.</font>**  
+- **There is a significant difference** in the mean sales between Promotion 2 and Promotion 3.
+- Treatment Effect: Promotion 3 resulted to aproximately 24.778 more in mean sales than Promotion 2.
+- In 99% confidence interval there is a small overlap (Promotion 3's value falls within Promotion 2's interval), indicating that their mean sales could be similar in that range, although Promotion 3 generally has higher sales.   
+- **The chance of type I error** (rejecting a correct H<sub>0</sub>) **is small**: 0.000946 (0.095%).
+- Practical significance: Cohen's d of -0.814 indicates a **large effect size**, with the negative sign signifying that the **Promotion 3 has a higher mean than Promotion 2**.
 
 
 </br>

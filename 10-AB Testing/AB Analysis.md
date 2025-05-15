@@ -14,7 +14,7 @@ Evaluate A/B testing results and decide which marketing strategy works the best 
 ## General Approach
 
 - **Data Analysis :** Making sure that the attributes of each promotion group are symmetrically distributed so that the results of this A/B test are fair and correct.
-- **Pairwise Comparison :** Since we have three promotions (1, 2, and 3), we'll perform three pairwise comparisons:
+- **Pairwise Comparison :** Since we have three promotions (1, 2, and 3), we'll perform three pairwise comparisons:  
   • Promotion 1 vs. Promotion 2  
   • Promotion 1 vs. Promotion 3  
   • Promotion 2 vs. Promotion 3  

@@ -116,7 +116,7 @@ The table contains the metrics necessary to calculate the A/B test. Query is in 
 
 ## 1. Promotion 1 vs. Promotion 2
 
-#### First, using our extracted metric we perform t-test calculations:
+#### First, using our extracted metrics we perform t-test calculations:
 (Also can be found on [Google Spreadsheet](https://docs.google.com/spreadsheets/d/1MHubB4LabEpGiU_laga0oTvKTTpvIa4w-OtuR-zoGzU/edit?usp=sharing)) 
 
 $$ t-value = \frac{|\bar{x}_1 - \bar{x}_2|}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}} = \frac{|232.396 - 189.318|}{\sqrt{\frac{4110.463}{43} + \frac{3362.653}{47}}} = \frac{43.078}{\sqrt{167.138}} = 3.332 $$  
@@ -143,7 +143,7 @@ $$ df = {n_1} + {n_2} - 2 = 43 + 47 - 2 = 88 $$
 </table>
 
 #### And now we can compare and draw the conclusions:
-
+</br>
 <table align="center">
 <tr>
   <th> Decision Rule </th>
@@ -175,11 +175,11 @@ $$ df = {n_1} + {n_2} - 2 = 43 + 47 - 2 = 88 $$
 
 </br>
 
-### And lastly, we perform Practical significance calculations:
+#### And lastly, we perform Practical significance calculations:
 
 **Pooled Standard Deviation :**
 
-$s_p^2 = \frac{(n_1 - 1)s_x^2 + (n_2 - 1)s_y^2}{n_1 + n_2 - 2} = 60.988$
+$s_p^2 = \frac{(n_1 - 1)s_1^2 + (n_2 - 1)s_2^2}{n_1 + n_2 - 2} = 60.988$
 
 **Effect size (Cohen's d):**
 
@@ -193,6 +193,7 @@ $\implies$ Cohen's d = 0.706 indicates a large effect size.
 
 $\implies$ **Since t-value > critical t-value, and p-value < α, <font color=#FF0000>H<sub>0</sub> is rejected.</font>**  
 - **There is a significant difference** in the mean sales between Promotion 1 and Promotion 2. Promotion 1 mean > Promotion 2 mean.
+- The 99% confidence interval for the mean sales of Promotion 1 is (206.02, 258.78), while the 99% confidence interval for Promotion 2 is (166.59, 212.05). Since these intervals do not overlap, it provides further evidence that the mean sales between the two promotions are significantly different.
 - **The chance of type I error** (rejecting a correct H<sub>0</sub>) **is small**: 0.00135 (0.14%).
 - Practical significance: Cohen's d of 0.706 indicates a **large effect size**.
      
@@ -257,11 +258,11 @@ $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.635 $$
 
 </br>
 
-### Practical significance
+#### Practical significance
 
 **Pooled Standard Deviation :**
 
-$s_p^2 = \frac{(n_1 - 1)s_x^2 + (n_3 - 1)s_y^2}{n_1 + n_3 - 2} = 66.3867$
+$s_p^2 = \frac{(n_1 - 1)s_1^2 + (n_3 - 1)s_3^2}{n_1 + n_3 - 2} = 66.3867$
 
 **Effect size (Cohen's d):**
 
@@ -275,6 +276,7 @@ $\implies$ Cohen's d = 0.165 indicates a small effect size.
 
 $\implies$ **Since t-value < critical t-value, and p-value > α, H<sub>0</sub> cannot be rejected.**   
 - **There is no significant difference** in the mean sales between Promotion 1 and Promotion 3.
+- The 99% confidence interval for the mean sales of Promotion 1 is (206.02, 258.78), while the 99% confidence interval for Promotion 3 is (195.78, 247.14). Since these confidence intervals do overlap, it suggests that the true mean sales between Promotion 1 and Promotion 3 might not be significantly different at the 99% confidence level, which aligns with our failure to reject the null hypothesis in the t-test.
 - **The chance of type I error** (rejecting a correct H<sub>0</sub>) **is high**: 0.4264 (42.64%).
 - Practical significance: Cohen's d of 0.165 indicates a **small effect size**.
 
@@ -340,11 +342,11 @@ $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.627 $$
 
 </br>
   
-### Practical significance
+#### Practical significance
 
 **Pooled Standard Deviation :**
 
-$s_p^2 = \frac{(n_2 - 1)s_x^2 + (n_3 - 1)s_y^2}{n_2 + n_3 - 2} = 61.877$
+$s_p^2 = \frac{(n_2 - 1)s_2^2 + (n_3 - 1)s_3^2}{n_2 + n_3 - 2} = 61.877$
 
 **Effect size (Cohen's d):**
 
@@ -358,6 +360,7 @@ $\implies$ Cohen's d = -0.519 indicates a moderately large effect size, with the
 
 $\implies$ **Since t-value < critical t-value, and p-value > α, H<sub>0</sub> cannot be rejected.**  
 - **There is no significant difference** in the mean sales between Promotion 2 and Promotion 3.
+- The 99% confidence interval for the mean sales of Promotion 2 is (166.59, 212.05), while the 99% confidence interval for Promotion 3 is (195.78, 247.14). These confidence intervals do overlap, indicating that the true mean sales between Promotion 2 and Promotion 3 might not be significantly different at the 99% confidence level.
 - **The chance of type I error** (rejecting a correct H<sub>0</sub>) **is high**: 0.01353 (1.35%).
 - Practical significance: Cohen's d of -0.519 indicates a **large effect size**, with the negative sign signifying that the **Promotion 3 has a higher mean than Promotion 2**.
 
@@ -366,7 +369,7 @@ $\implies$ **Since t-value < critical t-value, and p-value > α, H<sub>0</sub> c
 
 ## Decision
 
-Given all the insights from the A/B test analysis, the most logical and data-driven final decision would be to roll out Promotion 1 as the primary marketing campaign for the new menu item across all locations.
+Given all the insights from the A/B test analysis, the most logical and data-driven final decision would be to roll out **Promotion 1** as the primary marketing campaign for the new menu item across all locations.
 
 </br>
 
@@ -375,7 +378,7 @@ Given all the insights from the A/B test analysis, the most logical and data-dri
 <table align="center">
   <tr>
     <td> <b>Statistically Significant Higher Sales</b> </td>
-    <td> Promotion 1 significantly increased mean sales over Promotion 2 (99% confidence), proving its greater effectiveness in driving new item purchases. </td>
+    <td> Promotion 1 significantly increased mean sales over Promotion 2 (99% confidence), proving its greater effectiveness in driving purchases. </td>
   </tr>
   <tr>
     <td> <b>No Significant Difference with Promotion 3</b> </td>

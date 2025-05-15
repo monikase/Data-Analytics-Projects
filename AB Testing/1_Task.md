@@ -183,8 +183,8 @@ Validation:
 
 $\implies$ **Since t-value > critical t-value, and p-value < α, H<sub>0</sub> is rejected.**  
 - **There is a significant difference** in the mean sales between Promotion 1 and Promotion 2. Promotion 1 mean > Promotion 2 mean.
-- The chance of type I error (rejecting a correct H0) is small: 0.00135 (0.14%).
-- Practical significance: Cohen's d = 0.706 indicates a large effect size.
+- **The chance of type I error** (rejecting a correct H<sub>0</sub>) **is small**: 0.00135 (0.14%).
+- Practical significance: Cohen's d = 0.706 indicates a **large effect size**.
      
 
 </br>

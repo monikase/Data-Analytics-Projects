@@ -106,13 +106,13 @@ The table contains the metrics necessary to calculate the A/B test. Query is in 
 </br>
 </br>
 
+First, we run t-test:
+
 $$ t-value = \frac{|\bar{x}_1 - \bar{x}_2|}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}} = \frac{|232.396 - 189.318|}{\sqrt{\frac{4110.463}{43} + \frac{3362.653}{47}}} = \frac{43.078}{\sqrt{167.138}} = 3.332 $$  
 
 </br>
 
 $$ df = {n_1} + {n_2} - 2 = 43 + 47 - 2 = 88 $$  
-
-</br>
 
 $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.632 $$
 
@@ -162,6 +162,14 @@ $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.632 $$
 <p align="center">
   <img width="750" height="520" src="https://github.com/user-attachments/assets/14dd6ed7-f798-4a7f-a4fc-ba9fbcaa6704">
 </p>
+
+</br>
+
+Now we have to check the practical significance:
+
+Pooled Standard Deviation :
+
+$s_p^2 = \frac{(n_1 - 1)s_x^2 + (n_2 - 1)s_y^2}{n_1 + n_2 - 2}$
 
 </br>
   

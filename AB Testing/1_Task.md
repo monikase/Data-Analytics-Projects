@@ -7,47 +7,61 @@ A fast-food chain plans to add a new item to its menu. However, they are still u
 In order to determine which promotion has the greatest effect on sales, the new item is introduced at locations in several randomly selected markets. 
 A different promotion is used at each location, and the weekly sales of the new item are recorded for the first four weeks.
 
-## Quick Overview
-
-![image](https://github.com/user-attachments/assets/421150d3-8b9f-4eea-a7ba-67f764c9f1a0)
-
 ## Goal of the Test
 
-Evaluate A/B testing results and decide which marketing strategy works the best.
-
-Since there are three marketing campaigns we will conduct several tests, comparing campaigns against one another. 
-This kind of testing is known as pairwise comparisons, and it suffers from the multiple testing problem - if we run a lot of tests, there’s an increased chance of getting a type I error (false positive).  
-**Therefore, for analysis of A/B test results we will use a confidence level (1−α) of 99%; α = 0.01**
+Evaluate A/B testing results and decide which marketing strategy works the best and has statistically significant differences among the test groups.
 
 ## General Approach
 
-Since we have three promotions (1, 2, and 3), we'll perform three pairwise comparisons:
+- **Data Analysis :** Making sure that the attributes of each promotion group are symmetrically distributed so that the results of this A/B test are fair and correct.   
 
-• Promotion 1 vs. Promotion 2  
-• Promotion 1 vs. Promotion 3  
-• Promotion 2 vs. Promotion 3  
+- Since we have three promotions (1, 2, and 3), we'll perform three pairwise comparisons:
 
-• **Hypotheses** For each comparison, we'll set up a **null hypothesis (H<sub>0</sub>)** and an **alternative hypothesis (H<sub>a</sub>)**.  
-• **Statistical Test:** we will use **Independent Samples t-test -** Used when comparing the means of two independent groups. 
+  - Promotion 1 vs. Promotion 2  
+  - Promotion 1 vs. Promotion 3  
+  - Promotion 2 vs. Promotion 3  
+
+- We'll run pairwise tests on three promotion campaigns. This increases the chance of a false positive due to multiple comparisons.  
+**Therefore, for analysis of A/B test results we will use a confidence level of 99%.**
+
+- **Hypotheses :** For each comparison, we'll set up a **null hypothesis (H<sub>0</sub>)** and an **alternative hypothesis (H<sub>a</sub>)**.  
+- **Statistical Test :** we will use **Independent Samples two-tailed t-test -** Used when comparing the means of two independent groups. 
+
+</br>
+
+## Data Analysis 
+
+![image](https://github.com/user-attachments/assets/5c1e0edf-815d-4a7f-96b4-cf717cb2dbb1)
+
+As we can see from these charts:  
+- Despite Promotion 3 having the largest total sales (35.5%), each promotion accounts for roughly a third of sales during the test weeks.  
+- Medium market size occupies the most among all three promotion groups, while the small market size occupies the least.  
+- Promotion 3 leads with its' 18% sales coming from the medium market, Promotion 1 leads in large market (14.38%).  
+</br>
+
+$\implies$ **After exploring the distribution of the variables in the three promotion groups, we can verify that the sample groups are similar and the A/B testing results will be meaningful and trustworthy.**  
+
+</br>
 
 ## Hypotheses
 
 **1. Promotion 1 vs. Promotion 2**
 
-• H<sub>0</sub> (Null Hypothesis): There is no significant difference in the mean sales between Promotion 1 and Promotion 2.  
-• H<sub>a</sub> (Alternative Hypothesis): There is a significant difference in the mean sales between Promotion 1 and Promotion 2.  
+- H<sub>0</sub> (Null Hypothesis): There is no significant difference in the mean sales between Promotion 1 and Promotion 2.  
+- H<sub>a</sub> (Alternative Hypothesis): There is a significant difference in the mean sales between Promotion 1 and Promotion 2.  
 
 **2. Promotion 1 vs. Promotion 3**
 
-• H<sub>0</sub> : There is no significant difference in the mean sales between Promotion 1 and Promotion 3.   
-• H<sub>a</sub> : There is a significant difference in the mean sales between Promotion 1 and Promotion 3.  
+- H<sub>0</sub> : There is no significant difference in the mean sales between Promotion 1 and Promotion 3.   
+- H<sub>a</sub> : There is a significant difference in the mean sales between Promotion 1 and Promotion 3.  
 
 
 **3. Promotion 2 vs. Promotion 3**
 
-• H<sub>0</sub> : There is no significant difference in the mean sales between Promotion 2 and Promotion 3.  
-• H<sub>a</sub> : There is a significant difference in the mean sales between Promotion 2 and Promotion 3.  
- 
+- H<sub>0</sub> : There is no significant difference in the mean sales between Promotion 2 and Promotion 3.  
+- H<sub>a</sub> : There is a significant difference in the mean sales between Promotion 2 and Promotion 3.  
+
+ </br>
 
 ## Calculations
 
@@ -107,7 +121,7 @@ $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.632 $$
 <table align="center">
 <tr>
   <th> t-value </th>
-  <th> t-critical value </th>
+  <th> critical t-value </th>
   <th> p-value </th>
   <th> α </th>
 </tr>
@@ -152,8 +166,9 @@ $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.632 $$
 </br>
   
 Verdict:  
-**There is a significant difference in the mean sales between Promotion 1 and Promotion 2:   
+$\implies$ **There is a significant difference in the mean sales between Promotion 1 and Promotion 2:   
 Promotion 1 Mean is greater than Promotion 2.**
+
 </br>
 
 ## 2. Promotion 1 vs. Promotion 3
@@ -220,8 +235,10 @@ $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.635 $$
 </br>
   
 Verdict:  
-**There is no significant difference in the mean sales between Promotion 1 and Promotion 3.**
+$\implies$ **There is no significant difference in the mean sales between Promotion 1 and Promotion 3.**
+
 </br>
+
 ## 3. Promotion 2 vs. Promotion 3
 </br>
 </br>
@@ -286,8 +303,10 @@ $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.627 $$
 </br>
   
 Verdict:  
-**There is no significant difference in the mean sales between Promotion 2 and Promotion 3.**
+$\implies$ **There is no significant difference in the mean sales between Promotion 2 and Promotion 3.**
+
 </br>
+
 ## Decision
 
 Given all the insights from the A/B test analysis, the most logical and data-driven final decision would be to roll out Promotion 1 as the primary marketing campaign for the new menu item across all locations.

@@ -294,16 +294,16 @@ $\implies$ Since t-value < critical t-value, and p-value > α,  **H<sub>0</sub> 
 </br>
 
 ## 3. Promotion 2 vs. Promotion 3
-</br>
-</br>
 
-$$ t-value = \frac{|\bar{x}_2 - \bar{x}_3|}{\sqrt{\frac{s_2^2}{n_2} + \frac{s_3^2}{n_3}}} = \frac{|189.318 - 221.458|}{\sqrt{\frac{3362.653}{47} + \frac{4294.897}{47}}} = \frac{32.14}{\sqrt{162.927}} = 2.518 $$  
+#### Perform t-test calculations:
 
-
-$$ df = {n_2} + {n_3} - 2 = 47 + 47 - 2 = 92 $$  
+$$ t-value = \frac{|\bar{x}_2 - \bar{x}_3|}{\sqrt{\frac{s_2^2}{n_2} + \frac{s_3^2}{n_3}}} = \frac{|165.275 - 190.053|}{\sqrt{\frac{900.895}{36} + \frac{953.342}{36}}} = 3.453 $$  
 
 
-$$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.627 $$
+$$ df = {n_2} + {n_3} - 2 = 36 + 36 - 2 = 70 $$  
+
+
+<p align="center">critical t-value (from t-table) $$ \approx 2.648 $$ </p>
 
 
 <table align="center">
@@ -314,9 +314,9 @@ $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.627 $$
   <th> α </th>
 </tr>
 <tr>
-  <td> 2.518 </td>
-  <td> 2.627 </td>
-  <td> 0.0135 </td>
+  <td> 3.453 </td>
+  <td> 2.648 </td>
+  <td> 0.000946 </td>
   <td> 0.01 </td>
 </tr>
 </table>
@@ -330,13 +330,13 @@ $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.627 $$
 </tr>
 <tr>
   <td> Reject if t-value > critical t-value </td>
-  <td> t-value=2.518 < critical t=2.627 </td>
-  <td> $\implies$ We cannot reject H<sub>0</sub> hypothesis </td>
+  <td> t-value=3.453 > critical t=2.648 </td>
+  <td> $\implies$ We reject H<sub>0</sub> hypothesis </td>
 </tr>
  <tr>
   <td> Reject if p-value < α </td>
-  <td> p-value=0.0135 > α=0.01 </td>
-  <td> $\implies$ We cannot reject H<sub>0</sub> hypothesis </td>
+  <td> p-value=0.000946 < α=0.01 </td>
+  <td> $\implies$ We reject H<sub>0</sub> hypothesis </td>
 </tr>
 </table>
 </br>
@@ -348,7 +348,7 @@ $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.627 $$
 </br>
 
 <p align="center">
-  <img width="750" height="520" src="https://github.com/user-attachments/assets/eecb4cbb-398d-4c3a-9101-59fb87799d69">
+  <img width="750" height="520" src="https://github.com/user-attachments/assets/9e60782e-77e9-4ca7-9f4a-6edbadfb1a02">
 </p>
 
 </br>

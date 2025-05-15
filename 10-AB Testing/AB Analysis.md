@@ -13,18 +13,13 @@ Evaluate A/B testing results and decide which marketing strategy works the best 
 
 ## General Approach
 
-- **Data Analysis :** Making sure that the attributes of each promotion group are symmetrically distributed so that the results of this A/B test are fair and correct.   
-
-- Since we have three promotions (1, 2, and 3), we'll perform three pairwise comparisons:
-
+- **Data Analysis :** Making sure that the attributes of each promotion group are symmetrically distributed so that the results of this A/B test are fair and correct.
+- **Pairwise Comparison :** Since we have three promotions (1, 2, and 3), we'll perform three pairwise comparisons:
   - Promotion 1 vs. Promotion 2  
   - Promotion 1 vs. Promotion 3  
-  - Promotion 2 vs. Promotion 3  
-
-- We'll run pairwise tests on three promotion campaigns. This increases the chance of a false positive due to multiple comparisons.  
-**Therefore, for analysis of A/B test results we will use a confidence level of 99%.**
-
-- **Hypotheses :** For each comparison, we'll set up a **null hypothesis (H<sub>0</sub>)** and an **alternative hypothesis (H<sub>a</sub>)**.  
+  - Promotion 2 vs. Promotion 3
+*This increases the chance of a false positive due to multiple comparisons. **Therefore, for analysis of A/B test results we will use a confidence level of 99%.**
+- **Hypotheses :** For each comparison, we'll set up a **null hypothesis (H<sub>0</sub>)** and an **alternative hypothesis (H<sub>a</sub>)**.
 - **Statistical Test :** we will use **Independent Samples two-tailed t-test -** Used when comparing the means of two independent groups. 
 
 </br>

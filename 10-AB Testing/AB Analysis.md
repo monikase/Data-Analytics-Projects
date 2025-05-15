@@ -21,7 +21,10 @@ Evaluate A/B testing results and decide which marketing strategy works the best 
 
 *This increases the chance of a false positive due to multiple comparisons. **Therefore, for analysis of A/B test results we will use a confidence level of 99%.**
 - **Hypotheses :** For each comparison, we'll set up a **null hypothesis (H<sub>0</sub>)** and an **alternative hypothesis (H<sub>a</sub>)**.
-- **Statistical Test :** we will use **Independent Samples two-tailed t-test -** Used when comparing the means of two independent groups. 
+- **Statistical Test :** we will use **Independent Samples two-tailed t-test -** Used when comparing the means of two independent groups.
+- **Interpret Results :** In which direction metrics are significant statistically and practically.
+- **Launch Decision :** Arrive at the final data-driven decision - which marketing strategy considered best for launching.
+
 
 </br>
 

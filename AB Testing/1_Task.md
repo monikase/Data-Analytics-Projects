@@ -184,9 +184,8 @@ $\implies$ Cohen's d = 0.706 indicates a large effect size.
 $\implies$ **Since t-value > critical t-value, and p-value < α, H<sub>0</sub> is rejected.**  
 - **There is a significant difference** in the mean sales between Promotion 1 and Promotion 2. Promotion 1 mean > Promotion 2 mean.
 - **The chance of type I error** (rejecting a correct H<sub>0</sub>) **is small**: 0.00135 (0.14%).
-- Practical significance: Cohen's d = 0.706 indicates a **large effect size**.
+- Practical significance: Cohen's d of 0.706 indicates a **large effect size**.
      
-
 </br>
 
 ## 2. Promotion 1 vs. Promotion 3
@@ -251,9 +250,27 @@ $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.635 $$
 </p>
 
 </br>
+
+### Practical significance
+
+**Pooled Standard Deviation :**
+
+$s_p^2 = \frac{(n_1 - 1)s_x^2 + (n_3 - 1)s_y^2}{n_1 + n_3 - 2} = 66.3867$
+
+**Effect size (Cohen's d):**
+
+$d=(\bar{x}_1-\bar{x}_3)/s_p^2=0.706$
+
+$\implies$ Cohen's d = 0.165 indicates a small effect size. 
+
+</br>
   
-Verdict:  
-$\implies$ **There is no significant difference in the mean sales between Promotion 1 and Promotion 3.**
+### Validation: 
+
+$\implies$ **Since t-value > critical t-value, and p-value < α, H<sub>0</sub> is rejected.**  
+- **There is a significant difference** in the mean sales between Promotion 1 and Promotion 2. Promotion 1 mean > Promotion 2 mean.
+- **The chance of type I error** (rejecting a correct H<sub>0</sub>) **is high**: 0.4264 (42.64%).
+- Practical significance: Cohen's d of 0.165 indicates a **small effect size**.
 
 </br>
 

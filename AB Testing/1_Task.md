@@ -179,7 +179,7 @@ $\implies$ Cohen's d = 0.706 indicates a large effect size.
 
 </br>
   
-Validation: 
+### Validation: 
 
 $\implies$ **Since t-value > critical t-value, and p-value < α, H<sub>0</sub> is rejected.**  
 - **There is a significant difference** in the mean sales between Promotion 1 and Promotion 2. Promotion 1 mean > Promotion 2 mean.

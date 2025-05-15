@@ -178,27 +178,32 @@ $$ df = {n_1} + {n_2} - 2 = 36 + 36 - 2 = 70 $$
 
 </br>
 
+We can also see, that there is no overlap between these intervals (Promotion 2's highest value, 178.716, is below Promotion 1's lowest, 192.908), suggesting a significant difference in mean sales.
+Treatment Effect $\implies$ 42.584 Promotion 1 led to aproximately 42.584 more sales than Promotion 2
+
+
 #### And lastly, we perform Practical significance calculations:
 
 **Pooled Standard Deviation :**
 
-$s_p^2 = \frac{(n_1 - 1)s_1^2 + (n_2 - 1)s_2^2}{n_1 + n_2 - 2} = 60.988$
+$s_p^2 = \frac{(n_1 - 1)s_1^2 + (n_2 - 1)s_2^2}{n_1 + n_2 - 2} = 31.673$
 
 **Effect size (Cohen's d):**
 
-$d=(\bar{x}_1-\bar{x}_2)/s_p^2=0.706$
+$d=(\bar{x}_1-\bar{x}_2)/s_p^2=1.344$
 
-$\implies$ Cohen's d = 0.706 indicates a large effect size.
+$\implies$ Cohen's d = 1.344 indicates a large effect size.
 
 </br>
   
 ### Validation: 
 
-$\implies$ **Since t-value > critical t-value, and p-value < α, <font color=#FF0000>H<sub>0</sub> is rejected.</font>**  
-- **There is a significant difference** in the mean sales between Promotion 1 and Promotion 2. Promotion 1 mean > Promotion 2 mean.
-- The 99% confidence interval for the mean sales of Promotion 1 is (206.02, 258.78), while the 99% confidence interval for Promotion 2 is (166.59, 212.05). Since these intervals do not overlap, it provides further evidence that the mean sales between the two promotions are significantly different.
-- **The chance of type I error** (rejecting a correct H<sub>0</sub>) **is small**: 0.00135 (0.14%).
-- Practical significance: Cohen's d of 0.706 indicates a **large effect size**.
+$\implies$ Since t-value > critical t-value, and p-value < α, **H<sub>0</sub> is rejected.</font>**  
+- **There is a significant difference** in the mean sales between Promotion 1 and Promotion 2. 
+- Treatment Effect: Promotion 1 led to aproximately 42.584 more of sales than Promotion 2
+- The 99% confidence intervals for the mean sales of Promotion 1 and Promotion 2 do not overlap, and provides evidence that the mean sales between the two promotions are significantly different.
+- **The chance of type I error** (rejecting a correct H<sub>0</sub>) **is small**: 0.000026 (0.000026%).
+- Practical significance: Cohen's d of 1.34 indicates a **large effect size**.
      
 </br>
 

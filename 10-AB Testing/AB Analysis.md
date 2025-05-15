@@ -32,10 +32,14 @@ Evaluate A/B testing results and decide which marketing strategy works the best 
 
 ![image](https://github.com/user-attachments/assets/5c1e0edf-815d-4a7f-96b4-cf717cb2dbb1)
 
-As we can see from these charts:  
+From these charts we can see that:  
 - Despite Promotion 3 having the largest total sales (35.5%), each promotion accounts for roughly a third of sales during the test weeks.  
 - Medium market size occupies the most among all three promotion groups, while the small market size occupies the least.  
-- Promotion 3 leads with its' 18% sales coming from the medium market, Promotion 1 leads in large market (14.38%).  
+- Promotion 3 leads with its' 18% sales coming from the medium market, Promotion 1 leads in large market (14.38%).
+
+Deal with Outliers and Setting the equal sample proportion:
+- After analyzing dataset outliers were found: Promotion 1(7), Promotion 2(6), Promotion 3(5). Therefore the sample size = 36 per each promotion group.
+
 </br>
 
 $\implies$ **After exploring the distribution of the variables in the three promotion groups, we can verify that the sample groups are similar and the A/B testing results will be meaningful and trustworthy.**  

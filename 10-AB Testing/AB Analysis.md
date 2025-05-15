@@ -208,15 +208,15 @@ $\implies$ Since t-value > critical t-value, and p-value < α, **H<sub>0</sub> i
 </br>
 
 ## 2. Promotion 1 vs. Promotion 3
-</br>
-</br>
 
-$$ t-value = \frac{|\bar{x}_1 - \bar{x}_3|}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_3^2}{n_3}}} = \frac{|232.396 - 221.458|}{\sqrt{\frac{4110.463}{43} + \frac{4294.897}{47}}} = \frac{10.938}{\sqrt{186.973}} = 0.7999 $$  
+#### Perform t-test calculations:
+
+$$ t-value = \frac{|\bar{x}_1 - \bar{x}_3|}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_3^2}{n_3}}} = \frac{|207.859 - 190.053|}{\sqrt{\frac{1105.489}{36} + \frac{953.342}{36}}} = 2.354 $$  
 
 
-$$ df = {n_1} + {n_3} - 2 = 43 + 47 - 2 = 88 $$  
+$$ df = {n_1} + {n_3} - 2 = 36 + 36 - 2 = 70 $$  
 
-$$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.635 $$
+ <p align="center">critical t-value (from t-table) $$\approx 2.648 $$ </p>
 
 
 <table align="center">
@@ -227,9 +227,9 @@ $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.635 $$
   <th> α </th>
 </tr>
 <tr>
-  <td> 0.7999 </td>
-  <td> 2.635 </td>
-  <td> 0.4259 </td>
+  <td> 2.354 </td>
+  <td> 2.648 </td>
+  <td> 0.0214 </td>
   <td> 0.01 </td>
 </tr>
 </table>
@@ -243,12 +243,12 @@ $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.635 $$
 </tr>
 <tr>
   <td> Reject if t-value > critical t-value </td>
-  <td> t-value=0.7999 < critical t=2.635 </td>
+  <td> t-value=2.354 < critical t=2.648 </td>
   <td> $\implies$ We cannot reject H<sub>0</sub> hypothesis </td>
 </tr>
  <tr>
   <td> Reject if p-value < α </td>
-  <td> p-value=0.4259 > α=0.01 </td>
+  <td> p-value=0.0214 > α=0.01 </td>
   <td> $\implies$ We cannot reject H<sub>0</sub> hypothesis </td>
 </tr>
 </table>
@@ -261,8 +261,11 @@ $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.635 $$
 </br>
 
 <p align="center">
-  <img width="750" height="520" src="https://github.com/user-attachments/assets/ca8e3c47-2281-4ea2-9204-f53d32d1aad5">
+  <img width="750" height="520" src="https://github.com/user-attachments/assets/bac958de-91a3-4e48-99bd-5a29e2e11462">
 </p>
+
+We can see, that there is a small overlap: Promotion 1 falls within Promotion 3's interval, indicating that their mean sales could be similar in that small range, although Promotion 1 generally has higher sales.  
+Treatment Effect $\implies$ Promotion 1 resulted to aproximately 17.806 more in mean sales than Promotion 3.
 
 </br>
 
@@ -270,23 +273,23 @@ $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.635 $$
 
 **Pooled Standard Deviation :**
 
-$s_p^2 = \frac{(n_1 - 1)s_1^2 + (n_3 - 1)s_3^2}{n_1 + n_3 - 2} = 66.3867$
+$s_p^2 = \frac{(n_1 - 1)s_1^2 + (n_3 - 1)s_3^2}{n_1 + n_3 - 2} = 32.0845$
 
 **Effect size (Cohen's d):**
 
-$d=(\bar{x}_1-\bar{x}_3)/s_p^2=0.16476$
+$d=(\bar{x}_1-\bar{x}_3)/s_p^2=0.555$
 
-$\implies$ Cohen's d = 0.165 indicates a small effect size. 
+$\implies$ Cohen's d = 0.555 indicates a medium effect size. 
 
 </br>
   
 ### Validation: 
 
-$\implies$ **Since t-value < critical t-value, and p-value > α, H<sub>0</sub> cannot be rejected.**   
+$\implies$ Since t-value < critical t-value, and p-value > α,  **H<sub>0</sub> cannot be rejected.**   
 - **There is no significant difference** in the mean sales between Promotion 1 and Promotion 3.
-- The 99% confidence interval for the mean sales of Promotion 1 is (206.02, 258.78), while the 99% confidence interval for Promotion 3 is (195.78, 247.14). Since these confidence intervals do overlap, it suggests that the true mean sales between Promotion 1 and Promotion 3 might not be significantly different at the 99% confidence level, which aligns with our failure to reject the null hypothesis in the t-test.
-- **The chance of type I error** (rejecting a correct H<sub>0</sub>) **is high**: 0.4264 (42.64%).
-- Practical significance: Cohen's d of 0.165 indicates a **small effect size**.
+- The 99% confidence interval hasve a small overlap, indicating that their mean sales could be similar in that range, although Promotion 1 generally has higher sales.
+- **The chance of type I error** (rejecting a correct H<sub>0</sub>) **is high**: 0.02136 (2.14%).
+- Practical significance: Cohen's d of 0.555 indicates a **medium effect size**.
 
 </br>
 

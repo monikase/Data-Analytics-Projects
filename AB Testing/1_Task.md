@@ -165,11 +165,15 @@ $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.632 $$
 
 </br>
 
-Now we have to check the practical significance:
+### Practical significance
 
 Pooled Standard Deviation :
 
-$s_p^2 = \frac{(n_1 - 1)s_x^2 + (n_2 - 1)s_y^2}{n_1 + n_2 - 2}$
+$s_p^2 = \frac{(n_1 - 1)s_x^2 + (n_2 - 1)s_y^2}{n_1 + n_2 - 2} = 60.988$
+
+Cohen's d:
+
+$d=(\bar{x}_1-\bar{x}_2)/s_p^2=0.706$
 
 </br>
   

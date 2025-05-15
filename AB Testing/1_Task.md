@@ -63,6 +63,18 @@ $\implies$ **After exploring the distribution of the variables in the three prom
 
  </br>
 
+## Target Metrics
+
+### Primary
+-  Mean Sales - to identify the promotion that leads the highest average sales
+- Statistical Significance of the Difference in Mean Sales (p-value)
+
+### Secondary
+- Effect Size (Cohen's d) - determine the practical significance.
+- Distribution within Each Promotion Group: Ensuring that the distribution of market sizes is similar across the promotion groups
+
+ </br>
+
 ## Calculations
 
 The table contains the metrics necessary to calculate the A/B test. Query is in the appendix.
@@ -100,23 +112,20 @@ The table contains the metrics necessary to calculate the A/B test. Query is in 
   </tr>
 </table>
 <p align="center"> <sup>Table 1. Metrics needed for Independent samples t-test</sup> </p align="center">
-</br>
+
 
 ## 1. Promotion 1 vs. Promotion 2
-</br>
-</br>
 
-First, we run t-test:
+#### First, using our extracted metric we perform t-test calculations:
+(Also can be found on [Google Spreadsheet](https://docs.google.com/spreadsheets/d/1MHubB4LabEpGiU_laga0oTvKTTpvIa4w-OtuR-zoGzU/edit?usp=sharing)) 
 
 $$ t-value = \frac{|\bar{x}_1 - \bar{x}_2|}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}} = \frac{|232.396 - 189.318|}{\sqrt{\frac{4110.463}{43} + \frac{3362.653}{47}}} = \frac{43.078}{\sqrt{167.138}} = 3.332 $$  
 
-</br>
 
 $$ df = {n_1} + {n_2} - 2 = 43 + 47 - 2 = 88 $$  
 
-$$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.632 $$
+<p align="center">critical t-value (from t-table) $$\approx 2.632 $$</p>
 
-</br>
 
 <table align="center">
 <tr>
@@ -132,28 +141,29 @@ $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.632 $$
   <td> 0.01 </td>
 </tr>
 </table>
-</br>
+
+#### And now we can compare and draw the conclusions:
 
 <table align="center">
 <tr>
-  <th> Explanation </th>
+  <th> Decision Rule </th>
   <th> Comparison </th>
   <th> Conclusion </th>
 </tr>
 <tr>
-  <td> t-value > critical value </td>
-  <td> 3.332 > 2.632 </td>
+  <td> Reject if t-value > critical t-value </td>
+  <td> t=3.332 > critical t=2.632 </td>
   <td> $\implies$ We can reject H<sub>0</sub> hypothesis </td>
 </tr>
  <tr>
-  <td> p-value < α </td>
-  <td> 0.0013 < 0.01 </td>
+  <td> Reject if p-value < α </td>
+  <td> p=0.0013 < α=0.01 </td>
   <td> $\implies$ We can reject H<sub>0</sub> hypothesis  </td>
 </tr>
 </table>
 </br>
 
-<p align="center"> We can also use <a href="https://www.evanmiller.org/ab-testing/t-test.html">Evan Miller 2 Sample T-Test</a> to do this test from raw sales data. Query is in the appendix. </p align="center">
+<p align="center"> We can also use <a href="https://www.evanmiller.org/ab-testing/t-test.html">Evan Miller 2 Sample T-Test</a> to do this test from raw sales data. (Query is in the appendix.) </p align="center">
 
 <p align="center"> <sub> Sample 1 - Promotion 1, Sample 2 - Promotion 2 </sub></p>
 
@@ -165,7 +175,7 @@ $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.632 $$
 
 </br>
 
-### Practical significance
+### And lastly, we perform Practical significance calculations:
 
 **Pooled Standard Deviation :**
 
@@ -181,7 +191,7 @@ $\implies$ Cohen's d = 0.706 indicates a large effect size.
   
 ### Validation: 
 
-$\implies$ **Since t-value > critical t-value, and p-value < α, H<sub>0</sub> is rejected.**  
+$\implies$ **Since t-value > critical t-value, and p-value < α, <font color=#FF0000>H<sub>0</sub> is rejected.</font>**  
 - **There is a significant difference** in the mean sales between Promotion 1 and Promotion 2. Promotion 1 mean > Promotion 2 mean.
 - **The chance of type I error** (rejecting a correct H<sub>0</sub>) **is small**: 0.00135 (0.14%).
 - Practical significance: Cohen's d of 0.706 indicates a **large effect size**.
@@ -194,15 +204,11 @@ $\implies$ **Since t-value > critical t-value, and p-value < α, H<sub>0</sub> i
 
 $$ t-value = \frac{|\bar{x}_1 - \bar{x}_3|}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_3^2}{n_3}}} = \frac{|232.396 - 221.458|}{\sqrt{\frac{4110.463}{43} + \frac{4294.897}{47}}} = \frac{10.938}{\sqrt{186.973}} = 0.7999 $$  
 
-</br>
 
 $$ df = {n_1} + {n_3} - 2 = 43 + 47 - 2 = 88 $$  
 
-</br>
-
 $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.635 $$
 
-</br>
 
 <table align="center">
 <tr>
@@ -222,18 +228,18 @@ $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.635 $$
 
 <table align="center">
 <tr>
-  <th> Explanation </th>
+  <th> Decision Criteria </th>
   <th> Comparison </th>
   <th> Conclusion </th>
 </tr>
 <tr>
-  <td> t-value < critical value </td>
-  <td> 0.7999 < 2.635 </td>
+  <td> Reject if t-value > critical t-value </td>
+  <td> t-value=0.7999 < critical t=2.635 </td>
   <td> $\implies$ We cannot reject H<sub>0</sub> hypothesis </td>
 </tr>
  <tr>
-  <td> p-value > α </td>
-  <td> 0.4259 > 0.01 </td>
+  <td> Reject if p-value < α </td>
+  <td> p-value=0.4259 > α=0.01 </td>
   <td> $\implies$ We cannot reject H<sub>0</sub> hypothesis </td>
 </tr>
 </table>
@@ -280,15 +286,12 @@ $\implies$ **Since t-value < critical t-value, and p-value > α, H<sub>0</sub> c
 
 $$ t-value = \frac{|\bar{x}_2 - \bar{x}_3|}{\sqrt{\frac{s_2^2}{n_2} + \frac{s_3^2}{n_3}}} = \frac{|189.318 - 221.458|}{\sqrt{\frac{3362.653}{47} + \frac{4294.897}{47}}} = \frac{32.14}{\sqrt{162.927}} = 2.518 $$  
 
-</br>
 
 $$ df = {n_2} + {n_3} - 2 = 47 + 47 - 2 = 92 $$  
 
-</br>
 
 $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.627 $$
 
-</br>
 
 <table align="center">
 <tr>
@@ -308,18 +311,18 @@ $$ t\text{-critical}\ value\ (\ from\ t-table\ )\ \approx 2.627 $$
 
 <table align="center">
 <tr>
-  <th> Explanation </th>
+  <th> Decision Criteria </th>
   <th> Comparison </th>
   <th> Conclusion </th>
 </tr>
 <tr>
-  <td> t-value < critical value </td>
-  <td> 2.518 < 2.627 </td>
+  <td> Reject if t-value > critical t-value </td>
+  <td> t-value=2.518 < critical t=2.627 </td>
   <td> $\implies$ We cannot reject H<sub>0</sub> hypothesis </td>
 </tr>
  <tr>
-  <td> p-value > α </td>
-  <td> 0.0135 > 0.01 </td>
+  <td> Reject if p-value < α </td>
+  <td> p-value=0.0135 > α=0.01 </td>
   <td> $\implies$ We cannot reject H<sub>0</sub> hypothesis </td>
 </tr>
 </table>
@@ -406,6 +409,10 @@ Given all the insights from the A/B test analysis, the most logical and data-dri
     <td> Even after implementing Promotion 1, continuous performance monitoring is crucial due to changing market conditions, competitor actions, and customer preferences, ensuring sustained success through sales and other relevant metric tracking. </td>
   </tr>
 </table> 
+
+</br>
+
+
 
 </br>
 

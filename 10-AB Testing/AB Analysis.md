@@ -42,7 +42,7 @@ From these charts we can see that:
 
 </br>
 
-$\implies$ **After exploring the distribution of the variables in the three promotion groups, we can verify that the sample groups are similar and the A/B testing results will be meaningful and trustworthy.**  
+$\implies$ **Examining variable distributions and adjusting sample size ensured group similarity, for meaningful and trustworthy A/B testing.**  
 
 </br>
 

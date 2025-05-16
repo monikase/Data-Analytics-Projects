@@ -185,13 +185,24 @@ Treatment Effect $\implies$ Promotion 1 led to aproximately 42.584 more in sales
 
 #### And lastly, we perform Practical significance calculations:
 
-**Pooled Standard Deviation :**
+</br>
+
+**Pooled Standard Deviation :**  
+Calculate the variance of two campaigns, assuming that they have equal variances.
 
 $s_p^2 = \frac{(n_1 - 1)s_1^2 + (n_2 - 1)s_2^2}{n_1 + n_2 - 2} = 31.673$
 
-**Effect size (Cohen's d):**
+**Effect size (Cohen's d):**  
+Calculate the measure of effect size that quantifies the standardized difference between the means of two groups. (How far apart two group means are in terms of their standard deviation)
 
 $d=(\bar{x}_1-\bar{x}_2)/s_p^2=1.344$
+
+| Decision Rule |
+| :----- |
+| d≈0.2 - Small effect  | 
+| d≈0.5 - Medium effect |
+| d≈0.8 or greater - Large effect |  
+
 
 $\implies$ Cohen's d = 1.344 indicates a large effect size.
 
@@ -236,6 +247,8 @@ $$ df = {n_1} + {n_3} - 2 = 36 + 36 - 2 = 70 $$
 </table>
 </br>
 
+#### Compare and draw the conclusions:
+
 <table align="center">
 <tr>
   <th> Decision Criteria </th>
@@ -273,13 +286,21 @@ Treatment Effect $\implies$ Promotion 1 resulted to aproximately 17.806 more in 
 
 #### Practical significance
 
-**Pooled Standard Deviation :**
+**Pooled Standard Deviation :**  
+Calculate the variance of two campaigns, assuming that they have equal variances.  
 
 $s_p^2 = \frac{(n_1 - 1)s_1^2 + (n_3 - 1)s_3^2}{n_1 + n_3 - 2} = 32.0845$
 
 **Effect size (Cohen's d):**
+Calculate the measure of effect size that quantifies the standardized difference between the means of two groups. (How far apart two group means are in terms of their standard deviation)  
 
 $d=(\bar{x}_1-\bar{x}_3)/s_p^2=0.555$
+
+| Decision Rule |
+| :----- |
+| d≈0.2 - Small effect  | 
+| d≈0.5 - Medium effect |
+| d≈0.8 or greater - Large effect | 
 
 $\implies$ Cohen's d = 0.555 indicates a medium effect size. 
 
@@ -325,6 +346,8 @@ $$ df = {n_2} + {n_3} - 2 = 36 + 36 - 2 = 70 $$
 </table>
 </br>
 
+#### Compare and draw the conclusions:
+
 <table align="center">
 <tr>
   <th> Decision Criteria </th>
@@ -363,12 +386,20 @@ Treatment Effect $\implies$ Promotion 3 resulted to aproximately 24.778 more in 
 #### Practical significance
 
 **Pooled Standard Deviation :**
+Calculate the variance of two campaigns, assuming that they have equal variances.  
 
 $s_p^2 = \frac{(n_2 - 1)s_2^2 + (n_3 - 1)s_3^2}{n_2 + n_3 - 2} = 30.449$
 
 **Effect size (Cohen's d):**
+Calculate the measure of effect size that quantifies the standardized difference between the means of two groups. (How far apart two group means are in terms of their standard deviation)  
 
 $d=(\bar{x}_2-\bar{x}_3)/s_p^2=-0.814$
+
+| Decision Rule |
+| :----- |
+| d≈0.2 - Small effect  | 
+| d≈0.5 - Medium effect |
+| d≈0.8 or greater - Large effect | 
 
 $\implies$ Cohen's d = -0.814 indicates a large effect size, with the negative sign signifying that the Promotion 3 has a higher mean than Promotion 2.
 

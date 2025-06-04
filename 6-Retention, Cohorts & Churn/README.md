@@ -12,6 +12,20 @@ Provide weekly subscriptions data that shows how many subscribers started their 
 ## Dashboard Overview
 ![image](https://github.com/user-attachments/assets/3c978d80-5a53-4eaa-bc55-ad8e9865e32e)
 
+## Summary
+
+**Retention & Churn Trends:**  
+- 88% retention after 6 weeks, but most churn happens in Weeks 1 & 2.  
+- December cohorts (Dec-07, Dec-21, Dec-28) show high retention, while early November cohorts have the lowest retention (85%).  
+- Churn rate starts increasing after Jan-04, signaling potential issues.
+ 
+**Recommended Actions:**  
+- Strengthen onboarding & early engagement to reduce initial churn.  
+- Analyze December cohorts to replicate successful strategies.  
+- Address user engagement challenges in lower-performing cohorts.  
+- Leverage holiday-driven campaigns beyond seasonal spikes.  
+
+
 
 
 

@@ -23,7 +23,9 @@ Over the past year, the company has achieved outstanding growth, redefining succ
 
 - Revenue increased by 57%  
 - Profit rising by 74% - reaching $6.18M  
-- Primarily driven by online sales growth of 186%.  
+- Primarily driven by online sales growth of 186%.
+- While B2B revenue grew by 30% to $36.3M, profitability dropped by 155%, resulting in a $636K loss.
+- The United States and Australia are the company’s top revenue drivers.
 
 ### Key Takeaways & Actionable Strategies:
 

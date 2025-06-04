@@ -9,6 +9,7 @@ Provide weekly subscriptions data that shows how many subscribers started their 
 
 Link to Full Analysis: [Google Sheets](https://docs.google.com/spreadsheets/d/1rUupRylEpHb4gzet9fhkJ3I1h27pNMVzXPU48Zscq5s/edit?usp=sharing)
 
+## Dashboard Overview
 ![image](https://github.com/user-attachments/assets/3c978d80-5a53-4eaa-bc55-ad8e9865e32e)
 
 

@@ -1,4 +1,4 @@
-## Advanced SQL using BigQuery
+# SQL Tasks (II) using BigQuery
 
 - Queries 1 : An overview of customers
 - Queries 2 : Reporting Sales' numbers

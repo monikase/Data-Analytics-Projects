@@ -15,5 +15,5 @@ The goal was to extract meaningful insights into business performance and prepar
 
 - Dashboard.pbix : Interactive PowerBI file
 - Dashboard.pdf : Overview of the dashboard
-- Sales Repord Intro.pdf : Explained steps of analysis
+- Sales Report Intro.pdf : Explained steps of analysis
 - Queries.sql : Queries used to extract data

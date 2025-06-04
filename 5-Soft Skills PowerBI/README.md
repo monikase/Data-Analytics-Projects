@@ -23,9 +23,9 @@ Over the past year, the company has achieved outstanding growth, redefining succ
 
 ### Key Takeaways & Actionable Strategies:
 
- •  Optimize B2B operations by improving pricing, negotiating vendor relationships, and addressing inefficiencies.  
- •  Expand online sales by launching Components online and targeting new markets.  
- •  Reevaluate underperforming products such as Caps and Jerseys, while scaling Accessories and optimizing bike pricing strategies.  
- •  Focus on high-potential regions, particularly Texas, California, and Washington, while expanding into Pennsylvania and Louisiana for additional revenue opportunities.  
+- Optimize B2B operations by improving pricing, negotiating vendor relationships, and addressing inefficiencies.  
+- Expand online sales by launching Components online and targeting new markets.  
+- Reevaluate underperforming products such as Caps and Jerseys, while scaling Accessories and optimizing bike pricing strategies.  
+- Focus on high-potential regions, particularly Texas, California, and Washington, while expanding into Pennsylvania and Louisiana for additional revenue opportunities.  
 
 

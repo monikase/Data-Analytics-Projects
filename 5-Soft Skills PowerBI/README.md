@@ -16,3 +16,16 @@ Provide a dashboard about business performance which then would be used for 2 pr
 ## Main Dashboard
 
 ![image](https://github.com/user-attachments/assets/5d685f4a-6279-4445-834a-07b5415626d0)
+
+## Summary & Key Insights
+
+Over the past year, the company has achieved outstanding growth, redefining success within its industry. Revenue increased by 57%, with profit rising by 74%, reaching $6.18M, driven primarily by online sales growth of 186%.
+
+### Key Takeaways & Actionable Strategies:
+
+• Optimize B2B operations by improving pricing, negotiating vendor relationships, and addressing inefficiencies.  
+• Expand online sales by launching Components online and targeting new markets.  
+• Reevaluate underperforming products such as Caps and Jerseys, while scaling Accessories and optimizing bike pricing strategies.  
+• Focus on high-potential regions, particularly Texas, California, and Washington, while expanding into Pennsylvania and Louisiana for additional revenue opportunities.  
+
+

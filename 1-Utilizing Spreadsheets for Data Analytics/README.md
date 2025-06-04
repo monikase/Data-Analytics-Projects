@@ -1,4 +1,4 @@
-## Business Sales & Performance Analysis
+# Business Sales & Performance Analysis
 
 This project aims to provide comprehensive analytical insights on the company's sales and operational performance, focusing on key trends and comparisons that can drive strategic decisions. The 'Overview' sheet will serve as a central dashboard, offering visualized data and meaningful insights.
 

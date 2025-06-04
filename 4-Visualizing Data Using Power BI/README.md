@@ -21,3 +21,5 @@ The goal was to extract meaningful insights into business performance and prepar
 Overview:  
 
 ![image](https://github.com/user-attachments/assets/1efc7641-7a7a-4138-8d15-7d0a8fa9b1ff)
+
+![me](https://github.com/monikase/Data-Analytics-Projects/blob/396cc4c70cf4163ab3fe1df7d13dffb471a5c5af/4-Visualizing%20Data%20Using%20Power%20BI/dashboard_view.gif)

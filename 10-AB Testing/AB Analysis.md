@@ -69,7 +69,7 @@ $\implies$ **Examining variable distributions and adjusting sample size ensured 
 ## Target Metrics
 
 ### Primary
--  Mean Sales - to identify the promotion that leads the highest average sales
+-  Sum of Sales - to identify the promotion that leads the highest average sales
 - Statistical Significance of the Difference in Mean Sales (p-value)
 
 ### Secondary

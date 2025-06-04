@@ -13,7 +13,7 @@ The goal was to extract meaningful insights into business performance and prepar
 
 ### Attachments:
 
-- [*Dashboard.pbix*](https://github.com/monikase/Data-Analytics-Projects/blob/d1b5f12ac7621ad311cb0b36c578f0a0c9a43c3d/4-Visualizing%20Data%20Using%20Power%20BI/BusinessDashboard.pbix) : Interactive PowerBI file
+- [*Dashboard.pbix*](https://github.com/monikase/Data-Analytics-Projects/blob/d1b5f12ac7621ad311cb0b36c578f0a0c9a43c3d/4-Visualizing%20Data%20Using%20Power%20BI/BusinessDashboard.pbix) : PowerBI file
 - [*Dashboard.pdf*](https://github.com/monikase/Data-Analytics-Projects/blob/efa1f6f4a729b200c11c8b5b967b95a6099f6b6a/4-Visualizing%20Data%20Using%20Power%20BI/Dashboard.pdf) : Full overview of the dashboard
 - [*Sales Report Intro.pdf*](https://github.com/monikase/Data-Analytics-Projects/blob/5affa0965b10cb731e0b2ac5fb67c25fa0d844a2/4-Visualizing%20Data%20Using%20Power%20BI/Sales%20Report%20Intro.pdf) : Explained steps of analysis
 - [*Queries.sql*](https://github.com/monikase/Data-Analytics-Projects/blob/5affa0965b10cb731e0b2ac5fb67c25fa0d844a2/4-Visualizing%20Data%20Using%20Power%20BI/Queries.sql) : Queries used to extract data

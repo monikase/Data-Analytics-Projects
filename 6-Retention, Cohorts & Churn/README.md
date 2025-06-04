@@ -12,7 +12,7 @@ Provide weekly subscriptions data that shows how many subscribers started their 
 ## Dashboard Overview
 ![image](https://github.com/user-attachments/assets/3c978d80-5a53-4eaa-bc55-ad8e9865e32e)
 
-## Summary of the Insights:
+## Summary of the Insights
 
 **Retention & Churn Trends:**  
 - 88% retention after 6 weeks, but most churn happens in Weeks 1 & 2.  

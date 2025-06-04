@@ -1,5 +1,5 @@
 # Fast Food Marketing Campaign A/B Test Analysis
-Full Analysis: [A\B Test Analysis](https://github.com/TuringCollegeSubmissions/msedui-MAT2.4.6/blob/5114afa5435ae80b41ab33494b2c67d5bfab4442/A%5CB%20Test%20Analysis.md)  
+Full Analysis: [A\B Test Analysis](https://github.com/monikase/Data-Analytics-Projects/blob/2cc9fa56e02ac040edbd016e3b33ea3606370eb1/_10-AB%20Testing/AB%20Analysis.md)  
 
 ### Summary
 

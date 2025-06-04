@@ -10,7 +10,8 @@ End result should show weekly retention cohorts for each week of data available 
 
 Link to Analysis: [Google Sheets](https://docs.google.com/spreadsheets/d/1rUupRylEpHb4gzet9fhkJ3I1h27pNMVzXPU48Zscq5s/edit?usp=sharing)
 
-![image](https://github.com/user-attachments/assets/e048a5f2-7bad-4412-a0a3-aca1022f8bd0)
+![image](https://github.com/user-attachments/assets/1ee4f01b-5322-4d6c-9952-9412e552f069)
+
 
 
 

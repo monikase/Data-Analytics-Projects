@@ -17,3 +17,7 @@ The goal was to extract meaningful insights into business performance and prepar
 - *Dashboard.pdf* : Overview of the dashboard
 - *Sales Report Intro.pdf* : Explained steps of analysis
 - *Queries.sql* : Queries used to extract data
+
+Overview:  
+
+![image](https://github.com/user-attachments/assets/1efc7641-7a7a-4138-8d15-7d0a8fa9b1ff)

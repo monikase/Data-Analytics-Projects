@@ -6,10 +6,10 @@ The goal was to extract meaningful insights into business performance and prepar
 
 ### Key Business Questions:
 
-•  How business performed over the year in terms of revenue and the number of sales orders?
-•  What are the trends in orders received from each sales channel, and which channel has generated the most revenue over time?
-•  How efficiently is the company delivering products to customers?
-•  How much revenue and how many sales orders have been received from each country, and which country has performed the best?
+•  How business performed over the year in terms of revenue and the number of sales orders?  
+•  What are the trends in orders received from each sales channel, and which channel has generated the most revenue over time?  
+•  How efficiently is the company delivering products to customers?  
+•  How much revenue and how many sales orders have been received from each country, and which country has performed the best?  
 
 ### Attachments:
 

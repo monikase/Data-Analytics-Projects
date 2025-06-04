@@ -2,7 +2,7 @@
 
 ## Requirements
 
-Provide 1 dashboard which then would be used use for 2 presentations for two departments:
+Provide a dashboard about business performance which then would be used for 2 presentations for two departments:
 
 1. Executive Overview [Presentation](https://my.visme.co/view/90deyd48-executive-summary#s1)
 2. Sales Analysis [Presentation](https://my.visme.co/view/1jzgn6pp-sales-analysis#s1)

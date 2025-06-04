@@ -19,7 +19,11 @@ Provide a dashboard about business performance which then would be used for 2 pr
 
 ## Summary & Key Insights
 
-Over the past year, the company has achieved outstanding growth, redefining success within its industry. Revenue increased by 57%, with profit rising by 74%, reaching $6.18M, driven primarily by online sales growth of 186%.
+Over the past year, the company has achieved outstanding growth, redefining success within its industry. 
+
+- Revenue increased by 57%  
+- Profit rising by 74% - reaching $6.18M  
+- Primarily driven by online sales growth of 186%.  
 
 ### Key Takeaways & Actionable Strategies:
 

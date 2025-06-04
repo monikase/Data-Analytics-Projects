@@ -1,6 +1,6 @@
 # Adventure Works Sales Dashboard using PowerBI
 
-In this project, I was working with Adventure Works Sales Orders dataset, which contains multiple sheets covering Sales Orders, Employees, Territory, and Sales Reasons data.  
+In this project, I was working with Adventure Works Sales Orders dataset, which contains multiple tables covering Sales Orders, Employees, Territory, and Sales Reasons data.  
 
 The goal was to extract meaningful insights into business performance and prepare an interactive, user-friendly dashboard with PowerBI.
 

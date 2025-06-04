@@ -1,4 +1,4 @@
-# Basic SQL tasks using BigQuery environment
+# SQL tasks using BigQuery environment
 
 - Query 1 : Products Overview
 - Query 2 : Work orders review

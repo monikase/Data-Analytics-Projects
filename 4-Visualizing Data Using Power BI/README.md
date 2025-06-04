@@ -18,6 +18,6 @@ The goal was to extract meaningful insights into business performance and prepar
 - [*Sales Report Intro.pdf*](https://github.com/monikase/Data-Analytics-Projects/blob/5affa0965b10cb731e0b2ac5fb67c25fa0d844a2/4-Visualizing%20Data%20Using%20Power%20BI/Sales%20Report%20Intro.pdf) : Explained steps of analysis
 - [*Queries.sql*](https://github.com/monikase/Data-Analytics-Projects/blob/5affa0965b10cb731e0b2ac5fb67c25fa0d844a2/4-Visualizing%20Data%20Using%20Power%20BI/Queries.sql) : Queries used to extract data
 
-Overview:  
+### Brief Overview:  
 
 ![me](https://github.com/monikase/Data-Analytics-Projects/blob/396cc4c70cf4163ab3fe1df7d13dffb471a5c5af/4-Visualizing%20Data%20Using%20Power%20BI/dashboard_view.gif)

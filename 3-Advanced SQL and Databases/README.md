@@ -6,7 +6,6 @@ Explanations and queries: [Google Sheet](https://docs.google.com/spreadsheets/d/
 
 ```sql
 /*
-1.4 TASK
 Business would like to extract data on all active customers from North America. Only customers that have either ordered no less than 2500 in total amount (with Tax) or ordered 5 + times should be presented.
 - In the output for these customers divide their address line into two columns
 - Order the output by country, state and date_last_order.

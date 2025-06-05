@@ -6,7 +6,7 @@ This analysis examines online shopping behavior, focusing on user interactions f
 
 • [*Funnel.sql*](https://github.com/monikase/Data-Analytics-Projects/blob/a719671e5eeb623d71f52cc9e7c76c83ff55c8ac/7-Funnel%20Analysis/Funnel.sql)
 
-**Funnel Analysis:** [Google Sheets](https://docs.google.com/spreadsheets/d/1RABDCjpsUpbF2IJrgsjek5JKrH36rfo995JiZcc2lHA/edit?usp=sharing)
+**Funnel Analysis & Process:** [Google Sheets](https://docs.google.com/spreadsheets/d/1RABDCjpsUpbF2IJrgsjek5JKrH36rfo995JiZcc2lHA/edit?usp=sharing)
 
 ## Overview
 

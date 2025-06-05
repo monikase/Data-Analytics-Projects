@@ -1,6 +1,6 @@
 # SQL Tasks (II) using BigQuery
 
-Explanations and queries: [Google Sheet](https://docs.google.com/spreadsheets/d/1dtS0I7dlqFrQQmTqkeSznCe86vQnYJearFEqzydz3ME/edit?usp=sharing)
+All queries with explanations: [Google Sheet](https://docs.google.com/spreadsheets/d/1dtS0I7dlqFrQQmTqkeSznCe86vQnYJearFEqzydz3ME/edit?usp=sharing)
 
 - Query 1.4 : An overview of customers
 

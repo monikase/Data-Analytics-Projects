@@ -9,7 +9,7 @@ Specifically, analyze:
 - Top-performing salespeople based on revenue and volume.
 - Leading countries in terms of sales, helping target market expansion strategies.
 - Major sales reasons, uncovering drivers behind successful transactions.
-- Additional insights that could offer valuable perspectives for business growth.
+
 By leveraging these data points, the project will deliver actionable intelligence, helping the business optimize sales strategies, improve logistical operations, and enhance overall performance.
 
 **Link to Google Sheets:** [Sales & Performance Analysis](https://docs.google.com/spreadsheets/d/18tJznePg0lrdk1OfUaUwF4GVFstI7-cxyRcSSb2r8I0/edit?usp=sharing)

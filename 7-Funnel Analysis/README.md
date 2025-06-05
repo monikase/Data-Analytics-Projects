@@ -1,6 +1,6 @@
 # Funnel Analysis
 
-This analysis examines online shopping behavior on 2021-02-07, focusing on user interactions from the top three countries: United States, India, and Canada. Highlighting drop-off rates, conversion percentages, and strategic insights to improve shopping conversions.
+This analysis examines online shopping behavior, focusing on user interactions from the top three countries: United States, India, and Canada. Highlighting drop-off rates, conversion percentages, and strategic insights to improve shopping conversions.
 
 ## Attachments
 

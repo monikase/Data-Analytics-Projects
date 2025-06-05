@@ -6,7 +6,7 @@ In this project, I analyzed the RFM dataset containing customer invoice details,
 
 ## Attachments
 
-• [*Query RFM.sql*](https://github.com/monikase/Data-Analytics-Projects/blob/8b5a31d71ef22855f6dc5ff430c3cf6f6362ad79/8-RFM%20Segments/RFM_Segments.sql)  
+• [*Query.sql*](https://github.com/monikase/Data-Analytics-Projects/blob/8b5a31d71ef22855f6dc5ff430c3cf6f6362ad79/8-RFM%20Segments/RFM_Segments.sql)  
 • [*PowerBI file*](https://github.com/monikase/Data-Analytics-Projects/blob/8b5a31d71ef22855f6dc5ff430c3cf6f6362ad79/8-RFM%20Segments/RFM.pbix)  
 • [*Analysis.pdf*](https://github.com/monikase/Data-Analytics-Projects/blob/8b5a31d71ef22855f6dc5ff430c3cf6f6362ad79/8-RFM%20Segments/RFM_Analysis.pdf)  
 

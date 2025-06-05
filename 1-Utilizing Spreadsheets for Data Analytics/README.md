@@ -1,6 +1,6 @@
 # Business Sales & Performance Analysis
 
-This project aims to provide comprehensive analytical insights on the company's sales and operational performance, focusing on key trends and comparisons that can drive strategic decisions. The 'Overview' sheet will serve as a central dashboard, offering visualized data and meaningful insights.
+This analysis provide comprehensive analytical insights on the company's sales and operational performance, focusing on key trends and comparisons that can drive strategic decisions. The 'Overview' sheet serve as a central dashboard, offering visualized data and meaningful insights.
 
 Specifically, analyze:
 - Monthly sales trends to identify patterns and seasonal variations.

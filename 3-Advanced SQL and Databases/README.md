@@ -123,13 +123,9 @@ LIMIT 500;
 
 ```sql
 /*
-2.4 TASK
 Enrich 2.3 query by adding taxes on a country level:
 - As taxes can vary in country based on province, the needed column is ‘mean_tax_rate’ -> average tax rate in a country.
-- Also, as not all regions have data on taxes, you also want to be transparent and show the ‘perc_provinces_w_tax’ -> a column representing the percentage of provinces with available tax rates for each country 
-(i.e. If US has 53 provinces, and 10 of them have tax rates, then for US it should show 0,19)
-- Hint: If a state has multiple tax rates, choose the higher one. Do not double count a state in country average rate calculation if it has multiple tax rates.
-- Hint: Ignore the isonlystateprovinceFlag rate mechanic, it is beyond the scope of this exercise. Treat all tax rates as equal.
+- Also, as not all regions have data on taxes, you also want to be transparent and show the ‘perc_provinces_w_tax’ -> a column representing the percentage of provinces with available tax rates for each country
 */
 
 -- CTES

@@ -16,9 +16,6 @@ In this project, I analyzed the RFM dataset containing customer invoice details,
 
 
 ## Conclusions
- 
-Customers are categorized based on Recency (last purchase date), Frequency (number of purchases), and Monetary value (total spending) to better understand their engagement levels.
-The most valuable customers have high spending frequency and recent purchases, making them ideal for loyalty and premium offers.
 
 High-Value vs. At-Risk Groups:
 - Top customers contribute significantly to revenue—focusing on retaining them through personalized offers, VIP benefits, and exclusive discounts can boost retention.

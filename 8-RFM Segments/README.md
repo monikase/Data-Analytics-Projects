@@ -7,4 +7,4 @@ In this project, I analyzed the RFM dataset containing customer invoice details,
 
 ## Overview
 
-![image](https://github.com/user-attachments/assets/7e897f7f-0b85-4688-8c94-1e2e7e18fbc9)
+![image](https://github.com/user-attachments/assets/86061ace-53c6-4a32-8acc-171c3e93ab84)

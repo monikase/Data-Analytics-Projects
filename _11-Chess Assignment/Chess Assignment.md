@@ -327,7 +327,40 @@ def get_queen_captures(position: str, board: dict[str, str]) -> list[str]:
 
 **Mini-task 5.6: Capture logic for a king**
 
+The king moves one square in any direction.
+- Create a list of 8 possible one-step directions (diagonals, vertical, horizontal).
+- For each direction:
+   - Calculate the new position
+   - If that square contains a piece, add it to the capture list.
+
 ```python
+# Determines the pieces a king can capture from its current position.
+def get_king_captures(position: str, board: dict[str, str]) -> list[str]:
+    """
+    Capture rules for a king:
+    - A king can move one square in any direction.
+    - The king can capture any piece on a square within one move.
+    """
+    if not is_valid_position(position) or position not in board or board[position] != "king":
+        return []
+    capturable_positions = []
+    file = ord(position[0])  # 'a' to 'h'
+    rank = int(position[1])   # '1' to '8'
+    directions = [
+        (-1, -1), (-1, 0), (-1, 1),
+        ( 0, -1),          ( 0, 1),
+        ( 1, -1), ( 1, 0), ( 1, 1)
+    ]
+
+    for d_file, d_rank in directions:
+        current_file = file + d_file
+        current_rank = rank + d_rank
+        if ord('a') <= current_file <= ord('h') and 1 <= current_rank <= 8:
+            current_pos = f"{chr(current_file)}{current_rank}"
+            if current_pos in board:
+                capturable_positions.append(current_pos)
+
+    return capturable_positions
 ```
 
 **Mini-task 6: Check which black pieces the white piece can capture**

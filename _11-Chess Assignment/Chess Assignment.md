@@ -285,7 +285,7 @@ def get_bishop_captures(position: str, board: dict[str, str]) -> list[str]:
 
 **Mini-task 5.5: Capture logic for a queen**
 
-The queen combines the movement logic of both rook and bishop:
+The queen combines the movement logic of both **rook** and **bishop**:
 - Combine all these movement directions in a list of tuples
 - Iterate through each direction with the same approach as used for the rook and bishop 
 

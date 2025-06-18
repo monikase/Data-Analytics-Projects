@@ -197,8 +197,8 @@ def get_rook_captures(position: str, board: dict[str, str]) -> list[str]:
             current_pos = f"{chr(current_file)}{current_rank}"
             if current_pos in board:
                 capturable_positions.append(current_pos)
-                break  # Stop in this direction after finding the first piece
-            current_file += d_file
+                break                 # Stop in this direction after finding the first piece
+            current_file += d_file    # If not, continue on that same direction
             current_rank += d_rank
 
     return capturable_positions

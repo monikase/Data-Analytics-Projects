@@ -365,7 +365,34 @@ def get_king_captures(position: str, board: dict[str, str]) -> list[str]:
 
 **Mini-task 6: Check which black pieces the white piece can capture**
 
+Logic Summary:
+- Given a white piece’s type and position, determine which black pieces it can capture based on its movement rules.
+- Check the type of white piece using conditional statements.
+- Depending on the piece type, call the corresponding capture function to calculate possible capture positions.
+- Each of these helper functions returns a list of black-piece positions that are within capturing range.
+- If the piece type isn’t recognized, return an empty list.
+
 ```python
+# Determines which black pieces the white piece can capture.
+def get_capturable_pieces(board: dict[str, str], white_piece: str, white_position: str) -> list[str]:
+
+    capturable_positions = []
+    if white_piece == "pawn":
+        capturable_positions = get_pawn_captures(white_position, board)
+    elif white_piece == "rook":
+        capturable_positions = get_rook_captures(white_position, board)
+    elif white_piece == "bishop":
+        capturable_positions = get_bishop_captures(white_position, board)
+    elif white_piece == "knight":
+        capturable_positions = get_knight_captures(white_position, board)
+    elif white_piece == "queen":
+        capturable_positions = get_queen_captures(white_position, board)
+    elif white_piece == "king":
+        capturable_positions = get_king_captures(white_position, board)
+    else:
+        return []
+
+    return capturable_positions
 ```
 
 **Mini-task 7: Main flow to gather user input and determine capturable pieces**

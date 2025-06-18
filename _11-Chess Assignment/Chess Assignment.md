@@ -7,10 +7,10 @@ Implement a Python program that will answer a simple question – given a board 
 ### Primary Requirements
 
 **1. User Input for White Piece**  
-   • Prompt the user to input a white piece and its position on the board.  
-   • User must choose between two predefined piece types (e.g., pawn and rook).  
-   • The input format must be: (e.g., knight a5).  
-   • The program must confirm a successful addition or display an error message if the input is invalid.  
+- Prompt the user to input a white piece and its position on the board.  
+- User must choose between two predefined piece types (e.g., pawn and rook).  
+- The input format must be: (e.g., knight a5).  
+- The program must confirm a successful addition or display an error message if the input is invalid.  
    
 **2. User Input for Black Pieces** 
    • After the white piece is set, the user must input the black pieces one by one.  

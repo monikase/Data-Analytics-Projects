@@ -127,6 +127,9 @@ def get_pawn_captures(position: str, board: dict[str, str]) -> list[str]:
     - Pawns cannot capture pieces directly in front of them.
     - Only the first piece encountered diagonally can be captured.
     """
+    if not is_valid_position(position) or position not in board or board[position] != "pawn":
+        return []
+
     capturable_positions = []
     file = ord(position[0])  # 'a' to 'h' convert to ASCII number
     rank = int(position[1])   # '1' to '8'
@@ -156,7 +159,45 @@ def get_pawn_captures(position: str, board: dict[str, str]) -> list[str]:
 
 **Mini-task 5.2: Capture logic for a rook**
 
+For the rook logic we need slightly different approach:
+- Define possible movement directions in tuples ( Up (+rank), Down (-rank), Right (+file), Left(-file) )
+- Go through all possible directions until encounter a piece
+
 ```python
+# Determines the pieces a rook can capture from its current position.
+def get_rook_captures(position: str, board: dict[str, str]) -> list[str]:
+    """
+    Capture rules for a rook:
+    - A rook can capture pieces in a straight line horizontally or vertically.
+    - A rook on e4 is hitting e1-e8 and a4-h4 squares
+    - The rook can only capture the first piece encountered in any direction.
+    - If a piece obstructs the path, further positions in that direction are not reachable.
+ 
+    if not is_valid_position(position) or position not in board or board[position] != "rook":
+        return []
+
+    capturable_positions = []
+    file = ord(position[0])  # 'a' to 'h'
+    rank = int(position[1])   # '1' to '8'
+
+    directions = [(0, 1), (0, -1), (1, 0), (-1, 0)] # Up, Down, Right, Left
+
+    # Loop all directions
+    for d_file, d_rank in directions:
+        current_file = file + d_file
+        current_rank = rank + d_rank
+
+        # Inside each direction simulate steps until encounter the piece or go off board
+        while ord('a') <= current_file <= ord('h') and 1 <= current_rank <= 8:
+            # Convert numeric file back into position string
+            current_pos = f"{chr(current_file)}{current_rank}"
+            if current_pos in board:
+                capturable_positions.append(current_pos)
+                break  # Stop in this direction after finding the first piece
+            current_file += d_file
+            current_rank += d_rank
+
+    return capturable_positions
 ```
 
 **Mini-task 5.3: Capture logic for a knight**

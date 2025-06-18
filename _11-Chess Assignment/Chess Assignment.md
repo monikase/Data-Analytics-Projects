@@ -172,7 +172,7 @@ def get_rook_captures(position: str, board: dict[str, str]) -> list[str]:
     - A rook on e4 is hitting e1-e8 and a4-h4 squares
     - The rook can only capture the first piece encountered in any direction.
     - If a piece obstructs the path, further positions in that direction are not reachable.
- 
+    """
     if not is_valid_position(position) or position not in board or board[position] != "rook":
         return []
 

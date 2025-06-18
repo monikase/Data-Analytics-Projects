@@ -65,7 +65,7 @@ def is_valid_piece(piece: str) -> bool:
 **Mini-task 2: Validate a position on the chessboard**
 
 ```python
-# Validate a position on the chessboard
+# Checks if the given position is valid on a chessboard.
 def is_valid_position(position: str) -> bool:
     """
     A valid chess position:
@@ -88,6 +88,7 @@ def is_valid_position(position: str) -> bool:
 **Mini-task 3: Parse user input for a piece and its position**
 
 ```python
+# Parses the input string for a piece and its position into tuple: fixed size, ordered collection.
 def parse_piece_input(input_str: str) -> tuple[str, str] | None:
 
     parts = input_str.split()
@@ -98,6 +99,15 @@ def parse_piece_input(input_str: str) -> tuple[str, str] | None:
 
 **Mini-task 4: Add a piece to the board**
 
+```python
+# Adds a piece to the board if the position is valid and not already occupied.
+def add_piece(board: dict[str, str], piece: str, position: str) -> bool:
+
+    if is_valid_position(position) and position not in board:
+        board[position] = piece
+        return True
+    return False
+```
 
 
 

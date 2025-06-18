@@ -107,11 +107,14 @@ def add_piece(board: dict[str, str], piece: str, position: str) -> bool:
 
 **Mini-task 5.1: Capture logic for a pawn**
 
-- In this part, we need to convert the position letters 'a' to 'h' to ASCII numbers using ord(), and convert them back</br>
-  to letters using the chr() function, since Python can't directly do math like 'e' - 1' (e.g., ord('a') returns 97; chr(97) returns 'a').
-
-- Set the direction of pawn movement. For white, pawns move up the board (increasing rank).
-
+In this part we have to determine logic for a pawn through this steps:  
+- Create an empty list to store potential capture positions.
+- Extract the file (position[0]) and rank (position[1]) from the pawn’s current position.
+- Convert the file letter ('a' to 'h') to its ASCII number using ord(), and convert it back using chr() — since Python</b>
+  doesn’t support character arithmetic directly (e.g., ord('a') returns 97; chr(97) returns 'a').
+- Set the direction of pawn movement. For white pawns, this means moving up the board (increasing rank).
+- Check the diagonally forward-left and forward-right squares, making sure they stay within the board boundaries.
+- Construct those new positions and check if they exist in the board dictionary—if so, append them to the capture list.
 
 ```python
 # Determine the pieces a pawn can capture from its current position.

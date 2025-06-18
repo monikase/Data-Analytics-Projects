@@ -285,7 +285,44 @@ def get_bishop_captures(position: str, board: dict[str, str]) -> list[str]:
 
 **Mini-task 5.5: Capture logic for a queen**
 
+The queen combines the movement logic of both rook and bishop:
+- Combine all these movement directions in a list of tuples
+- Iterate through each direction with the same approach as used for the rook and bishop 
+
 ```python
+#Determines the pieces a queen can capture from its current position.
+def get_queen_captures(position: str, board: dict[str, str]) -> list[str]:
+    """
+    Capture rules for a queen:
+    - A queen can move horizontally, vertically, or diagonally.
+    - The queen can only capture the first piece encountered in any direction.
+    - If a piece obstructs the path, further positions in that direction are not reachable.
+    """
+    if not is_valid_position(position) or position not in board or board[position] != "queen":
+        return []
+
+    capturable_positions = []
+    file = ord(position[0])  # 'a' to 'h'
+    rank = int(position[1])   # '1' to '8'
+
+    directions = [
+        (0, 1), (0, -1), (1, 0), (-1, 0),  # Vertical and horizontal
+        (-1, -1), (-1, 1), (1, -1), (1, 1)  # Diagonal
+    ]
+
+    for d_file, d_rank in directions:
+        current_file = file + d_file
+        current_rank = rank + d_rank
+
+        while ord('a') <= current_file <= ord('h') and 1 <= current_rank <= 8:
+            current_pos = f"{chr(current_file)}{current_rank}"
+            if current_pos in board:
+                capturable_positions.append(current_pos)
+                break  # Stop in this direction after finding the first piece
+            current_file += d_file
+            current_rank += d_rank
+
+    return capturable_positions
 ```
 
 **Mini-task 5.6: Capture logic for a king**

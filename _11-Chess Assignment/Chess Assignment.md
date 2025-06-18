@@ -4,7 +4,7 @@
 
 Implement a Python program that will answer a simple question – given a board state that the user enters, with 1 white figure and up to 16 black figures, which black figures can the white figure take?
 
-### Primary Requierements
+### Primary Requirements
 
 **1. User Input for White Piece**  
    • Prompt the user to input a white piece and its position on the board.  

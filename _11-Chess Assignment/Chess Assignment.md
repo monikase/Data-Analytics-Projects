@@ -36,7 +36,7 @@ Implement a Python program that will answer a simple question – given a board 
 
 ### Mini Tasks
 
-First let's break it down. Successfully completing these mini-tasks will provide the foundational building blocks needed to assemble the final program. The minitasks are these:
+First let's break it down. Successfully completing these mini-tasks will provide the foundational building blocks needed to assemble the final program:
 
 - Mini-task 1: Validate a chess piece
 - Mini-task 2: Validate a position on the chessboard
@@ -50,3 +50,19 @@ First let's break it down. Successfully completing these mini-tasks will provide
 - Mini-task 5.6: Capture logic for a king
 - Mini-task 6: Check which black pieces the white piece can capture
 - Mini-task 7: Main flow to gather user input and determine capturable pieces
+
+---
+
+**Mini-task 1: Validate a chess piece**
+
+```
+# Checks if the given piece is a valid chess piece from the list.
+def is_valid_piece(piece: str) -> bool:
+    valid_pieces = ["pawn", "knight", "bishop", "rook", "queen", "king"]
+    return piece in valid_pieces
+```
+
+**Mini-task 2: Validate a position on the chessboard**
+
+
+

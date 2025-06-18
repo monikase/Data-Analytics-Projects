@@ -22,7 +22,7 @@ Implement a Python program that will answer a simple question – given a board 
 **3. Input Validation**  
 - The program must ensure that input coordinates follow the correct format (where the letter is a-h and the digit is 1-8, e.g., a1, d4, h8).  
 - The program must handle edge cases, such as:  
-       • Attempting to enter "done" before adding at least one black piece.  
+       -- Attempting to enter "done" before adding at least one black piece.  
        • Providing invalid chess piece names.  
        • Entering out-of-bounds coordinates.  
 

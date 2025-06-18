@@ -162,9 +162,9 @@ def get_pawn_captures(position: str, board: dict[str, str]) -> list[str]:
 For the rook logic we need slightly different approach:
 - Define movement directions as tuples: ( Up (0, +1), Down (0, -1), Right (+1, 0), Left(-1, 0) )
 - For each direction simulate step-by-step movement:
--       At each new square, construct the position string
--       If the square is empty, continue moving
--       If the square contains a piece, add it to capture list and stop in that direction
+   - At each new square, construct the position string
+   - If the square is empty, continue moving
+   - If the square contains a piece, add it to capture list and stop in that direction
 - Make sure all generated positions stay within board boundaries
 
 ```python

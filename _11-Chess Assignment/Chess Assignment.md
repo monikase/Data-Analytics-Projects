@@ -206,7 +206,40 @@ def get_rook_captures(position: str, board: dict[str, str]) -> list[str]:
 
 **Mini-task 5.3: Capture logic for a knight**
 
+A knight moves in an "L" shape: two squares in one direction and one square perpendicular.
+- Create a list of tuples, where each tuple represents one of the knight’s eight possible moves (as offsets in file and rank).
+- Iterate through each move, applying offset to the knight's current position.
+- If the constructed position is valid and contains a piece, treat it as a potential capture.
+
 ```python
+# Determines the pieces a knight can capture from its current position.
+def get_knight_captures(position: str, board: dict[str, str]) -> list[str]:
+    """
+    Capture rules for a knight:
+    - A knight moves in an "L" shape.
+    - Knights can jump over other pieces and are not obstructed.
+    - Can capture any piece at its landing position.
+    """
+    if not is_valid_position(position) or position not in board or board[position] != "knight":
+        return []
+
+    capturable_positions = []
+    file = ord(position[0])  # 'a' to 'h'
+    rank = int(position[1])   # '1' to '8'
+
+    knight_moves = [
+        (-2, -1), (-2, 1), (-1, -2), (-1, 2),
+        ( 1, -2), ( 1, 2), ( 2, -1), ( 2, 1)
+    ]
+    for d_file, d_rank in knight_moves:
+        current_file = file + d_file
+        current_rank = rank + d_rank
+        if ord('a') <= current_file <= ord('h') and 1 <= current_rank <= 8:
+            current_pos = f"{chr(current_file)}{current_rank}"
+            if current_pos in board:
+                capturable_positions.append(current_pos)
+
+    return capturable_positions
 ```
 
 **Mini-task 5.4: Capture logic for a bishop**

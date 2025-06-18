@@ -105,17 +105,81 @@ def add_piece(board: dict[str, str], piece: str, position: str) -> bool:
     return False
 ```
 
+**Mini-task 5.1: Capture logic for a pawn**
+
+- In this part we have to convert our position letters 'a' to 'h' to ASCII number using ord() function because Python can't directly do math like 'e' - 1.
+-       e.g. ord('a')  # returns 65
 
 
 
+```python
+# Determine the pieces a pawn can capture from its current position.
+def get_pawn_captures(position: str, board: dict[str, str]) -> list[str]:
+    """
+    Capture rules for a pawn:
+    - A pawn can capture diagonally forward one square.
+    - A pawn (white) on e4 is hitting d5 and f5
+    - Pawns cannot capture pieces directly in front of them.
+    - Only the first piece encountered diagonally can be captured.
+    """
+    capturable_positions = []
+    file = ord(position[0])  # 'a' to 'h' convert to ASCII number
+    rank = int(position[1])   # '1' to '8'
 
-Mini-task 5.1: Capture logic for a pawn
-Mini-task 5.2: Capture logic for a rook
-Mini-task 5.3: Capture logic for a knight
-Mini-task 5.4: Capture logic for a bishop
-Mini-task 5.5: Capture logic for a queen
-Mini-task 5.6: Capture logic for a king
-Mini-task 6: Check which black pieces the white piece can capture
-Mini-task 7: Main flow to gather user input and determine capturable pieces
+    # Determine pawn movement direction
+    rank_direction = 1
+
+    if file > ord('a') and 1 <= (rank + rank_direction) <= 8:
+        left_capture_file = chr(file - 1)
+        left_capture_rank = rank + rank_direction
+        left_capture_pos = f"{left_capture_file}{left_capture_rank}"
+        if left_capture_pos in board:
+            capturable_positions.append(left_capture_pos)
+
+    # Check for captures on the right diagonal
+    if file < ord('h') and 1 <= (rank + rank_direction) <= 8:
+        right_capture_file = chr(file + 1)
+        right_capture_rank = rank + rank_direction
+        right_capture_pos = f"{right_capture_file}{right_capture_rank}"
+        if right_capture_pos in board:
+            capturable_positions.append(right_capture_pos)
+
+    return capturable_positions
+```
+
+**Mini-task 5.2: Capture logic for a rook**
+
+```python
+```
+
+**Mini-task 5.3: Capture logic for a knight**
+
+```python
+```
+
+**Mini-task 5.4: Capture logic for a bishop**
+
+```python
+```
+
+**Mini-task 5.5: Capture logic for a queen**
+
+```python
+```
+
+**Mini-task 5.6: Capture logic for a king**
+
+```python
+```
+
+**Mini-task 6: Check which black pieces the white piece can capture**
+
+```python
+```
+
+**Mini-task 7: Main flow to gather user input and determine capturable pieces**
+
+```python
+```
 
 

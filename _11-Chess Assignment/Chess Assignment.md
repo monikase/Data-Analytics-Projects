@@ -75,10 +75,8 @@ def is_valid_position(position: str) -> bool:
     """
     if len(position) != 2:
         return False
-
     if position[0] < 'a' or position[0] > 'h':
-        return False
-    
+        return False    
     if position[1] < '1' or position[1] > '8':
         return False
     
@@ -90,7 +88,6 @@ def is_valid_position(position: str) -> bool:
 ```python
 # Parses the input string for a piece and its position into tuple: fixed size, ordered collection.
 def parse_piece_input(input_str: str) -> tuple[str, str] | None:
-
     parts = input_str.split()
     if len(parts) == 2 and is_valid_piece(parts[0]) and is_valid_position(parts[1]):
         return parts[0], parts[1]
@@ -102,7 +99,6 @@ def parse_piece_input(input_str: str) -> tuple[str, str] | None:
 ```python
 # Adds a piece to the board if the position is valid and not already occupied.
 def add_piece(board: dict[str, str], piece: str, position: str) -> bool:
-
     if is_valid_position(position) and position not in board:
         board[position] = piece
         return True

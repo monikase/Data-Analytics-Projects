@@ -107,7 +107,7 @@ def add_piece(board: dict[str, str], piece: str, position: str) -> bool:
 
 **Mini-task 5.1: Capture logic for a pawn**
 
-- In this part we have to convert our position letters 'a' to 'h' to ASCII number using ord() function\ because Python can't directly do math like 'e' - 1. (e.g. ord('a')  # returns 65)
+- In this part we have to convert our position letters 'a' to 'h' to ASCII number using ord() function</br> because Python can't directly do math like 'e' - 1. (e.g. ord('a')  # returns 65)
 - Set the direction of pawn movement. For white, pawns move up the board (increasing rank).
 
 

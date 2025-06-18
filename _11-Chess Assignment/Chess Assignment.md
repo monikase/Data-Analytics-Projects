@@ -64,5 +64,52 @@ def is_valid_piece(piece: str) -> bool:
 
 **Mini-task 2: Validate a position on the chessboard**
 
+```python
+# Validate a position on the chessboard
+def is_valid_position(position: str) -> bool:
+    """
+    A valid chess position:
+    - Must be exactly two characters long.
+    - The first character must be a letter between 'a' and 'h' (inclusive).
+    - The second character must be a digit between '1' and '8' (inclusive).
+    """
+    if len(position) != 2:
+        return False
+
+    if position[0] < 'a' or position[0] > 'h':
+        return False
+    
+    if position[1] < '1' or position[1] > '8':
+        return False
+    
+    return True
+```
+
+**Mini-task 3: Parse user input for a piece and its position**
+
+```python
+def parse_piece_input(input_str: str) -> tuple[str, str] | None:
+
+    parts = input_str.split()
+    if len(parts) == 2 and is_valid_piece(parts[0]) and is_valid_position(parts[1]):
+        return parts[0], parts[1]
+    return None
+```
+
+**Mini-task 4: Add a piece to the board**
+
+
+
+
+
+
+Mini-task 5.1: Capture logic for a pawn
+Mini-task 5.2: Capture logic for a rook
+Mini-task 5.3: Capture logic for a knight
+Mini-task 5.4: Capture logic for a bishop
+Mini-task 5.5: Capture logic for a queen
+Mini-task 5.6: Capture logic for a king
+Mini-task 6: Check which black pieces the white piece can capture
+Mini-task 7: Main flow to gather user input and determine capturable pieces
 
 

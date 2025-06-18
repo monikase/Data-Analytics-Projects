@@ -55,7 +55,7 @@ First let's break it down. Successfully completing these mini-tasks will provide
 
 **Mini-task 1: Validate a chess piece**
 
-```
+```python
 # Checks if the given piece is a valid chess piece from the list.
 def is_valid_piece(piece: str) -> bool:
     valid_pieces = ["pawn", "knight", "bishop", "rook", "queen", "king"]

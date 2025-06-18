@@ -115,6 +115,7 @@ In this part we have to determine logic for a pawn through this steps:
 - Set the direction of pawn movement. For white pawns, this means moving up the board (increasing rank).
 - Check the diagonally forward-left and forward-right squares, making sure they stay within the board boundaries.
 - Construct those new positions and check if they exist in the board dictionary—if so, append them to the capture list.
+</br>
 
 ```python
 # Determine the pieces a pawn can capture from its current position.
@@ -133,8 +134,7 @@ def get_pawn_captures(position: str, board: dict[str, str]) -> list[str]:
     # Determine pawn movement direction
     rank_direction = 1
 
-    # Check Diagonal Left Captures
-    # Checks if the pawn is not on the leftmost column ('a') and its next rank is within bounds.
+    # Check Diagonal Left Capture
     if file > ord('a') and 1 <= (rank + rank_direction) <= 8:
         # chr() converts ASCII number to the letter
         left_capture_file = chr(file - 1)
@@ -143,7 +143,7 @@ def get_pawn_captures(position: str, board: dict[str, str]) -> list[str]:
         if left_capture_pos in board:
             capturable_positions.append(left_capture_pos)
 
-    # Check for captures on the right diagonal
+    # Check Diagonal Left Capture
     if file < ord('h') and 1 <= (rank + rank_direction) <= 8:
         right_capture_file = chr(file + 1)
         right_capture_rank = rank + rank_direction

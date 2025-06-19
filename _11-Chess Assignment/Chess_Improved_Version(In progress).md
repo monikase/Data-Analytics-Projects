@@ -188,6 +188,42 @@ def add_piece(board: dict, piece: str, position: str, color: str) -> bool:    # 
     return False
 ```
 
+### UPDATE: gat_pawn_captures():
+
+Implementing color aware logic
+- Direction Based on Color
+- Capture conditions
+
+```python
+# Mini-task 5.1: Capture logic for a pawn
+def get_pawn_captures(position: str, board: dict[str, str]) -> list[str]:
+    
+    # Check piece name from tuple and get its color.
+    if not is_valid_position(position) or position not in board or board[position][0] != "pawn":
+        return []
+
+    capturable_positions = []
+    file = ord(position[0])  # 'a' to 'h'
+    rank = int(position[1])   # '1' to '8'
+    color = board[position][1]                                        # UPDATE: Get the color
+
+    # Determine pawn movement direction BASED ON ITS COLOR 
+    rank_direction = 1 if color == "white" else -1                    # UPDATE: Change direction if it is not white
+
+    # Check for captures on the left diagonal
+    if file > ord('a'):
+        left_capture_pos = f"{chr(file - 1)}{rank + rank_direction}"
+        if left_capture_pos in board and board[left_capture_pos][1] != color:   # UPDATE: Check if the target piece is of the opposite color.
+            capturable_positions.append(left_capture_pos)
+
+    # Check for captures on the right diagonal
+    if file < ord('h'):
+        right_capture_pos = f"{chr(file + 1)}{rank + rank_direction}"
+        if right_capture_pos in board and board[right_capture_pos][1] != color: # UPDATE: Check if the target piece is of the opposite color.
+            capturable_positions.append(right_capture_pos)
+
+    return capturable_positions
+```
 
 Same code printed different output through different platforms:
 

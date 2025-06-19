@@ -42,7 +42,7 @@ This program will start from the code written for Chess_Mini_Tasks.
 
 ## 1. Implement a Nice Visualization Function
 
-### get_chess_piece_symbol()
+### NEW: get_chess_piece_symbol()
   - Create a function to print the chessboard using Unicode chess symbols to represent each piece accurately.
   - Ensure proper alignment of pieces in an 8x8 grid, with row and column labels.
 
@@ -76,7 +76,7 @@ def get_chess_piece_symbol(piece: str, color: str) -> str:
     return symbols[piece][color]
 ```
 
-### Print board function:
+### NEW: print_the_board():
 - Set width of each board cell, and build 8x8 board grid 
 - Map file letters ('a' to 'h') to column indices: {'a': 0, 'b': 1, ..., 'h': 7}
 - Loop through board dictionary, which maps positions to tuples of piece type and **color** 
@@ -118,9 +118,9 @@ def print_the_board(board: dict) -> None:
     print(f"   {file_labels_str}   ")
 ```
 
-### We also need to update main() function:
+### UPDATE: main():
 
-- Add variable for the piece color
+We need to update our main function adding variable for the piece color
 
 ```python
 def main() -> None:
@@ -172,6 +172,8 @@ def main() -> None:
     else:
         print("No capturable pieces found.")
 ```
+
+### UPDATE: add_piece():
 
 Now calling add_piece function takes 3 positional arguments but 4 were given, so we need an update:
 

@@ -232,7 +232,8 @@ Similarly we have to adjust all other pieces.
 ![image](https://github.com/user-attachments/assets/3d28d1f0-ffb6-4148-b38c-3d3d10c1e4d1)
 
 
-### !!! Same code printed different output through different terminal:
+### ⚠️ Note: The visual layout of the chessboard may appear differently depending on the terminal or editor you're using. In particular, character alignment may vary between platforms like Google Colab and VS Code.
+
 
 
 ![image](https://github.com/user-attachments/assets/182bf905-441d-4d3c-9b94-f4c7e2e8e894)

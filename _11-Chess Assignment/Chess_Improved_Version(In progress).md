@@ -1,6 +1,6 @@
 # A Chess Question
 
-### Project Goal
+## 1. Implement a Nice Visualization Function
 
 This Python code simulates a simplified chess game, an improved version of [Chess Mini Tasks](https://github.com/monikase/Data-Analytics-Projects/blob/main/_11-Chess%20Assignment/Chess_Mini_Tasks.md), allowing users:
 

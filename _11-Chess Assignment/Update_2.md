@@ -242,6 +242,8 @@ def main() -> None:
     print_the_board(board, highlighted_squares=attackable_squares)
 ```
 
+---
+
 ## Output:
 
 ![image](https://github.com/user-attachments/assets/64c70a62-9f43-4a1a-950e-1eb7f7758370)

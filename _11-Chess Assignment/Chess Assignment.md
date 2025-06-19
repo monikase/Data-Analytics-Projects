@@ -450,7 +450,8 @@ def main() -> None:
             else:
                 print(f"Invalid input or position '{white_position}' is already occupied. Please try again.")
         else:
-            print("Invalid input format or invalid piece/position. Please use the format 'piece position' (e.g., 'pawn e4').")
+            print("Invalid input format or invalid piece/position.
+            Please use the format 'piece position' (e.g., 'pawn e4').")
 
     # 2. Get up to 16 black pieces from console
     for i in range(16):
@@ -469,7 +470,7 @@ def main() -> None:
             else:
                 print(f"Invalid input or position '{black_position}' is already occupied. Please try again.")
         else:
-            print("Invalid input format or invalid piece/position. \
+            print("Invalid input format or invalid piece/position.
             Please use the format 'piece position' (e.g., 'bishop c5').")
         
     # 3. Calculate capturable pieces

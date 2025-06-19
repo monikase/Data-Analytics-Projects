@@ -103,9 +103,10 @@ def print_the_board(board: dict[str, tuple[str, str]]) -> None:
     print(file_labels)
 ```
 
-Same code printed output:
+Same code printed different output through different platforms:
 
-![image (1)](https://github.com/user-attachments/assets/e6f3272b-a883-427e-abba-a80489393ceb)
+![image](https://github.com/user-attachments/assets/182bf905-441d-4d3c-9b94-f4c7e2e8e894)
+
 
 
 

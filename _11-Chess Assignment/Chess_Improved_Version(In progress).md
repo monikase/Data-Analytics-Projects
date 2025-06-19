@@ -120,9 +120,8 @@ def print_the_board(board: dict) -> None:
 
 ```python
 def main() -> None:
-
     board = {}
-    # Ged white piece input from the console
+    # 1. Get white piece input from the console
     white_piece_name = ""
     white_position = ""  
     while True:
@@ -139,6 +138,7 @@ def main() -> None:
         else:
             print("Invalid input. Use format 'piece position'.")
 
+    # 2. Get up to 16 black pieces from console
     for i in range(16):
         black_input = input(f"Enter black piece {i+1} and position (or 'done'): ").lower()
         if black_input == "done":
@@ -154,8 +154,10 @@ def main() -> None:
 
     print_the_board(board)
 
+    # 3. Calculate capturable pieces
     capturable_positions = get_capturable_pieces(board, white_piece_name, white_position)
-    
+
+    # 4. Print results    
     print(f"\nWhite {white_piece_name} at {white_position} can capture:")
     if capturable_positions:
         for pos in capturable_positions:

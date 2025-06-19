@@ -188,7 +188,7 @@ def add_piece(board: dict, piece: str, position: str, color: str) -> bool:    # 
     return False
 ```
 
-### UPDATE: gat_pawn_captures():
+### UPDATE: get_pawn_captures():
 
 Implementing color aware logic
 - Direction Based on Color
@@ -225,7 +225,14 @@ def get_pawn_captures(position: str, board: dict[str, str]) -> list[str]:
     return capturable_positions
 ```
 
-Same code printed different output through different platforms:
+Similarly we have to adjust all other pieces. 
+
+## Output Task 1:
+
+![image](https://github.com/user-attachments/assets/3d28d1f0-ffb6-4148-b38c-3d3d10c1e4d1)
+
+
+**!!!** Same code printed different output through different terminal:
 
 
 ![image](https://github.com/user-attachments/assets/182bf905-441d-4d3c-9b94-f4c7e2e8e894)

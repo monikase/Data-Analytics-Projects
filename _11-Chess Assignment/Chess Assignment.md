@@ -160,7 +160,7 @@ def get_pawn_captures(position: str, board: dict[str, str]) -> list[str]:
 **Mini-task 5.2: Capture logic for a rook**
 
 For the rook logic we need slightly different approach:
-- Define movement directions as tuples: ( Up (0, +1), Down (0, -1), Right (+1, 0), Left(-1, 0) )
+- Define movement directions as tuples: ( Up (0, +1), Down (0, -1), Right (+1, 0), Left (-1, 0) )
 - For each direction simulate step-by-step movement:
    - At each new square, construct the position string
    - If the square is empty, continue moving
@@ -410,9 +410,9 @@ First initialize the game board as empty dictionary
       - If successful, print confirmation and exit the loop.
   
 **2. Get up to 16 black pieces from console:**
-   - Prompt user to enter a black piece and its position.
-   - If the user enters "done", exit the loop.
-   - Otherwise, parse the input using **parse_piece_input()**.
+   - In each iteration prompt user to enter a black piece and its position.
+      - If the user enters "done", exit the loop.
+      - Otherwise, parse the input using **parse_piece_input()**.
    - If the input is valid:
       - Extract the piece name and position.
       - Check that the position is not the same as the white piece's.
@@ -424,10 +424,15 @@ First initialize the game board as empty dictionary
       - Show a message explaining the correct input format.
     
 **3. Calculate capturable pieces**
+   - Using current board state and white piece's type and position call get_capturable_pieces(board, white_piece_name, white_position)
+      - It will return a list of black piece positions that white piece can capture
 
 **4. Print results**
-
-
+   - Print a summary message stating which white piece is attempting captures and from which position.
+   - If any capturable positions were found:
+      - Loop through each and print the name and position of the capturable black piece in a list format.
+   - If no capturable pieces are found:
+      - Display a message indicating that the white piece cannot capture any opponent.
 
 ```python
 def main() -> None:

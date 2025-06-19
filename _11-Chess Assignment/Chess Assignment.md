@@ -490,4 +490,10 @@ def main() -> None:
         print("\nNo capturable pieces found.")
 ```
 
+---
+
+### Program Output:
+
+![image](https://github.com/user-attachments/assets/490c2d41-e867-434b-a41c-e9b2496cc3fa)
+
 

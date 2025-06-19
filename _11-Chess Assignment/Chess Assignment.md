@@ -397,8 +397,8 @@ def get_capturable_pieces(board: dict[str, str], white_piece: str, white_positio
 
 **Mini-task 7: Main flow to gather user input and determine capturable pieces**
 
-Main function where you reuse all previous functions and assemble working solution
-First initialize the game board as empty dictionary
+Main function where we reuse all previous functions and assemble working solution  
+Before starting, initialize the game board as empty dictionary.  
 
 **1. Get white piece input from the console:**
    - Begin a loop that asks the user to enter a white piece and its starting position (e.g., "pawn e4").

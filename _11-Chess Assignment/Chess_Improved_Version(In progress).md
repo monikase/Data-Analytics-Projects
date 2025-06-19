@@ -1,7 +1,7 @@
 # A Chess Question
 ## 1. Implement a Nice Visualization Function
 
-This Python code updates [Chess Mini Tasks](https://github.com/monikase/Data-Analytics-Projects/blob/main/_11-Chess%20Assignment/Chess_Mini_Tasks.md)
+This Python update enhances the [Chess Mini Tasks](https://github.com/monikase/Data-Analytics-Projects/blob/main/_11-Chess%20Assignment/Chess_Mini_Tasks.md) program by adding new functions and refining existing ones to create a visually appealing chessboard complete with pieces.
 
 ---
 

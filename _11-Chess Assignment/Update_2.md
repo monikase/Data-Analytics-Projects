@@ -4,7 +4,7 @@
 This Python update enhances the [Chess Mini Tasks](https://github.com/monikase/Data-Analytics-Projects/blob/main/_11-Chess%20Assignment/Chess_Mini_Tasks.md) by highlighting all squares that the white piece can attack, even if the path is blocked by another piece.
 
 ---
-### NEW: get_all_attackable_squares():
+### NEW: get_all_attackable_squares()
 
 Main function for determining all squares a given piece can attack.
 - It redirects to specific helper function depending on the piece type.
@@ -38,7 +38,7 @@ def get_all_attackable_squares(piece_type: str, position: str, color: str) -> li
 
 
 
-### NEW: get_sliding_attacks():
+### NEW: get_sliding_attacks()
 
 - Calculates all squares a sliding piece (rook, bishop, queen) attacks in given directions, without considering other pieces as blockers.
 

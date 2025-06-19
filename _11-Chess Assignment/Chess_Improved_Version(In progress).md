@@ -116,7 +116,7 @@ def print_the_board(board: dict) -> None:
     print(f"   {file_labels_str}   ")
 ```
 
-After this we need also to update main() function:
+### We also need to update main() function:
 
 ```python
 def main() -> None:
@@ -131,7 +131,7 @@ def main() -> None:
         if parsed_white_input:
             white_piece_name, white_position = parsed_white_input
             
-            if add_piece(board, white_piece_name, white_position, 'white'):          # UPDATE: call add_piece(..) with the color 'white'.
+            if add_piece(board, white_piece_name, white_position, 'white'):       # UPDATE: call add_piece(..) with the color 'white'.
                 print(f"Added white {white_piece_name} at {white_position}.")
                 break
             else:
@@ -147,7 +147,7 @@ def main() -> None:
         if parsed_black_input:
             black_piece_name, black_position = parsed_black_input
 
-            if not add_piece(board, black_piece_name, black_position, 'black'):      # UPDATE: call add_piece(..) with the color 'black'.
+            if not add_piece(board, black_piece_name, black_position, 'black'):    # UPDATE: call add_piece(..) with the color 'black'.
                 print(f"Position '{black_position}' is already occupied.")
         else:
             print("Invalid input. Use format 'piece position'.")

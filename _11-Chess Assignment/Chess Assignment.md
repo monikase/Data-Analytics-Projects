@@ -397,7 +397,86 @@ def get_capturable_pieces(board: dict[str, str], white_piece: str, white_positio
 
 **Mini-task 7: Main flow to gather user input and determine capturable pieces**
 
+Main function where you reuse all previous functions and assemble working solution
+First initialize the game board as empty dictionary
+
+1. Get white piece input from the console:
+   - Begin a loop that asks the user to enter a white piece and its starting position (e.g., "pawn e4").
+   - Use parse_piece_input() to split and validate the user input:
+      - If parsing succeeds, extract the piece name and position.
+      - If parsing fails, display error message and restart the loop.
+   - Attempt to add the white piece to the board:
+   - If the position is already occupied or invalid, inform the user and restart the loop.
+   - If successful, print confirmation and exit the loop.
+  
+2. Get up to 16 black pieces from console:
+   - Prompt user to enter a black piece and its position.
+   - If the user enters "done", exit the loop.
+   - Otherwise, parse the input using parse_piece_input().
+   - If the input is valid:
+      - Extract the piece name and position.
+      - Check that the position is not the same as the white piece's.
+         - If it is, notify the user and skip to the next input.
+      - Try to add the piece to the board using add_piece().
+         - If successful, confirm the piece was added.
+         - If the position is already occupied, alert the user.
+   - If the input format is invalid:
+      - Show a message explaining the correct input format.
+
 ```python
+def main() -> None:
+    """
+    Main function to handle user input, manage the board, and output capturable pieces.
+    """
+    board = {}
+    # 1. Get white piece input from the console
+    white_piece_name = ""
+    white_position = ""
+    while True:
+        white_input = input("Enter the white piece and its position (e.g., 'pawn e4'): ").lower()
+
+        parsed_white_input = parse_piece_input(white_input)
+        if parsed_white_input:
+            white_piece_name, white_position = parsed_white_input
+            if add_piece(board, white_piece_name, white_position):
+                print(f"Added white {white_piece_name} at {white_position}.")
+                break
+            else:
+                print(f"Invalid input or position '{white_position}' is already occupied. Please try again.")
+        else:
+            print("Invalid input format or invalid piece/position. Please use the format 'piece position' (e.g., 'pawn e4').")
+
+    # 2. Get up to 16 black pieces from console
+    for i in range(16):
+        black_input = input(f"Enter black piece {i+1} and its position (e.g., 'bishop c5') or 'done': ")
+        if black_input.lower() == "done":
+            break
+        parsed_black_input = parse_piece_input(black_input)
+        if parsed_black_input:
+            # Unpack piece name and position
+            black_piece_name, black_position = parsed_black_input
+            # Ensure the black piece is not placed on the white piece's position
+            if black_position == white_position:
+                print(f"Cannot place a black piece on the white piece's position '{white_position}'.")
+            elif add_piece(board, black_piece_name, black_position):
+                print(f"Added black {black_piece_name} at {black_position}.")
+            else:
+                print(f"Invalid input or position '{black_position}' is already occupied. Please try again.")
+        else:
+            print("Invalid input format or invalid piece/position. Please use the format 'piece position' (e.g., 'bishop c5').")
+        
+    # 3. Calculate capturable pieces
+    capturable_positions = get_capturable_pieces(board, white_piece_name, white_position)
+    
+    # 4. Print results
+    print(f"\nWhite {white_piece_name} at {white_position} can capture black pieces at the following positions:")
+    if capturable_positions:
+        for pos in capturable_positions:
+            print(f"- {board[pos]} at {pos}")
+    else:
+        print("\nNo capturable pieces found.")
+
+
 ```
 
 

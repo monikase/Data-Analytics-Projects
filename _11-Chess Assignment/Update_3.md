@@ -1,7 +1,7 @@
 # A Chess Question
 ## 3. Implement Starting Position Generation
 
-This Python code builds upon the previous Chess Question Code Task (Update_2.py) by introducing an interactive setup. At the start, the program prompts the user to choose between two options: manually input piece positions or generate them randomly. If random generation is selected, the program automatically places one white piece and sixteen black pieces at random, ensuring a realistic starting scenario.
+This Python code builds upon the previous Chess Task (Update_2.py) by introducing an interactive setup. At the start, the program prompts the user to choose between two options: manually input piece positions or generate them randomly. If random generation is selected, the program automatically places one white piece and sixteen black pieces at random, ensuring a realistic starting scenario.
 
 ---
 

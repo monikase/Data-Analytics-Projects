@@ -2,7 +2,7 @@
 
 ### Project Goal
 
-This Python code simulates a simplified chess game [Improved Version of Chess_Mini_Tasks](https://github.com/monikase/Data-Analytics-Projects/blob/main/_11-Chess%20Assignment/Chess_Mini_Tasks.md), allowing users:
+This Python code simulates a simplified chess game Improved Version of [Chess Mini Tasks](https://github.com/monikase/Data-Analytics-Projects/blob/main/_11-Chess%20Assignment/Chess_Mini_Tasks.md), allowing users:
 
 * **Manage Chess Pieces:** Add white and black chess pieces to specific positions in the board
 * **Analyze Piece Movements:** Displaying all squares that a selected piece can atack

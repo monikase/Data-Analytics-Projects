@@ -118,51 +118,54 @@ def print_the_board(board: dict) -> None:
 
 ### We also need to update main() function:
 
+- Add variable for the piece color
+
 ```python
 def main() -> None:
+    """
+    Main function to handle user input, manage the board, and output capturable pieces.
+    """
     board = {}
-    # 1. Get white piece input from the console
     white_piece_name = ""
-    white_position = ""  
+    white_position = ""
+    # 1. Get white piece input from the console
     while True:
         white_input = input("Enter the white piece and its position (e.g., 'pawn e4'): ").lower()
         parsed_white_input = parse_piece_input(white_input)
         if parsed_white_input:
             white_piece_name, white_position = parsed_white_input
-            
-            if add_piece(board, white_piece_name, white_position, 'white'):       # UPDATE: call add_piece(..) with the color 'white'.
+            # FIX: Call add_piece with the color 'white'.
+            if add_piece(board, white_piece_name, white_position, 'white'):     # UPDATE: Call add_piece with the color 'white'.
                 print(f"Added white {white_piece_name} at {white_position}.")
                 break
             else:
-                print(f"Position '{white_position}' is already occupied.")
+                print(f"Position '{white_position}' is already occupied. Please try again.")
         else:
-            print("Invalid input. Use format 'piece position'.")
+            print("Invalid input format or invalid piece/position. Please use the format 'piece position' (e.g., 'pawn e4').")
 
     # 2. Get up to 16 black pieces from console
     for i in range(16):
-        black_input = input(f"Enter black piece {i+1} and position (or 'done'): ").lower()
+        black_input = input(f"Enter black piece {i+1} and its position (e.g., 'bishop c5') or 'done': ").lower()
         if black_input == "done":
             break
         parsed_black_input = parse_piece_input(black_input)
         if parsed_black_input:
             black_piece_name, black_position = parsed_black_input
-
-            if not add_piece(board, black_piece_name, black_position, 'black'):    # UPDATE: call add_piece(..) with the color 'black'.
-                print(f"Position '{black_position}' is already occupied.")
+            
+            if not add_piece(board, black_piece_name, black_position, 'black'):   # UPDATE: Call add_piece with the color 'black'.
+                print(f"Position '{black_position}' is already occupied. Please try again.")
         else:
-            print("Invalid input. Use format 'piece position'.")
+            print("Invalid input. Use format 'piece position' (e.g., 'bishop c5').")
 
     print_the_board(board)
 
-    # 3. Calculate capturable pieces
     capturable_positions = get_capturable_pieces(board, white_piece_name, white_position)
-
-    # 4. Print results    
-    print(f"\nWhite {white_piece_name} at {white_position} can capture:")
+    
+    print(f"\nWhite {white_piece_name} at {white_position} can capture black pieces at the following positions:")
     if capturable_positions:
         for pos in capturable_positions:
-            # FIX: Access the piece name from the tuple for printing.
-            captured_piece_name = board[pos][0]
+            
+            captured_piece_name = board[pos][0]                  # UPDATE: Access the piece name from the tuple for printing.
             print(f"- Black {captured_piece_name} at {pos}")
     else:
         print("No capturable pieces found.")
@@ -170,6 +173,7 @@ def main() -> None:
 
 
 Same code printed different output through different platforms:
+
 
 ![image](https://github.com/user-attachments/assets/182bf905-441d-4d3c-9b94-f4c7e2e8e894)
 

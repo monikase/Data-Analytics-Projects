@@ -424,7 +424,7 @@ Before starting, initialize the game board as empty dictionary.
       - Show a message explaining the correct input format.
     
 **3. Calculate capturable pieces**
-   - Using current board state and white piece's type and position call get_capturable_pieces(board, white_piece_name, white_position)
+   - Using current board state and white piece's type and position call **get_capturable_pieces(...)**
       - It will return a list of black piece positions that white piece can capture
 
 **4. Print results**

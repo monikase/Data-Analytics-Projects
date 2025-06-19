@@ -171,6 +171,19 @@ def main() -> None:
         print("No capturable pieces found.")
 ```
 
+Now calling add_piece function takes 3 positional arguments but 4 were given, so we need an update:
+
+```python
+# Mini-task 4: Add a piece to the board
+# def add_piece(board: dict[str, str], piece: str, position: str) -> bool: 
+def add_piece(board: dict, piece: str, position: str, color: str) -> bool:    # UPDATE: Receiving 4 arguments
+
+    if is_valid_position(position) and position not in board:
+        board[position] = (piece, color)                                      # UPDATE: Added color   
+        return True
+    return False
+```
+
 
 Same code printed different output through different platforms:
 

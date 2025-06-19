@@ -231,8 +231,8 @@ Similarly we have to adjust all other pieces.
 
 ![image](https://github.com/user-attachments/assets/3d28d1f0-ffb6-4148-b38c-3d3d10c1e4d1)
 
-
-### ⚠️ Note: The visual layout of the chessboard may appear differently depending on the terminal or editor you're using. In particular, character alignment may vary between platforms like Google Colab and VS Code.
+</br>
+⚠️ **Note: The visual layout of the chessboard may appear differently depending on the terminal or editor you're using. In particular, character alignment may vary between platforms like Google Colab and VS Code.**
 
 
 

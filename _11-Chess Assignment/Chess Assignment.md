@@ -400,7 +400,7 @@ def get_capturable_pieces(board: dict[str, str], white_piece: str, white_positio
 Main function where you reuse all previous functions and assemble working solution
 First initialize the game board as empty dictionary
 
-1. Get white piece input from the console:
+**1. Get white piece input from the console:**
    - Begin a loop that asks the user to enter a white piece and its starting position (e.g., "pawn e4").
    - Use **parse_piece_input()** to split and validate the user input:
       - If parsing succeeds, extract the piece name and position.
@@ -409,7 +409,7 @@ First initialize the game board as empty dictionary
       - If the position is already occupied or invalid, inform the user and restart the loop.
       - If successful, print confirmation and exit the loop.
   
-2. Get up to 16 black pieces from console:
+**2. Get up to 16 black pieces from console:**
    - Prompt user to enter a black piece and its position.
    - If the user enters "done", exit the loop.
    - Otherwise, parse the input using **parse_piece_input()**.
@@ -422,6 +422,12 @@ First initialize the game board as empty dictionary
          - If the position is already occupied, alert the user.
    - If the input format is invalid:
       - Show a message explaining the correct input format.
+    
+**3. Calculate capturable pieces**
+
+**4. Print results**
+
+
 
 ```python
 def main() -> None:
@@ -463,7 +469,8 @@ def main() -> None:
             else:
                 print(f"Invalid input or position '{black_position}' is already occupied. Please try again.")
         else:
-            print("Invalid input format or invalid piece/position. Please use the format 'piece position' (e.g., 'bishop c5').")
+            print("Invalid input format or invalid piece/position. \
+            Please use the format 'piece position' (e.g., 'bishop c5').")
         
     # 3. Calculate capturable pieces
     capturable_positions = get_capturable_pieces(board, white_piece_name, white_position)
@@ -475,8 +482,6 @@ def main() -> None:
             print(f"- {board[pos]} at {pos}")
     else:
         print("\nNo capturable pieces found.")
-
-
 ```
 
 

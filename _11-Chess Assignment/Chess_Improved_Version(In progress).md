@@ -6,8 +6,6 @@ This Python code updates [Chess Mini Tasks](https://github.com/monikase/Data-Ana
 
 ---
 
-## 1. Implement a Nice Visualization Function
-
 ### NEW: get_chess_piece_symbol()
   - Create a function to print the chessboard using Unicode chess symbols to represent each piece accurately.
   - Ensure proper alignment of pieces in an 8x8 grid, with row and column labels.

@@ -72,36 +72,100 @@ def get_chess_piece_symbol(piece: str, color: str) -> str:
 
     # Return the corresponding symbol
     return symbols[piece][color]
+```
 
-def print_the_board(board: dict[str, tuple[str, str]]) -> None:
+### Print board function:
+- Set width of each board cell, and build 8x8 board grid 
+- Map file letters ('a' to 'h') to column indices: {'a': 0, 'b': 1, ..., 'h': 7}
+- Loop through board dictionary, which maps positions to tuples of piece type and **color** 
+- Slice position e.g. "e4" to **file = "e"**, **rank = "4"** and convert it to column and row 
+- Get symbol from **get_chess_piece_symbol(..)** function and place it in the cell
+- Define labels, visual board elements
+- Loop through each row of the grid, printing the cells with vertical bars and showing rank numbers on both sides.
+
+```python
+def print_the_board(board: dict) -> None:
 
     cell_width = 4
     board_grid = [[" " * cell_width for _ in range(8)] for _ in range(8)]
     file_to_col = {chr(ord('a') + i): i for i in range(8)}
-
-    # Placing pieces on the board
+    
     for position, (piece, color) in board.items():
         if is_valid_position(position):
-            file = position[0]
-            rank = int(position[1])
+            file, rank = position[0], int(position[1])
             col = file_to_col[file]
             row = 8 - rank
+            # Center the symbol inside the cell for proper alignment
             board_grid[row][col] = get_chess_piece_symbol(piece, color).center(cell_width)
 
-    # Build labels 
-    file_labels = " ".join(chr(ord('a') + i).center(cell_width))
+    # Labels for files ('a' through 'h')
+    file_labels_str = " ".join(chr(ord('a') + i).center(cell_width) for i in range(8))
 
-    separator = "+".join("-" * cell_width for _ in range(8)) # Separators line
+    separator_str = "+".join("-" * cell_width for _ in range(8))
 
-    print(f"  +{separator}+  ")
-    print(separator)
+    # Print the top file labels and border
+    print(f"   {file_labels_str}   ")
+    print(f"  +{separator_str}+  ")
+
+    # Print each rank with its pieces and side labels
     for row_index in range(8):
-      rank = 8 - row_index
-      row_cells = "|".join(board_grid[row_index])
-      print(f"{rank} |{row_cells}| {rank}")
-      print(separator)
-    print(file_labels)
+        rank = 8 - row_index
+        row_cells_str = "|".join(board_grid[row_index])
+        print(f"{rank} |{row_cells_str}| {rank}")
+        print(f"  +{separator_str}+  ")
+    print(f"   {file_labels_str}   ")
 ```
+
+After this we need also to update main() function:
+
+```python
+def main() -> None:
+
+    board = {}
+    # Ged white piece input from the console
+    white_piece_name = ""
+    white_position = ""  
+    while True:
+        white_input = input("Enter the white piece and its position (e.g., 'pawn e4'): ").lower()
+        parsed_white_input = parse_piece_input(white_input)
+        if parsed_white_input:
+            white_piece_name, white_position = parsed_white_input
+            
+            if add_piece(board, white_piece_name, white_position, 'white'):          # UPDATE: call add_piece(..) with the color 'white'.
+                print(f"Added white {white_piece_name} at {white_position}.")
+                break
+            else:
+                print(f"Position '{white_position}' is already occupied.")
+        else:
+            print("Invalid input. Use format 'piece position'.")
+
+    for i in range(16):
+        black_input = input(f"Enter black piece {i+1} and position (or 'done'): ").lower()
+        if black_input == "done":
+            break
+        parsed_black_input = parse_piece_input(black_input)
+        if parsed_black_input:
+            black_piece_name, black_position = parsed_black_input
+
+            if not add_piece(board, black_piece_name, black_position, 'black'):      # UPDATE: call add_piece(..) with the color 'black'.
+                print(f"Position '{black_position}' is already occupied.")
+        else:
+            print("Invalid input. Use format 'piece position'.")
+
+    print_the_board(board)
+
+    capturable_positions = get_capturable_pieces(board, white_piece_name, white_position)
+    
+    print(f"\nWhite {white_piece_name} at {white_position} can capture:")
+    if capturable_positions:
+        for pos in capturable_positions:
+            # FIX: Access the piece name from the tuple for printing.
+            captured_piece_name = board[pos][0]
+            print(f"- Black {captured_piece_name} at {pos}")
+    else:
+        print("No capturable pieces found.")
+```
+
 
 Same code printed different output through different platforms:
 

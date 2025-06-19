@@ -190,6 +190,8 @@ def get_pawn_captures(position: str, board: dict[str, str]) -> list[str]:
 
 Similarly we have to adjust all other pieces. 
 
+---
+
 ## Output:
 
 ![image](https://github.com/user-attachments/assets/3d28d1f0-ffb6-4148-b38c-3d3d10c1e4d1)

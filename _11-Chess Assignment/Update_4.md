@@ -121,3 +121,10 @@ def main() -> None:
         else:
             print(f"Unknown command: '{command}'. Please use one of the available commands.")
 ```
+
+---
+
+## Output:
+
+![image](https://github.com/user-attachments/assets/fe2b005c-1a7b-48db-998b-049b8c9c49ce)
+

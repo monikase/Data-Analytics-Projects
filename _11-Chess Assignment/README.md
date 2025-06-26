@@ -19,5 +19,7 @@ This Python code simulates a simplified chess game, allowing users:
 [Code on Google Colab Notebook](https://colab.research.google.com/drive/1Bs71zqz8-9XDec0BTxFJntxJeJHsZ4sA?usp=sharing)
 
 ---
-**Output**
+**3. Output**  
+
+
 ![image](https://github.com/user-attachments/assets/fe2b005c-1a7b-48db-998b-049b8c9c49ce)

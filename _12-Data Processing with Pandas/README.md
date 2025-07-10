@@ -18,9 +18,8 @@ Get ready to see how high energy, danceability, and an optimal loudness defined 
 ### Quick Summary Overview:
 
 Our deep dive into Spotify's Top 50 Tracks of 2020 revealed some clear patterns shaping the year's biggest hits.   
-Unsurprisingly, **Pop and Hip-Hop/Rap** dominated the soundscape of the year.
+- Unsurprisingly, **Pop and Hip-Hop/Rap** dominated the soundscape of the year.
 
-</br>
 The analysis also indicates that hit songs generally exhibited the following characteristics:
 
 - **High Energy & Danceability**: Popular tracks are typically upbeat and rhythm-driven.

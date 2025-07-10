@@ -22,7 +22,7 @@ Our deep dive into Spotify's Top 50 Tracks of 2020 revealed some clear patterns 
 
 The analysis also indicates that hit songs generally exhibited the following characteristics:
 
-- **High Energy & Danceability**: Popular tracks are typically upbeat and rhythm-driven.
+- **High Energy & Danceability**: Popular tracks were typically upbeat and rhythm-driven.
 - **Low Acousticness & Speechiness**: They tend to have clear instrumental and vocal clarity rather than raw, unfiltered sounds or spoken word.
 - **Optimal Loudness**: Most popular songs are concentrated within a specific loudness range (-5 to -7 dB), suggesting an optimal listening volume.
 - **Minimal Instrumentalness**: Hit songs are vocal-centric, with instrumental tracks being rare in the top charts.

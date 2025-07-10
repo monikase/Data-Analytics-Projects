@@ -15,12 +15,11 @@ Get ready to see how high energy, danceability, and an optimal loudness defined 
 
 ## Quick Summary Overview: The Anatomy of a 2020 Hit
 
-- Genre Diversity: **Pop and Hip-Hop/Rap** are dominant
-
-Our deep dive into Spotify's Top 50 Tracks of 2020 revealed some clear patterns shaping the year's biggest bops. Unsurprisingly, Pop and Hip-Hop/Rap stood as the undisputed titans of the charts, dominating the soundscape of the year.
+Our deep dive into Spotify's Top 50 Tracks of 2020 revealed some clear patterns shaping the year's biggest hits.   
+Unsurprisingly, Pop and Hip-Hop/Rap dominated the soundscape of the year.
 
 </br>
-What truly makes a track resonate? The analysis indicates that hit songs generally exhibit the following characteristics:
+What truly made a track resonate? The analysis indicates that hit songs generally exhibited the following characteristics:
 
 - **High Energy & Danceability**: Popular tracks are typically upbeat and rhythm-driven.
 - **Low Acousticness & Speechiness**: They tend to have clear instrumental and vocal clarity rather than raw, unfiltered sounds or spoken word.

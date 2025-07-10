@@ -15,7 +15,7 @@ Get ready to see how high energy, danceability, and an optimal loudness defined 
 
 </br>
 
-### Quick Summary Overview: The Anatomy of a 2020 Hit
+### Quick Summary Overview:
 
 Our deep dive into Spotify's Top 50 Tracks of 2020 revealed some clear patterns shaping the year's biggest hits.   
 Unsurprisingly, Pop and Hip-Hop/Rap dominated the soundscape of the year.

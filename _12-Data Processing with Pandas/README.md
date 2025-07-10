@@ -4,7 +4,7 @@ What truly made a song a *hit* in the year of 2020? Beyond fleeting trends and v
 
 From cleaning raw data to visualizing hidden patterns, we'll explore:
 
-- **The Reigning Rhythms:** Which genres truly dominated the airwaves?
+- **The Reigning Rhythms:** Which genres dominated?
 - **The Anatomy of a Hit:** Are there common audio DNA shared by the most popular tracks?
 - **Beyond the Hype:** Can we identify distinct categories of chart-toppers based on their unique characteristics?
 

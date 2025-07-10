@@ -1,25 +1,27 @@
-# Data Processing with Pandas - Spotify Top 50 Tracks of 2020
+## Unlocking the Sound of 2020: A Spotify Top Tracks Analysis with Pandas
 
-This notebook analyzes Spotify's top tracks of 2020 using pandas. Cleaning data, explore trends, and visualize key features.
+What truly made a song a *hit* in the year of 2020? Beyond fleeting trends and viral moments, do the numbers reveal a deeper truth about the music that resonated most? This project dives deep into Spotify's Top 50 Tracks of 2020, leveraging the power of Pandas to dissect audio features and uncover the "secrets" behind chart-topping success.
 
-Data set was taken from [Kaggle](https://www.kaggle.com/datasets/atillacolak/top-50-spotify-tracks-2020)
+From cleaning raw data to visualizing hidden patterns, we'll explore:
 
-Jupyter Notebook File:
-[Analysis](https://github.com/TuringCollegeSubmissions/msedui-PYDA.2.5/blob/main/Spotify_Analysis.ipynb)
+- **The Reigning Rhythms:** Which genres truly dominated the airwaves?
+- **The Anatomy of a Hit:** Are there common audio DNA shared by the most popular tracks?
+- **Beyond the Hype:** Can we identify distinct categories of chart-toppers based on their unique characteristics?
 
+Get ready to see how high energy, danceability, and an optimal loudness sweet spot defined the sound of 2020's biggest bangers!
 
-## Project Goals
+**(Jupyter Notebook: [Analysis](Analysis.ipynb))**
+**(Dataset Source: [Kaggle](https://www.kaggle.com/datasets/thedevastator/spotify-top-50-tracks-2020))**
 
-The project aimed to answer the following key questions:
-1. What are the dominant genres in 2020's top charts?
-2. Are there specific audio features that consistently appear in popular tracks?
-3. Can we identify distinct 'types' of hit songs based on their characteristics?
-
-## Quick Summary Overview:
+## Quick Summary Overview: The Anatomy of a 2020 Hit
 
 - Genre Diversity: **Pop and Hip-Hop/Rap** are dominant
 
-The analysis indicates that hit songs generally exhibit the following characteristics:
+Our deep dive into Spotify's Top 50 Tracks of 2020 revealed some clear patterns shaping the year's biggest bops. Unsurprisingly, Pop and Hip-Hop/Rap stood as the undisputed titans of the charts, dominating the soundscape of the year.
+
+</br>
+What truly makes a track resonate? The analysis indicates that hit songs generally exhibit the following characteristics:
+
 - **High Energy & Danceability**: Popular tracks are typically upbeat and rhythm-driven.
 - **Low Acousticness & Speechiness**: They tend to have clear instrumental and vocal clarity rather than raw, unfiltered sounds or spoken word.
 - **Optimal Loudness**: Most popular songs are concentrated within a specific loudness range (-5 to -7 dB), suggesting an optimal listening volume.

@@ -8,7 +8,7 @@ From cleaning raw data to visualizing hidden patterns, we'll explore:
 - **The Anatomy of a Hit:** Are there common audio DNA shared by the most popular tracks?
 - **Beyond the Hype:** Can we identify distinct categories of chart-toppers based on their unique characteristics?
 
-Get ready to see how high energy, danceability, and an optimal loudness sweet spot defined the sound of 2020's biggest bangers!
+Get ready to see how high energy, danceability, and an optimal loudness defined the sound of 2020's biggest hits!
 
 **(Jupyter Notebook: [Analysis](Analysis.ipynb))**
 **(Dataset Source: [Kaggle](https://www.kaggle.com/datasets/thedevastator/spotify-top-50-tracks-2020))**

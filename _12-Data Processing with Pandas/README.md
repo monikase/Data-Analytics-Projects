@@ -10,7 +10,7 @@ From cleaning raw data to visualizing hidden patterns, we'll explore:
 
 Get ready to see how high energy, danceability, and an optimal loudness defined the sound of 2020's biggest hits!
 
-**(Jupyter Notebook: [Analysis](https://github.com/monikase/Data-Analytics-Projects/blob/main/Spotify.ipynb))**
+**(Jupyter Notebook: [Analysis](https://github.com/monikase/Data-Analytics-Projects/blob/main/_12-Data%20Processing%20with%20Pandas/Spotify.ipynb))**
 **(Dataset Source: [Kaggle](https://www.kaggle.com/datasets/thedevastator/spotify-top-50-tracks-2020))**
 
 </br>

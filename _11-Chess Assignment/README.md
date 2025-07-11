@@ -16,6 +16,8 @@ This Python code simulates a simplified chess game, allowing users:
 * **Visualize the Board:** Chosen pieces and highlighted squares
 * **Interactive menu:** Offers a command-line interface to perform these actions
 
+[Python file](https://github.com/monikase/Data-Analytics-Projects/blob/main/_11-Chess%20Assignment/Chess_Final_Program.py)
+
 [Code on Google Colab Notebook](https://colab.research.google.com/drive/1Bs71zqz8-9XDec0BTxFJntxJeJHsZ4sA?usp=sharing)
 
 ---

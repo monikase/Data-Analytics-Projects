@@ -1,7 +1,7 @@
 # Vinted Seller Shipping Performance
 ### Analysis of Shipping Time and Non-Shipment Correlation
 
-[Analysis](https://github.com/monikase/Data-Analytics-Projects/blob/main/_13%20EDA%20Vinted/Vinted.ipynb)
+[Full Analysis](https://github.com/monikase/Data-Analytics-Projects/blob/main/_13%20EDA%20Vinted/Vinted.ipynb)
 
 This analysis reveals a strong correlation between delayed shipping and non-shipment cancellations on Vinted. Specifically, sellers who do not ship within 3 days are significantly more likely to cancel orders due to seller failure, impacting buyer trust and overall platform success. I've identified key areas for intervention that could improve shipping reliability and reduce cancellations.
 

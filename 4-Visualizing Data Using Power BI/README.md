@@ -3,7 +3,7 @@
 In this project, I was working with Adventure Works Sales Orders dataset, which covers Sales Orders, Employees, Territory, and Sales Reasons data.  
 
 ### The goal 
-- Extract meaningful insights into business performance and prepare an interactive, user-friendly dashboard with PowerBI.
+• Extract meaningful insights into business performance and prepare an interactive, user-friendly dashboard with PowerBI.
 
 ### Key Business Questions:
 

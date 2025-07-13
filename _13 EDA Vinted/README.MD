@@ -6,8 +6,8 @@ This analysis reveals a strong correlation between delayed shipping and non-ship
 To analyze the time taken for Vinted sellers to ship items and determine if there's a correlation between delayed initial shipping (e.g., beyond 3 days) and the likelihood of an item never being shipped at all.
 
 ### Key Questions to Answer:
-What is the average shipping time for sellers on Vinted?
-What is the distribution of shipping times (e.g., how many ship within 1 day, 2 days, etc.)?
-What percentage of orders are canceled due to non-shipment?
-Is there a statistically significant difference in the non-shipment rate for sellers who ship within the first 3 days compared to those who don't?
-Are there specific item categories, price points, or seller characteristics that are associated with longer shipping times or higher non-shipment rates?
+1. What is the average shipping time for sellers on Vinted?
+2. What is the distribution of shipping times (e.g., how many ship within 1 day, 2 days, etc.)?
+3. What percentage of orders are canceled due to non-shipment?
+4. Is there a statistically significant difference in the non-shipment rate for sellers who ship within the first 3 days compared to those who don't?
+5. Are there specific item categories, price points, or seller characteristics that are associated with longer shipping times or higher non-shipment rates?

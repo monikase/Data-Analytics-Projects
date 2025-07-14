@@ -192,7 +192,7 @@ $$ df = {n_1} + {n_2} - 2 = 36 + 36 - 2 = 70 $$
 
 </p>
 
-</br>
+---
 
 We can also see, that there is no overlap between these intervals (Promotion 2's highest value, 178.901, is below Promotion 1's lowest, 192.765), suggesting a significant difference in mean sales.   
 
@@ -201,7 +201,7 @@ Treatment Effect $\implies$ Promotion 1 led to aproximately 42.584 more in sales
 
 #### And lastly, we perform Practical significance calculations:
 
-</br>
+---
 
 **Pooled Standard Deviation :**  
 Calculate the variance of two campaigns, assuming that they have equal variances.
@@ -222,7 +222,7 @@ $d=(\bar{x}_1-\bar{x}_2)/s_p^2=1.344$
 
 $\implies$ Cohen's d = 1.344 indicates a large effect size.
 
-</br>
+---
   
 ### Validation: 
 
@@ -233,7 +233,7 @@ $\implies$ Since t-value > critical t-value, and p-value < α, **H<sub>0</sub> i
 - **The chance of type I error** (rejecting a correct H<sub>0</sub>) **is small**: 0.000026 (0.000026%).
 - Practical significance: Cohen's d of 1.34 indicates a **large effect size**.
      
-</br>
+---
 
 ## 2. Promotion 1 vs. Promotion 3
 

@@ -194,7 +194,7 @@ $$ df = {n_1} + {n_2} - 2 = 36 + 36 - 2 = 70 $$
 
 ---
 
-We can also see, that there is no overlap between these intervals (Promotion 2's highest value, 178.901, is below Promotion 1's lowest, 192.765), suggesting a significant difference in mean sales.   
+There is no overlap between these intervals (Promotion 2's highest value, 178.901, is below Promotion 1's lowest, 192.765), suggesting a significant difference in mean sales.   
 
 Treatment Effect $\implies$ Promotion 1 led to aproximately 42.584 more in sales than Promotion 2
 

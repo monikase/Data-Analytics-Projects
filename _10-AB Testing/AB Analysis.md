@@ -396,6 +396,7 @@ Despite Promotion 3 resulting in approximately 24.778 more in mean sales than Pr
 
 ---
  </br> 
+ 
 ### Practical significance
 
 **Pooled Standard Deviation :**

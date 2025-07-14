@@ -7,9 +7,11 @@ A fast-food chain plans to add a new item to its menu and is undecided between *
 The data analysis included making sure that the attributes of each promotion group were symmetrically distributed to ensure the A/B test results were fair and correct. Ultimately, examining variable distributions and adjusting the sample size (including dealing with outliers) ensured group similarity for a trustworthy A/B test.
 
 
-## Goal of the Test
+## Goal of Analysis
 
 Evaluate A/B testing results and decide which marketing strategy works the best and has statistically significant differences among the test groups.
+
+
 
 Dataset is taken from [Kaggle](https://www.kaggle.com/datasets/chebotinaa/fast-food-marketing-campaign-ab-test) with these columns:
  

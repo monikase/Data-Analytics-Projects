@@ -198,10 +198,8 @@ There is no overlap between these intervals (Promotion 2's highest value, 178.90
 
 Treatment Effect $\implies$ Promotion 1 led to aproximately 42.584 more in sales than Promotion 2
 
-
-#### And lastly, we perform Practical significance calculations:
-
 ---
+#### Practical significance calculations:
 
 **Pooled Standard Deviation :**  
 Calculate the variance of two campaigns, assuming that they have equal variances.

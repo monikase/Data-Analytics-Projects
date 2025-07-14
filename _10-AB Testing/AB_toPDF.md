@@ -1,7 +1,7 @@
 # Fast Food Marketing Campaign A/B Test Analysis
 
 [Project on GitHub](https://github.com/monikase/Data-Analytics-Projects/blob/main/_10-AB%20Testing/AB%20Analysis.md)  
-Query is in Appendix (Page 13)
+Query is in Appendix (Page 12)
 
 A fast-food chain tested three marketing campaigns for a new menu item by launching it across randomly selected locations, each using a different promotion. Weekly sales were tracked over four weeks to assess performance.
 
@@ -394,15 +394,12 @@ $\implies$ Cohen's d = -0.814 indicates a large effect size, with the negative s
 ### Validation: 
 
 $\implies$ Since t-value < critical t-value, and p-value > α, **H<sub>0</sub> is rejected.</font>**  
-- **There is a significant difference** in the mean sales between Promotion 2 and Promotion 3.
+- **There is a significant difference** in the mean sales Promotion 2 vs. Promotion 3.
 - Treatment Effect: Promotion 3 resulted to aproximately 24.778 more in mean sales than Promotion 2.
 - In 99% confidence interval there is a small overlap (Promotion 3's value falls within Promotion 2's interval), indicating that their mean sales could be similar in that range, although Promotion 3 generally has higher sales.   
 - **The chance of type I error** (rejecting a correct H<sub>0</sub>) **is small**: 0.000946 (0.095%).
-- Practical significance: Cohen's d of -0.814 indicates a **large effect size**, with the negative sign signifying that the **Promotion 3 has a higher mean than Promotion 2**.
+- Cohen's d of -0.814 indicates a **large effect size**, with the negative sign signifying that the **Promotion 3 has a higher mean than Promotion 2**.
 
-
----
-</br>
 
 # Decision
 

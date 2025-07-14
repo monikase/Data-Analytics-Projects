@@ -1,6 +1,6 @@
 # Fast Food Marketing Campaign A/B Test Analysis
 
-[Project on GitHub](https://github.com/monikase/Data-Analytics-Projects/blob/main/_10-AB%20Testing/AB%20Analysis.md)
+[Project on GitHub](https://github.com/monikase/Data-Analytics-Projects/blob/main/_10-AB%20Testing/AB%20Analysis.md)  
 Query is in Appendix (Page 13)
 
 A fast-food chain tested three marketing campaigns for a new menu item by launching it across randomly selected locations, each using a different promotion. Weekly sales were tracked over four weeks to assess performance.

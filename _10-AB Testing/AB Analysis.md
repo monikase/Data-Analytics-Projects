@@ -5,7 +5,7 @@ A fast-food chain plans to add a new item to its menu and is undecided between *
 The data analysis included making sure that the attributes of each promotion group were symmetrically distributed to ensure the A/B test results were fair and correct. Ultimately, examining variable distributions and adjusting the sample size (including dealing with outliers) ensured group similarity for a trustworthy A/B test.
 
 [Project on GitHub](https://github.com/monikase/Data-Analytics-Projects/blob/main/_10-AB%20Testing/AB%20Analysis.md)
-
+Query is in Appendix
 
 ## Goal of Analysis
 
@@ -358,6 +358,8 @@ $$ df = {n_2} + {n_3} - 2 = 36 + 36 - 2 = 70 $$
   <td> 0.01 </td>
 </tr>
 </table>
+
+</br>
 
 #### Summary:
 

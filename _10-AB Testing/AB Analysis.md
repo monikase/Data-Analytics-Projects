@@ -9,7 +9,7 @@ The data analysis included making sure that the attributes of each promotion gro
 
 ## Goal of Analysis
 
-Evaluate A/B testing results and decide which marketing strategy works the best and has statistically significant differences among the test groups.
+Evaluate which marketing strategy works the best and has statistically significant differences among the test groups.
 
 
 

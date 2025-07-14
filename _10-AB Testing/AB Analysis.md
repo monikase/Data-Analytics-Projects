@@ -155,7 +155,7 @@ $$ df = {n_1} + {n_2} - 2 = 36 + 36 - 2 = 70 $$
 <tr>
   <td> 5.704 </td>
   <td> 2.648 </td>
-  <td> 0.000 </td>
+  <td> 0.00000026 </td>
   <td> 0.01 </td>
 </tr>
 </table>
@@ -175,7 +175,7 @@ $$ df = {n_1} + {n_2} - 2 = 36 + 36 - 2 = 70 $$
 </tr>
  <tr>
   <td> Reject if p-value < α </td>
-  <td> p=0.000 < α=0.01 </td>
+  <td> p=0.00000026 < α=0.01 </td>
   <td> $\implies$ We can reject H<sub>0</sub> hypothesis  </td>
 </tr>
 </table>

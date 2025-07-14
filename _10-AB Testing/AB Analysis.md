@@ -190,7 +190,7 @@ $$ df = {n_1} + {n_2} - 2 = 36 + 36 - 2 = 70 $$
 </br>
 
 <p align="center">
-  <img width="600" height="748" alt="image" src="https://github.com/user-attachments/assets/70c64382-eb36-4425-bf22-c7714fcf89bb" />
+  <img width="400" height="498" alt="image" src="https://github.com/user-attachments/assets/70c64382-eb36-4425-bf22-c7714fcf89bb" />
 
 </p>
 
@@ -291,7 +291,7 @@ $$ df = {n_1} + {n_3} - 2 = 36 + 36 - 2 = 70 $$
 </br>
 
 <p align="center">
-  <img width="600" height="748" alt="image" src="https://github.com/user-attachments/assets/945fc8ed-f69b-45c0-93da-2b8ea893145a" />
+  <img width="400" height="498" alt="image" src="https://github.com/user-attachments/assets/945fc8ed-f69b-45c0-93da-2b8ea893145a" />
 </p>
 
 Treatment Effect $\implies$ Promotion 1 resulted to aproximately 17.806 more in mean sales than Promotion 3.
@@ -390,7 +390,7 @@ $$ df = {n_2} + {n_3} - 2 = 36 + 36 - 2 = 70 $$
 </br>
 
 <p align="center">
-  <img width="600" height="748" alt="image" src="https://github.com/user-attachments/assets/b700a126-87b6-443b-9e63-de8eb0193606" />
+  <img width="400" height="498" alt="image" src="https://github.com/user-attachments/assets/b700a126-87b6-443b-9e63-de8eb0193606" />
 
 </p>
 

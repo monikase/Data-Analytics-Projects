@@ -11,9 +11,6 @@ The data analysis included making sure that the attributes of each promotion gro
 
 Evaluate which marketing strategy works the best and has statistically significant differences among the test groups.
 
-<div style="page-break-after: always; visibility: hidden"> 
-\pagebreak 
-</div>
 
 ### Dataset
 

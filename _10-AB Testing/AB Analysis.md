@@ -391,7 +391,8 @@ $$ df = {n_2} + {n_3} - 2 = 36 + 36 - 2 = 70 $$
 </br>
 
 <p align="center">
-  <img width="750" height="520" src="https://github.com/user-attachments/assets/9e60782e-77e9-4ca7-9f4a-6edbadfb1a02">
+  <img width="600" height="748" alt="image" src="https://github.com/user-attachments/assets/b700a126-87b6-443b-9e63-de8eb0193606" />
+
 </p>
 
 We can see, that there is a small overlap: Promotion 3 falls within Promotion 2 interval, indicating that their mean sales could be similar in that small range, although Promotion 3 generally has higher sales.    
@@ -617,28 +618,4 @@ SELECT
   CAST(SUM(CASE WHEN PromotionID = 3 THEN Variance END) AS STRING) AS Promotion_3
 FROM
   FinalStats;
-```
-### Query for Evan Miller Test
-
-```sql
-WITH AggregatedSales AS (
-    SELECT
-        location_id AS LocationID,
-        promotion AS PromotionID,
-        SUM(sales_in_thousands) AS TotalSales
-    FROM
-        `tc-da-1.turing_data_analytics.wa_marketing_campaign` 
-    GROUP BY
-        LocationID,
-        PromotionID
-)
-SELECT 
-    LocationID,
-    SUM(CASE WHEN PromotionID = 1 THEN TotalSales END) AS Promotion_1,
-    SUM(CASE WHEN PromotionID = 2 THEN TotalSales END) AS Promotion_2,
-    SUM(CASE WHEN PromotionID = 3 THEN TotalSales END) AS Promotion_3
-FROM 
-    AggregatedSales
-GROUP BY LocationID
-ORDER BY LocationID;
 ```

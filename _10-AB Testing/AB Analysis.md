@@ -199,7 +199,7 @@ There is no overlap between these intervals (Promotion 2's highest value, 178.90
 Treatment Effect $\implies$ Promotion 1 led to aproximately 42.584 more in sales than Promotion 2
 
 ---
-#### Practical significance calculations:
+### Practical significance calculations:
 
 **Pooled Standard Deviation :**  
 Calculate the variance of two campaigns, assuming that they have equal variances.
@@ -235,7 +235,7 @@ $\implies$ Since t-value > critical t-value, and p-value < α, **H<sub>0</sub> i
 
 ## 2. Promotion 1 vs. Promotion 3
 
-#### Perform t-test calculations:
+#### T-test calculations:
 
 $$ t-value = \frac{|\bar{x}_1 - \bar{x}_3|}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_3^2}{n_3}}} = \frac{|207.859 - 190.053|}{\sqrt{\frac{1105.489}{36} + \frac{953.342}{36}}} = 2.354 $$  
 
@@ -261,7 +261,7 @@ $$ df = {n_1} + {n_3} - 2 = 36 + 36 - 2 = 70 $$
 </table>
 </br>
 
-#### Compare and draw the conclusions:
+#### Conclusions:
 
 <table align="center">
 <tr>
@@ -297,9 +297,9 @@ Treatment Effect $\implies$ Promotion 1 resulted to aproximately 17.806 more in 
 
 Despite Promotion 1 resulting in approximately 17.806 more in mean sales than Promotion 3, the 99% confidence intervals exhibit a small overlap. This overlap occurs where Promotion 1's interval falls within Promotion 3's interval, suggesting that their mean sales could be similar in that specific range, even though Promotion 1 generally has higher sales. This finding is supported by the statistical analysis, which determined there is no significant difference in the mean sales between Promotion 1 and Promotion 3.    
 
-</br>
+---
 
-#### Practical significance
+### Practical significance
 
 **Pooled Standard Deviation :**  
 Calculate the variance of two campaigns, assuming that they have equal variances.  
@@ -319,7 +319,7 @@ $d=(\bar{x}_1-\bar{x}_3)/s_p^2=0.555$
 
 $\implies$ Cohen's d = 0.555 indicates a medium effect size. 
 
-</br>
+---
   
 ### Validation: 
 
@@ -330,11 +330,11 @@ $\implies$ Since t-value < critical t-value, and p-value > α,  **H<sub>0</sub> 
 - **The chance of type I error** (rejecting a correct H<sub>0</sub>) **is high**: 0.02136 (2.14%).
 - Practical significance: Cohen's d of 0.555 indicates a **medium effect size**.
 
-</br>
+---
 
 ## 3. Promotion 2 vs. Promotion 3
 
-#### Perform t-test calculations:
+#### T-test calculations:
 
 $$ t-value = \frac{|\bar{x}_2 - \bar{x}_3|}{\sqrt{\frac{s_2^2}{n_2} + \frac{s_3^2}{n_3}}} = \frac{|165.275 - 190.053|}{\sqrt{\frac{900.895}{36} + \frac{953.342}{36}}} = 3.453 $$  
 
@@ -361,7 +361,7 @@ $$ df = {n_2} + {n_3} - 2 = 36 + 36 - 2 = 70 $$
 </table>
 </br>
 
-#### Compare and draw the conclusions:
+#### Conclusions:
 
 <table align="center">
 <tr>
@@ -397,9 +397,9 @@ We can see, that there is a small overlap: Promotion 3 falls within Promotion 2 
 
 Treatment Effect $\implies$ Promotion 3 resulted to aproximately 24.778 more in mean sales than Promotion 2.
 
-</br>
+---
   
-#### Practical significance
+### Practical significance
 
 **Pooled Standard Deviation :**
 Calculate the variance of two campaigns, assuming that they have equal variances.  
@@ -419,7 +419,7 @@ $d=(\bar{x}_2-\bar{x}_3)/s_p^2=-0.814$
 
 $\implies$ Cohen's d = -0.814 indicates a large effect size, with the negative sign signifying that the Promotion 3 has a higher mean than Promotion 2.
 
-</br>
+---
   
 ### Validation: 
 
@@ -431,9 +431,9 @@ $\implies$ Since t-value < critical t-value, and p-value > α, **H<sub>0</sub> i
 - Practical significance: Cohen's d of -0.814 indicates a **large effect size**, with the negative sign signifying that the **Promotion 3 has a higher mean than Promotion 2**.
 
 
-</br>
+---
 
-## Decision
+# Decision
 
 Given all the insights from the A/B test analysis, the most logical and data-driven final decision would be to roll out **Promotion 1** as the primary marketing campaign for the new menu item across all locations.
 

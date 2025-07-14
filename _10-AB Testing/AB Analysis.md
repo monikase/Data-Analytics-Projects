@@ -293,9 +293,9 @@ $$ df = {n_1} + {n_3} - 2 = 36 + 36 - 2 = 70 $$
   <img width="750" height="520" src="https://github.com/user-attachments/assets/bac958de-91a3-4e48-99bd-5a29e2e11462">
 </p>
 
-We can see, that there is a small overlap: Promotion 1 falls within Promotion 3's interval, indicating that their mean sales could be similar in that small range, although Promotion 1 generally has higher sales.    
-
 Treatment Effect $\implies$ Promotion 1 resulted to aproximately 17.806 more in mean sales than Promotion 3.
+
+Despite Promotion 1 resulting in approximately 17.806 more in mean sales than Promotion 3, the 99% confidence intervals exhibit a small overlap. This overlap occurs where Promotion 1's interval falls within Promotion 3's interval, suggesting that their mean sales could be similar in that specific range, even though Promotion 1 generally has higher sales. This finding is supported by the statistical analysis, which determined there is no significant difference in the mean sales between Promotion 1 and Promotion 3.    
 
 </br>
 

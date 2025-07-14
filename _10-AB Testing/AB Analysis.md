@@ -11,6 +11,8 @@ The data analysis included making sure that the attributes of each promotion gro
 
 Evaluate which marketing strategy works the best and has statistically significant differences among the test groups.
 
+<div style="page-break-after: always;"></div>
+
 ### Dataset
 
 Dataset is taken from [Kaggle](https://www.kaggle.com/datasets/chebotinaa/fast-food-marketing-campaign-ab-test) with these columns:

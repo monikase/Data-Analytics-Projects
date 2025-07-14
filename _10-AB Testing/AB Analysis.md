@@ -44,21 +44,21 @@ Dataset is taken from [Kaggle](https://www.kaggle.com/datasets/chebotinaa/fast-f
 
 ## Data Analysis 
 
-![image](https://github.com/user-attachments/assets/5c1e0edf-815d-4a7f-96b4-cf717cb2dbb1)
-
-From these charts we can see that:  
-- Despite Promotion 3 having the largest total sales (35.5%), each promotion accounts for roughly a third of sales during the test weeks.  
-- Medium market size occupies the most among all three promotion groups, while the small market size occupies the least.  
-- Promotion 3 leads with its' 18% sales coming from the medium market, Promotion 1 leads in large market (14.38%).
-
 **Deal with Outliers and set equal sample proportion:**
-- After analyzing dataset outliers were found: Promotion 1 **(7)**, Promotion 2 **(6)**, Promotion 3 **(5)**. Therefore, the sample size reduced (from 43-47) to 36 per each promotion group.
+- After analyzing dataset outliers were found and eliminated: Promotion 1 **(7)**, Promotion 2 **(6)**, Promotion 3 **(5)**. Therefore, the sample size reduced to 36 random samples per each promotion group.
+
+<img width="1963" height="585" alt="image" src="https://github.com/user-attachments/assets/cb7c8662-9262-4e50-9429-e60dc9046f6b" />
+
+- Promotions were evenly assigned across 36 locations, eliminating location bias.
+- Promotion 3 led in total sales (35.67%), slightly outperforming Promotion 2 (35.43%) and Promotion 1 (28.90%).
+- Weekly sales distribution remained stable, with Promotion 3 peaking in Week 2 and Promotion 2 lowest in Week 4.
+- Market size variation offers strategic insight into performance differences.
 
 </br>
 
 $\implies$ **Examining variable distributions and adjusting sample size ensured group similarity, for meaningful and trustworthy A/B testing.**  
 
-</br>
+---
 
 ## Hypotheses
 

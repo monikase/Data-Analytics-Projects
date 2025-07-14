@@ -2,9 +2,9 @@
 
 A fast-food chain plans to add a new item to its menu and is undecided between **three possible marketing campaigns** for promotion. To determine which promotion has the greatest effect on sales, the new item was introduced at locations in several randomly selected markets. A different promotion was used at each location, and the weekly sales of the new item were recorded for the first four weeks.  
 
-</br>
-
 The data analysis included making sure that the attributes of each promotion group were symmetrically distributed to ensure the A/B test results were fair and correct. Ultimately, examining variable distributions and adjusting the sample size (including dealing with outliers) ensured group similarity for a trustworthy A/B test.
+
+[Project on GitHub](https://github.com/monikase/Data-Analytics-Projects/blob/main/_10-AB%20Testing/AB%20Analysis.md)
 
 
 ## Goal of Analysis
@@ -433,6 +433,8 @@ $\implies$ Since t-value < critical t-value, and p-value > α, **H<sub>0</sub> i
 
 
 ---
+</br>
+</br>
 
 # Decision
 
@@ -482,9 +484,6 @@ Given all the insights from the A/B test analysis, the most logical and data-dri
 
 </br>
 
-
-
-</br>
 
 ## Appendix
 

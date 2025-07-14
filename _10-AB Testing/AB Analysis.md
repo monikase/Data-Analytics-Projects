@@ -162,8 +162,8 @@ $$ df = {n_1} + {n_2} - 2 = 36 + 36 - 2 = 70 $$
 </tr>
 </table>
 
-#### And now we can compare and draw the conclusions:
-</br>
+#### Summary:
+
 <table align="center">
 <tr>
   <th> Decision Rule </th>
@@ -181,13 +181,11 @@ $$ df = {n_1} + {n_2} - 2 = 36 + 36 - 2 = 70 $$
   <td> $\implies$ We can reject H<sub>0</sub> hypothesis  </td>
 </tr>
 </table>
-</br>
 
 <p align="center"> We can also use <a href="https://www.evanmiller.org/ab-testing/t-test.html">Evan Miller 2 Sample T-Test</a> to do this test from raw sales data. </p align="center">
 
 <p align="center"> <sub> Sample 1 - Promotion 1, Sample 2 - Promotion 2 </sub></p>
 
-</br>
 
 <p align="center">
   <img width="325" height="406" alt="image" src="https://github.com/user-attachments/assets/70c64382-eb36-4425-bf22-c7714fcf89bb" />
@@ -261,9 +259,9 @@ $$ df = {n_1} + {n_3} - 2 = 36 + 36 - 2 = 70 $$
   <td> 0.01 </td>
 </tr>
 </table>
-</br>
 
-#### Conclusions:
+
+#### Summary:
 
 <table align="center">
 <tr>
@@ -282,13 +280,13 @@ $$ df = {n_1} + {n_3} - 2 = 36 + 36 - 2 = 70 $$
   <td> $\implies$ We cannot reject H<sub>0</sub> hypothesis </td>
 </tr>
 </table>
-</br>
+
 
 <p align="center"> <a href="https://www.evanmiller.org/ab-testing/t-test.html">Evan Miller 2 Sample T-Test</a> </p align="center">
 
 <p align="center"> <sub> Sample 1 - Promotion 1, Sample 2 - Promotion 3 </sub></p>
 
-</br>
+
 
 <p align="center">
   <img width="325" height="406" alt="image" src="https://github.com/user-attachments/assets/945fc8ed-f69b-45c0-93da-2b8ea893145a" />
@@ -360,9 +358,8 @@ $$ df = {n_2} + {n_3} - 2 = 36 + 36 - 2 = 70 $$
   <td> 0.01 </td>
 </tr>
 </table>
-</br>
 
-#### Conclusions:
+#### Summary:
 
 <table align="center">
 <tr>
@@ -381,18 +378,15 @@ $$ df = {n_2} + {n_3} - 2 = 36 + 36 - 2 = 70 $$
   <td> $\implies$ We reject H<sub>0</sub> hypothesis </td>
 </tr>
 </table>
-</br>
 
 <p align="center"> <a href="https://www.evanmiller.org/ab-testing/t-test.html">Evan Miller 2 Sample T-Test</a> </p align="center">
 
 <p align="center"> <sub> Sample 1 - Promotion 2, Sample 2 - Promotion 3 </sub></p>
 
-</br>
 
 <p align="center">
   <img width="325" height="406" alt="image" src="https://github.com/user-attachments/assets/b700a126-87b6-443b-9e63-de8eb0193606" />
 
-</p>
 
 Treatment Effect $\implies$ Promotion 3 resulted to aproximately 24.778 more in mean sales than Promotion 2.
 

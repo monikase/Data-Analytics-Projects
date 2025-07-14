@@ -81,13 +81,15 @@ $\implies$ **Examining variable distributions and adjusting sample size ensured 
 
 ## Target Metrics
 
-### Primary
--  Sum of Sales - to identify the promotion that leads the highest average sales
-- Statistical Significance of the Difference in Mean Sales (p-value)
+#### Primary Metrics
+- Mean Sales: This metric is used to identify the promotion that leads the highest average sales.
 
-### Secondary
-- Effect Size (Cohen's d) - determine the practical significance.
-- Distribution within Each Promotion Group: Ensuring that the distribution of market sizes is similar across the promotion groups
+- Statistical Significance of the Difference in Mean Sales (p-value): This is used to determine if the differences observed in mean sales between promotions are statistically significant.
+
+#### Secondary Metrics
+- Effect Size (Cohen's d): This metric helps determine the practical significance of the difference in mean sales.
+
+- Distribution within Each Promotion Group: This is used for ensuring that the distribution of market sizes is similar across the promotion groups, which is important for the validity of the A/B test.
 
  </br>
 

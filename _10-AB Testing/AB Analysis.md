@@ -290,7 +290,6 @@ $$ df = {n_1} + {n_3} - 2 = 36 + 36 - 2 = 70 $$
 
 <p align="center">
   <img width="600" height="748" alt="image" src="https://github.com/user-attachments/assets/945fc8ed-f69b-45c0-93da-2b8ea893145a" />
-">
 </p>
 
 Treatment Effect $\implies$ Promotion 1 resulted to aproximately 17.806 more in mean sales than Promotion 3.

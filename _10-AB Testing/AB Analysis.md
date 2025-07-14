@@ -440,7 +440,6 @@ $\implies$ Since t-value < critical t-value, and p-value > α, **H<sub>0</sub> i
 
 Given all the insights from the A/B test analysis, the most logical and data-driven final decision would be to roll out **Promotion 1** as the primary marketing campaign for the new menu item across all locations.
 
-</br>
 
 **Rationale for this decision:**  
 
@@ -459,7 +458,6 @@ Given all the insights from the A/B test analysis, the most logical and data-dri
   </tr>
 </table>
 
-</br>
 
 **However, this final decision should be implemented with the following considerations:**  
 

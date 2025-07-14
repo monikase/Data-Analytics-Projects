@@ -476,7 +476,7 @@ Given all the insights from the A/B test analysis, the most logical and data-dri
   </tr>
 </table> 
 
-
+</br>
 
 ## Appendix
 

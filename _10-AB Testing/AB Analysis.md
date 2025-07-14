@@ -34,7 +34,8 @@ Dataset is taken from [Kaggle](https://www.kaggle.com/datasets/chebotinaa/fast-f
 
 *This increases the chance of a false positive due to multiple comparisons. Therefore, for analysis of A/B test results we will use a **confidence level of 99%.**
 - **Hypotheses :** For each comparison, we'll set up a **null hypothesis (H<sub>0</sub>)** and an **alternative hypothesis (H<sub>a</sub>)**.
-- **Statistical Test :** we will use **Independent Samples two-tailed t-test -** Used when comparing the means of two independent groups. **Note:** we could do a single hypothesis test by using ANOVA. However, ANOVA only tells us that there is a difference between groups. We also care about the direction of the difference, in addition to significance, and that requires another test.
+- **Statistical Test :** we will use **Independent Samples two-tailed t-test -** Used when comparing the means of two independent groups.
+**Note:** we could do a single hypothesis test by using ANOVA. However, ANOVA only tells us that there is a difference between groups. We also care about the direction of the difference, in addition to significance, and that requires another test.
 - **Interpret Results :** In which direction metrics are significant statistically and practically.
 - **Launch Decision :** Arrive at the final data-driven decision - which marketing strategy considered best for launching.
 

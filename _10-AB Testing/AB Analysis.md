@@ -519,8 +519,8 @@ PercentileStats AS (
   -- Use APPROX_QUANTILES for approximate percentiles to determine Q1 and Q3 for outlier detection
   SELECT
     PromotionID,
-    (APPROX_QUANTILES(TotalSales, 100))[OFFSET(25)] AS Q1, -- 25th percentile
-    (APPROX_QUANTILES(TotalSales, 100))[OFFSET(75)] AS Q3  -- 75th percentile
+    (APPROX_QUANTILES(TotalSales, 100))[OFFSET(25)] AS Q1,
+    (APPROX_QUANTILES(TotalSales, 100))[OFFSET(75)] AS Q3
   FROM
     AggregatedSales
   GROUP BY
@@ -557,14 +557,14 @@ OutlierHandledSales AS (
 ),
 SubsampledSales AS (
   -- Subsample each promotion group to have exactly 36 data points after outlier removal.
-  -- Using RAND() ensures a random selection, avoiding bias from ordering by TotalSales.
+  -- RAND() ensures a random selection, avoiding bias.
   SELECT
     LocationID,
     PromotionID,
     TotalSales,
     ROW_NUMBER() OVER (
       PARTITION BY PromotionID
-      ORDER BY RAND() -- Crucial for random sampling to avoid bias
+      ORDER BY RAND()
     ) AS rn
   FROM
     OutlierHandledSales
@@ -582,7 +582,7 @@ FinalStats AS (
   FROM
     SubsampledSales
   WHERE
-    rn <= 36 -- Select only the first 36 randomly ordered non-outlier samples
+    rn <= 36
   GROUP BY
     PromotionID
 )

@@ -188,7 +188,8 @@ $$ df = {n_1} + {n_2} - 2 = 36 + 36 - 2 = 70 $$
 </br>
 
 <p align="center">
-  <img width="750" height="520" src="https://github.com/user-attachments/assets/562a4d5d-8734-4253-8766-b20b66d35963">
+  <img width="600" height="748" alt="image" src="https://github.com/user-attachments/assets/70c64382-eb36-4425-bf22-c7714fcf89bb" />
+
 </p>
 
 </br>

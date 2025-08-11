@@ -2,7 +2,7 @@
 
 This project provides an in-depth analysis of a Coursera course dataset to identify the key drivers of student enrollment and satisfaction. By examining course features, ratings, and enrollment data, this analysis uncovers actionable insights to help optimize Coursera's course portfolio for maximum engagement and revenue in the competitive online education market.
 
-[Analysis](https://github.com/TuringCollegeSubmissions/msedui-PYDA.3.5/blob/main/Coursera_Analysis.ipynb)  
+[Analysis](https://github.com/monikase/Data-Analytics-Projects/blob/main/_14_EDA_Coursera/Coursera_Analysis.ipynb)  
 [Dataset](https://github.com/TuringCollegeSubmissions/msedui-PYDA.3.5/blob/main/coursera.csv)
 
 ### Goal of the Analysis

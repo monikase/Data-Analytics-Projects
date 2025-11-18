@@ -48,6 +48,13 @@ A single parsed events table, `turing_data_analytics.raw_events`, records variou
 - page_referrer 
 - campaign
 
+---
+
+### ANALYSIS
+
+The analysis begins with a high-level look at sales volume over a three-month period to establish the overall business trend.
+
+
 
 
 

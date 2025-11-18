@@ -64,5 +64,7 @@ GROUP BY purchase_date
 ORDER BY purchase_date
 ```
 
+<img width="1991" height="554" alt="image" src="https://github.com/user-attachments/assets/4293a533-976c-4569-b41e-b9f561e56a24" />
+
 
 

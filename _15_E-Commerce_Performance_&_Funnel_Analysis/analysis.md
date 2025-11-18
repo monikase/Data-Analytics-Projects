@@ -14,36 +14,38 @@ Through a series of SQL-driven investigations and Power BI visualizations, the p
 
 ### DATA
 
-Field name                          | Type
------------------------------------|---------
-event_date                         | STRING
-event_timestamp                    | INTEGER
-event_name                         | STRING
-event_value_in_usd                 | FLOAT
-user_id                            | STRING
-user_pseudo_id                     | STRING
-user_first_touch_timestamp         | INTEGER
-category                           | STRING
-mobile_model_name                  | STRING
-mobile_brand_name                  | STRING
-operating_system                   | STRING
-language                           | STRING
-is_limited_ad_tracking             | STRING
-browser                            | STRING
-browser_version                    | STRING
-country                            | STRING
-medium                             | STRING
-name                               | STRING
-traffic_source                     | STRING
-platform                           | STRING
-total_item_quantity                | INTEGER
-purchase_revenue_in_usd           | FLOAT
-refund_value_in_usd                | FLOAT
-shipping_value_in_usd             | FLOAT
-tax_value_in_usd                   | FLOAT
-transaction_id                     | STRING
-page_title                         | STRING
-page_location                      | STRING
-source                             | STRING
-page_referrer                      | STRING
-campaign                           | STRING
+- event_date 
+- event_timestamp 
+- event_name 
+- event_value_in_usd 
+- user_id 
+- user_pseudo_id 
+- user_first_touch_timestamp 
+- category 
+- mobile_model_name 
+- mobile_brand_name 
+- operating_system 
+- language 
+- is_limited_ad_tracking 
+- browser 
+- browser_version
+- country 
+- medium 
+- name ng
+- traffic_source 
+- platform 
+- total_item_quantity 
+- purchase_revenue_in_usd 
+- refund_value_in_usd 
+- shipping_value_in_usd 
+- tax_value_in_usd 
+- transaction_id 
+- page_title 
+- page_location 
+- source 
+- page_referrer 
+- campaign
+
+
+
+

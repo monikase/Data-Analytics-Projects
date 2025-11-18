@@ -54,7 +54,15 @@ A single parsed events table, `turing_data_analytics.raw_events`, records variou
 
 The analysis begins with a high-level look at sales volume over a three-month period to establish the overall business trend.
 
-
+```sql
+SELECT
+  PARSE_DATE('%Y%m%d', event_date) AS purchase_date,
+  COUNT(1) AS purchases_count
+FROM `tc-da-1.turing_data_analytics.raw_events`
+WHERE event_name = 'purchase'
+GROUP BY purchase_date
+ORDER BY purchase_date
+```
 
 
 

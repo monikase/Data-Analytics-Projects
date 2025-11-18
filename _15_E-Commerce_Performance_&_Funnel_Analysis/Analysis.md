@@ -318,31 +318,31 @@ ORDER BY date
 | 6 | Time to purchase is consistent                   | Users typically convert within 40–100 minutes, averaging 67 minutes. Spikes occur but don’t indicate friction.   |
 
 
-## Further Considerations & Recommendations
+### Further Considerations & Recommendations
 
-### 1. Strengthen retention strategy
+#### 1. Strengthen retention strategy
 Since returning users contribute very little to total purchases:
 - Introduce targeted re-engagement campaigns via CRM  
 - Evaluate onboarding flow and post-purchase experience  
 - Consider integrating loyalty programs or personalized reminders  
 
-### 2. Investigate post-holiday demand drop
+#### 2. Investigate post-holiday demand drop
 Although seasonal, the drop is steep. Recommendations:
 - Analyze marketing spend and campaign timing  
 - Identify whether customer acquisition slowed disproportionately  
 - Explore whether product assortment or pricing changes contributed to lower demand  
 
-### 3. Improve cross-device and cross-platform consistency
+#### 3. Improve cross-device and cross-platform consistency
 The slight device-based differences suggest:
 - Review desktop vs. mobile UX for conversion friction  
 - Ensure layout, speed, and checkout flow are optimized across platforms  
 
-### 4. Monitor browser version changes proactively
+#### 4. Monitor browser version changes proactively
 Even though no significant issues were found this time:
 - Automate funnel tracking by browser + OS combinations  
 - Set alerting thresholds for conversion drops  
 
-### 5. Investigate time-to-purchase outliers
+#### 5. Investigate time-to-purchase outliers
 Spikes in time-to-purchase could indicate:
 - Slow-loading pages  
 - Confusing flows causing users to return later  

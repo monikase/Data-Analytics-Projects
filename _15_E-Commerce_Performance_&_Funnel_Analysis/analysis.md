@@ -14,6 +14,8 @@ Through a series of SQL-driven investigations and Power BI visualizations, the p
 
 ### DATA
 
+A single parsed events table, `turing_data_analytics.raw_events`, records various frontend actions on the site from 2020-11-01 to 2021-01-31.
+
 - event_date 
 - event_timestamp 
 - event_name 

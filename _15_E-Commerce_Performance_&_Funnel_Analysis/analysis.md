@@ -12,7 +12,7 @@ Through a series of SQL-driven investigations and Power BI visualizations, the p
 
 ---
 
-### DATA
+### Data
 
 A single parsed events table, `turing_data_analytics.raw_events`, records various frontend actions on the site from 2020-11-01 to 2021-01-31.
 
@@ -50,7 +50,7 @@ A single parsed events table, `turing_data_analytics.raw_events`, records variou
 
 ---
 
-### ANALYSIS
+### Analysis
 
 The analysis begins with a high-level look at sales volume over a three-month period to establish the overall business trend.
 
@@ -79,5 +79,8 @@ FROM `tc-da-1.turing_data_analytics.raw_events`
 WHERE event_name = 'purchase'
 GROUP BY purchase_date, country
 ```
+
+<img width="1995" height="585" alt="image" src="https://github.com/user-attachments/assets/170db5b6-5c21-4de8-9e54-36c323a0574a" />
+
 
 

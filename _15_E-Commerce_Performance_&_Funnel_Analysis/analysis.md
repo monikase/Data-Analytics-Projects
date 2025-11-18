@@ -66,5 +66,18 @@ ORDER BY purchase_date
 
 <img width="1991" height="554" alt="image" src="https://github.com/user-attachments/assets/4293a533-976c-4569-b41e-b9f561e56a24" />
 
+After observing a post-holiday decline, the data is segmented by country and device category to understand whether certain markets or platforms behaved differently. This helps determine whether the decline is systemic or localized.
+
+#### Segmented by country:
+
+```sql
+SELECT
+  PARSE_DATE('%Y%m%d', event_date) AS purchase_date,
+  country,
+  COUNT(1) AS purchases_count
+FROM `tc-da-1.turing_data_analytics.raw_events`
+WHERE event_name = 'purchase'
+GROUP BY purchase_date, country
+```
 
 

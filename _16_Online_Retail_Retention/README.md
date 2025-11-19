@@ -1,6 +1,4 @@
-### Online Retail Retention Analysis 
-
----
+# Online Retail Retention Analysis 
 
 #### Goal
 

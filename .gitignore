@@ -1,0 +1,13 @@
+# Ignore large files
+data/amazon_products.csv
+*.db
+*.parquet
+*.zip
+
+# Ignore virtual environment junk
+__pycache__/
+*.pyc
+
+# Ignore OS files
+.DS_Store
+Thumbs.db

@@ -40,7 +40,7 @@ The analysis aims to answer the following key questions:
 1. [Data Cleaning & Preparation (Python)](https://github.com/monikase/Data-Analytics-Projects/blob/main/_18_Online_Retail_Analysis/notebooks/01_Data_Cleaning.ipynb)
 2. [Cohort Analysis (SQL + Python)](https://github.com/monikase/Data-Analytics-Projects/blob/main/_18_Online_Retail_Analysis/notebooks/02_Data_Analysis.ipynb)
 3. [RFM Segmentation (Python)](https://github.com/monikase/Data-Analytics-Projects/blob/main/_18_Online_Retail_Analysis/notebooks/02_Data_Analysis.ipynb)
-4. Dashboarding (Power BI)
+4. [Dashboarding (Power BI)](https://github.com/monikase/Data-Analytics-Projects/blob/main/_18_Online_Retail_Analysis/dashboard/Online_Retail_Dashboard.pdf)
 
 ---
 <img width="1639" height="1199" alt="image" src="https://github.com/user-attachments/assets/ab737ae8-7d65-4c54-a73c-e2e8a53b79ef" />  

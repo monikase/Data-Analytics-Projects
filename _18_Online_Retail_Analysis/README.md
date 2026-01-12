@@ -37,7 +37,7 @@ The analysis aims to answer the following key questions:
 
 ## Methodology
 
-1. Data Cleaning & Preparation (Python)
+1. [Data Cleaning & Preparation (Python)](https://github.com/monikase/Data-Analytics-Projects/blob/main/_18_Online_Retail_Analysis/notebooks/01_Data_Cleaning.ipynb)
 2. Cohort Analysis (SQL + Python)
 3. RFM Segmentation (Python)
 4. Dashboarding (Power BI)

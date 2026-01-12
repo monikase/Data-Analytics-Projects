@@ -43,6 +43,7 @@ The analysis aims to answer the following key questions:
 4. Dashboarding (Power BI)
 
 ---
+<img width="1639" height="1199" alt="image" src="https://github.com/user-attachments/assets/ab737ae8-7d65-4c54-a73c-e2e8a53b79ef" />  
 
 ## Key Insights
 - **Customer retention is the dominant revenue driver:**  

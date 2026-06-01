@@ -58,6 +58,7 @@ The retention team wants to identify the most valuable customers and prioritize 
 - Window Functions
 - RANK()
 
+```sql
 /* ------------------- 1.1 CUSTOMER METRICS ------------------- */
 
 -- Payment records represent customer spending.
@@ -67,7 +68,6 @@ The retention team wants to identify the most valuable customers and prioritize 
 -- The objective is to combine both perspectives into a
 -- single customer performance dataset.
 
-```sql
 WITH customer_metrics AS (
 
  SELECT

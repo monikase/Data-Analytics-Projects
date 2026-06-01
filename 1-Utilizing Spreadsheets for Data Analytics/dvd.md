@@ -869,10 +869,6 @@ Rental duration analysis highlighted differences in customer rental behavior acr
 
 ---
 
-# Key Learnings
-
-This project demonstrates how SQL can be used to transform transactional data into actionable business insights.
-
 The analyses combine technical SQL implementation with business-oriented thinking, focusing on customer behavior, revenue performance, retention, and operational efficiency.
 
 ---
